@@ -1,0 +1,21 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP NE555DR
+D Single Precision Timer
+K
+F http://www.ti.com/lit/ds/symlink/ne555.pdf
+$ENDCMP
+#
+$CMP L7812ABV
+D L7812ABV, Voltage Regulator, 1A 12 V, 2%, 3-Pin TO-220
+K
+F https://www.st.com/resource/en/datasheet/l78.pdf
+$ENDCMP
+#
+$CMP DTF13-4P-G003
+D Body Features: Primary Product Color Black | Configuration Features: Number of Sections 1 | Number of Rows 2 | Number of Positions 4 | PCB Mount Orientation Right Angle | Number of Signal Positions 4 | Contact Features: Mating Pin Diameter .063 INCH | Contact Type Pin | Contact Mating Area Plating Material Gold | Contact Current Rating (Max) 13 AMP | Contact Size Size 16 | Mating Pin Diameter 1.59 MM | Dimensions: Connector Width 27.18 MM | PCB Thickness (Recommended) .78  2.36 MM | Connector Length 1.31
+K
+F https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1-1773962-8&DocType=Data%20Sheet&DocLang=English&PartCntxt=DTF13-4P-G003&DocFormat=pdf
+$ENDCMP
+#
+#End Doc Library
