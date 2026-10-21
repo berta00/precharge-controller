@@ -18,4 +18,22 @@ K
 F https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1-1773962-8&DocType=Data%20Sheet&DocLang=English&PartCntxt=DTF13-4P-G003&DocFormat=pdf
 $ENDCMP
 #
+$CMP 9500750000
+D PCB terminal, 690 V, 24 A, Pitch in mm: 10.00, Number of poles: 2, Flat-blade connection, THT solder connection, 180, Box
+K
+F https://datasheet.weidmueller.com/pdf/en/9500750000/scope/2/
+$ENDCMP
+#
+$CMP CD4081BM96
+D CMOS Quad 2-Input AND Gate
+K
+F http://www.ti.com/lit/gpn/cd4081b
+$ENDCMP
+#
+$CMP CD40106BM96
+D CMOS Hex Schmitt Triggers
+K
+F http://www.ti.com/lit/gpn/cd40106b
+$ENDCMP
+#
 #End Doc Library
