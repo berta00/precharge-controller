@@ -665,7 +665,7 @@
         "uuid": "d0dc5348-c362-4b06-85a5-76de80ed7055"
       }
     ],
-    "used_designators": "#FLG1-2,#PWR1-11,C1-4,D1-4,IC1,J1,Q1-2,R1-2,U1",
+    "used_designators": "#FLG1-2,#PWR1-27,C1-5,D1-5,IC1-4,J1-3,Q1-2,R1-10,U1",
     "variants": []
   },
   "sheets": [
@@ -675,7 +675,19 @@
     ],
     [
       "9c54972c-2a2f-45eb-b851-58e6e35618ea",
-      "power_supply"
+      "lv_power_supply"
+    ],
+    [
+      "56fb71d1-0eb8-422f-888e-b936ea8ae617",
+      "lv_logic"
+    ],
+    [
+      "1985261d-6d1b-4055-84ae-f12baea9cf66",
+      "lv_rele_drive"
+    ],
+    [
+      "b60aff46-4517-4be9-addd-53c45289a4c6",
+      "hi_sense"
     ]
   ],
   "text_variables": {},
