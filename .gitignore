@@ -15,3 +15,10 @@ _autosave-*
 # lib cache and log files
 fp-info-cache
 *.log
+
+# LTspice
+*.net
+*.raw
+*.op.raw
+*.log
+*.bck
