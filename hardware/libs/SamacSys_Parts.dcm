@@ -36,4 +36,10 @@ K
 F http://www.ti.com/lit/gpn/cd40106b
 $ENDCMP
 #
+$CMP TC4S584F,LF
+D IC INVERT SCHMITT 1CH 1-INP SMV
+K
+F http://toshiba.semicon-storage.com/us/product/logic/one-gate-logic/detail.TC4S584F.html
+$ENDCMP
+#
 #End Doc Library
