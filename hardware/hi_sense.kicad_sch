@@ -1731,7 +1731,7 @@
 				)
 			)
 		)
-		(property "Value" "R_US"
+		(property "Value" "??"
 			(at 68.58 34.29 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1811,7 +1811,7 @@
 				)
 			)
 		)
-		(property "Value" "R_US"
+		(property "Value" "??"
 			(at 58.42 34.29 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1892,7 +1892,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "D_Zener"
+		(property "Value" "??"
 			(at 107.95 46.9899 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1974,7 +1974,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "R_US"
+		(property "Value" "??"
 			(at 77.47 48.2599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2056,7 +2056,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "??"
 			(at 95.25 48.2599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2137,7 +2137,7 @@
 				)
 			)
 		)
-		(property "Value" "R_US"
+		(property "Value" "??"
 			(at 48.26 34.29 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2296,7 +2296,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R_US"
+		(property "Value" "??"
 			(at 125.73 44.4499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2378,7 +2378,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R_US"
+		(property "Value" "??"
 			(at 149.86 44.4499 0)
 			(show_name no)
 			(do_not_autoplace no)
