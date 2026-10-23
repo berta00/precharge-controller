@@ -665,7 +665,7 @@
         "uuid": "d0dc5348-c362-4b06-85a5-76de80ed7055"
       }
     ],
-    "used_designators": "#FLG1-2,#PWR1-33,C1-6,D1-5,IC1-4,J1-3,Q1-4,R1-10,U1-2",
+    "used_designators": "#FLG1-2,#PWR1-40,C1-6,D1-8,IC1-5,J1-3,Q1-6,R1-16,U1-2",
     "variants": []
   },
   "sheets": [
@@ -687,7 +687,11 @@
     ],
     [
       "b60aff46-4517-4be9-addd-53c45289a4c6",
-      "hi_sense"
+      "hv_sense"
+    ],
+    [
+      "13d5b94f-9e46-4abe-aa19-69cfaed72935",
+      "hv_power"
     ]
   ],
   "text_variables": {},
