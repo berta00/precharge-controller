@@ -1754,7 +1754,7 @@
 		)
 		(uuid "4ce0ebe7-7073-4289-ab08-03428f1b8efe")
 	)
-	(text "Input: V_{in} = 12V\nOutput: V_{out} = 12V\n\nSizing Reverse polarity & Gate protection:\nR2 = \nD3 = 15V (max V_{GS}_{protected} = 15V < max V_{GS}_{nominal} = 20V)\n\nSizing Transient overvoltage protection:\nD4 = \n\nSizing Bypass filter:\nC3 = 0.1uF high-frequency bypass\nC4 = ??uF inductive transient bypass\n"
+	(text "Input: V_{in} = 12V\nOutput: V_{out} = 12V\n\nSizing Reverse polarity & Gate protection:\nR2 = \nD3 = 15V (max V_{GS}_{protected} = 15V < max V_{GS}_{nominal} = 20V)\n\nSizing Transient overvoltage protection:\nD4 = \n\nSizing Bypass filter:\nC3 = 0.1uF high-frequency bypass (multilayer ceramic)\nC4 = ??uF inductive transient bypass (multilayer ceramic)\n"
 		(exclude_from_sim no)
 		(at 46.355 137.795 0)
 		(effects

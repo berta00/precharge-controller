@@ -2139,6 +2139,12 @@
 		(uuid "94399a49-f7f7-4ff2-b344-be126306a9f9")
 	)
 	(junction
+		(at 144.78 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "96168f79-14c4-4a05-8f18-95f9e9844d1a")
+	)
+	(junction
 		(at 165.1 121.92)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2546,6 +2552,16 @@
 	)
 	(wire
 		(pts
+			(xy 144.78 60.96) (xy 144.78 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69dbaa1c-2971-466a-88b2-b070485bc9d4")
+	)
+	(wire
+		(pts
 			(xy 171.45 36.83) (xy 167.64 36.83)
 		)
 		(stroke
@@ -2653,6 +2669,16 @@
 			(type default)
 		)
 		(uuid "843d7896-b44e-40a3-ad49-e54cf4a2ac1e")
+	)
+	(wire
+		(pts
+			(xy 144.78 71.12) (xy 144.78 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8764aa67-b17e-40ca-997b-ce1cfae7b220")
 	)
 	(wire
 		(pts
@@ -2836,16 +2862,6 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 73.66) (xy 165.1 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b7cedea0-e588-4845-b179-9886896976e8")
-	)
-	(wire
-		(pts
 			(xy 196.85 76.2) (xy 214.63 76.2)
 		)
 		(stroke
@@ -2996,6 +3012,16 @@
 	)
 	(wire
 		(pts
+			(xy 142.24 73.66) (xy 165.1 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e016dd90-413c-4deb-99ee-a4056579d7de")
+	)
+	(wire
+		(pts
 			(xy 154.94 109.22) (xy 166.37 109.22)
 		)
 		(stroke
@@ -3129,7 +3155,7 @@
 	)
 	(hierarchical_label "CHARGE_REQUIRED_IN"
 		(shape input)
-		(at 144.78 73.66 180)
+		(at 142.24 73.66 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4104,6 +4130,88 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_US")
+		(at 144.78 67.31 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6d5dda11-f796-43f1-afa0-1bfd00efa1ad")
+		(property "Reference" "R10"
+			(at 147.32 66.0399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 147.32 68.5799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 145.796 67.564 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 144.78 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 144.78 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d7a845a8-11d2-4744-b62e-bccf49f0a1ac")
+		)
+		(pin "2"
+			(uuid "e2f0b5ff-d427-4b7a-8ea2-e7640ad1bbfd")
+		)
+		(instances
+			(project "precharge-controller"
+				(path "/d0dc5348-c362-4b06-85a5-76de80ed7055/56fb71d1-0eb8-422f-888e-b936ea8ae617"
+					(reference "R10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 165.1 123.19 0)
 		(unit 1)
@@ -4943,6 +5051,84 @@
 			(project "precharge-controller"
 				(path "/d0dc5348-c362-4b06-85a5-76de80ed7055/56fb71d1-0eb8-422f-888e-b936ea8ae617"
 					(reference "#PWR032")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 144.78 60.96 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b475d8b5-a94c-4990-b5d2-f442270618cf")
+		(property "Reference" "#PWR018"
+			(at 144.78 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+12V_LOGIC"
+			(at 144.78 55.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 144.78 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 144.78 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 144.78 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "32d5b3bc-3c7c-4715-bd3e-272148304de1")
+		)
+		(instances
+			(project "precharge-controller"
+				(path "/d0dc5348-c362-4b06-85a5-76de80ed7055/56fb71d1-0eb8-422f-888e-b936ea8ae617"
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)

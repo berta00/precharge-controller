@@ -42,4 +42,16 @@ K
 F http://toshiba.semicon-storage.com/us/product/logic/one-gate-logic/detail.TC4S584F.html
 $ENDCMP
 #
+$CMP 9500630000
+D PCB terminal, 690 V, 24 A, Pitch in mm: 7.50, Number of poles: 3, Flat-blade connection, THT solder connection, 180, Box
+K
+F https://datasheet.weidmueller.com/pdf/en/9500630000/scope/2/
+$ENDCMP
+#
+$CMP DTF13-6P-G003
+D Body Features: Primary Product Color Black | Configuration Features: Number of Sections 1 | PCB Mount Orientation Right Angle | Number of Signal Positions 6 | Number of Positions 6 | Number of Rows 2 | Contact Features: Contact Current Rating (Max) 13 AMP | Mating Pin Diameter 1.59 MM | Contact Type Pin | Contact Size Size 16 | Contact Mating Area Plating Material Gold | Mating Pin Diameter .063 INCH | Dimensions: PCB Thickness (Recommended) .031  .093 INCH | Connector Length 29.59 MM | Connector Width 1
+K
+F https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1-1773962-8&DocType=Data%20Sheet&DocLang=English&PartCntxt=DTF13-6P-G003&DocFormat=pdf
+$ENDCMP
+#
 #End Doc Library
