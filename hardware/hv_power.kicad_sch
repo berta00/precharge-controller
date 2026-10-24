@@ -2,9 +2,680 @@
 	(version 20260306)
 	(generator "eeschema")
 	(generator_version "10.0")
-	(uuid "7ee2d48f-8670-46ff-bf9e-1ae122e8171e")
+	(uuid "4c949eb4-68df-4d8a-8bea-a764a2cbf5fc")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Device:R_US"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.54 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R_US"
+				(at -2.54 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 1.016 -0.254 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resistor, US symbol"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_US_0_1"
+				(polyline
+					(pts
+						(xy 0 2.286) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.286) (xy 1.016 1.905) (xy 0 1.524) (xy -1.016 1.143) (xy 0 0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.762) (xy 1.016 0.381) (xy 0 0) (xy -1.016 -0.381) (xy 0 -0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -0.762) (xy 1.016 -1.143) (xy 0 -1.524) (xy -1.016 -1.905) (xy 0 -2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.286) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_US_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "G9KB_1A12V:G9KB-1A_DC12"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at -15.24 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Value" "G9KB-1A DC12"
+				(at -15.24 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Footprint" "RELAY_G9KB-1A_OMR"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+				)
+			)
+			(property "Datasheet" "G9KB-1A DC12"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "G9KB-1A DC12"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "RELAY_G9KB-1A_OMR"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "G9KB-1A_DC12_0_1"
+				(polyline
+					(pts
+						(xy -22.86 2.54) (xy -22.86 -22.86)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -22.86 -2.54) (xy -17.78 -2.54)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -22.86 -5.08) (xy -20.32 -5.08)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -22.86 -15.24) (xy -20.32 -15.24)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -22.86 -17.78) (xy -17.78 -17.78)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -22.86 -22.86) (xy -7.62 -22.86)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -20.32 -5.08) (xy -20.32 -2.54)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -20.32 -15.24) (xy -20.32 -17.78)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -17.78 -8.9027) (xy -17.78 -2.54)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -17.78 -9.2075)
+					(radius 0.3048)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -17.78 -11.1125)
+					(radius 0.3048)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -17.78 -17.78) (xy -17.78 -11.43)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -16.8275 -8.89) (xy -16.8275 -11.43)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -13.97 -9.525) (xy -13.97 -10.795)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -13.97 -9.525) (xy -11.43 -9.525)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -13.97 -9.525) (xy -11.43 -9.525) (xy -11.43 -10.795) (xy -13.97 -10.795)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -12.7 0) (xy -12.7 -20.32)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -12.7 -20.32) (xy -7.62 -20.32)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -11.43 -9.525) (xy -11.43 -10.795)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -11.43 -10.795) (xy -13.97 -10.795)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -7.62 2.54) (xy -22.86 2.54)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -7.62 0) (xy -12.7 0)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -7.62 -22.86) (xy -7.62 2.54)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at 0 0 180)
+					(length 7.62)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -20.32 180)
+					(length 7.62)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -30.48 -2.54 0)
+					(length 7.62)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -30.48 -15.24 0)
+					(length 7.62)
+					(name "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -30.48 -5.08 0)
+					(length 7.62)
+					(name "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -30.48 -17.78 0)
+					(length 7.62)
+					(name "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+12V"
 			(power global)
 			(pin_numbers
@@ -145,9 +816,427 @@
 			(embedded_fonts no)
 		)
 	)
+	(rectangle
+		(start 44.45 24.13)
+		(end 57.15 59.69)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "1a9469f9-dc4e-4f95-bd40-421e7083b4f0")
+	)
+	(rectangle
+		(start 44.704 109.22)
+		(end 82.55 144.78)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "5e4e7682-25ad-4cf7-aad5-16f62135f8fa")
+	)
+	(rectangle
+		(start 59.69 24.13)
+		(end 97.79 59.69)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "d3211247-aac9-48c4-bac6-0349a5c06d43")
+	)
+	(rectangle
+		(start 44.704 66.04)
+		(end 82.55 101.6)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "faec788e-3bf7-43e7-a4d7-03ff13cb9165")
+	)
+	(text "AIR PRE relay"
+		(exclude_from_sim no)
+		(at 59.436 22.86 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "05ea69e3-fb51-4db0-bfb7-968db59915a6")
+	)
+	(text "AIR POS relay"
+		(exclude_from_sim no)
+		(at 44.45 64.77 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3fd0b99e-2c9c-433e-863f-1680fc9476c4")
+	)
+	(text "Precharge\nresistor"
+		(exclude_from_sim no)
+		(at 44.196 20.32 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "de4aee45-0b1f-40e6-9e89-b19b404572fb")
+	)
+	(text "AIR NEG relay"
+		(exclude_from_sim no)
+		(at 44.45 107.95 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f1c100d5-eba8-48f0-813b-d91e94fbc7f9")
+	)
+	(junction
+		(at 46.99 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2245468f-625b-40ab-83d6-eb8d266921df")
+	)
+	(junction
+		(at 46.99 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "855f139a-201c-49fb-bcfa-937b21dc5d44")
+	)
+	(junction
+		(at 46.99 124.46)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9281abc0-c60b-42de-a459-22a7ac2385e9")
+	)
+	(junction
+		(at 62.23 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d0c1f1ed-9b4a-4e4e-8111-113ae4b4b680")
+	)
+	(junction
+		(at 62.23 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "db73c6ee-0017-4d38-bc2d-0beb5434af9b")
+	)
+	(junction
+		(at 46.99 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f80b19a7-a3b0-44a7-9509-d03da23a617f")
+	)
+	(wire
+		(pts
+			(xy 62.23 36.83) (xy 64.77 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "046e5edd-117f-4c0d-a4dd-6738f310f6dc")
+	)
+	(wire
+		(pts
+			(xy 80.01 96.52) (xy 90.17 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "128a5d3e-cfe7-4b46-b738-96642f750d1f")
+	)
+	(wire
+		(pts
+			(xy 95.25 54.61) (xy 105.41 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c947d62-6c45-4731-9bcf-2c7e60fbf219")
+	)
+	(wire
+		(pts
+			(xy 36.83 81.28) (xy 46.99 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2610b6d0-4170-4d9b-a8e6-61b81a13c1c1")
+	)
+	(wire
+		(pts
+			(xy 62.23 39.37) (xy 62.23 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b64f923-c94b-43c0-a10f-c78278dd9ee7")
+	)
+	(wire
+		(pts
+			(xy 49.53 93.98) (xy 46.99 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c742143-df18-4349-9b10-dea1f29060f8")
+	)
+	(wire
+		(pts
+			(xy 46.99 78.74) (xy 49.53 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ad7168e-f3c5-4b7e-948e-024369b28098")
+	)
+	(wire
+		(pts
+			(xy 64.77 52.07) (xy 62.23 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f8a205b-14ad-40e4-8168-13a1cf71e9d7")
+	)
+	(wire
+		(pts
+			(xy 46.99 121.92) (xy 46.99 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "64d59140-8171-4223-a331-b8b375c947e8")
+	)
+	(wire
+		(pts
+			(xy 80.01 76.2) (xy 88.9 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6570fc34-0f98-4291-b720-a58a0719f82b")
+	)
+	(wire
+		(pts
+			(xy 46.99 137.16) (xy 46.99 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67dd08c8-372e-43e9-ad5d-91054346fbd2")
+	)
+	(wire
+		(pts
+			(xy 46.99 81.28) (xy 46.99 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "691ad325-91a5-46df-9486-3f99d295f941")
+	)
+	(wire
+		(pts
+			(xy 49.53 137.16) (xy 46.99 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "697ca551-bd86-46e4-b50a-d9cb337612f7")
+	)
+	(wire
+		(pts
+			(xy 46.99 121.92) (xy 49.53 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d164d3e-9eec-4b0b-b621-7ca5cfde407f")
+	)
+	(wire
+		(pts
+			(xy 36.83 134.62) (xy 46.99 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70fbd1cf-3ec4-4481-a03d-9034e2cab39c")
+	)
+	(wire
+		(pts
+			(xy 36.83 39.37) (xy 64.77 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79cbbc5b-21e4-4844-99e1-346b0708d363")
+	)
+	(wire
+		(pts
+			(xy 54.61 49.53) (xy 64.77 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9369b320-3fc8-41e1-b09d-590c4a3459a4")
+	)
+	(wire
+		(pts
+			(xy 80.01 119.38) (xy 88.9 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d5be451-6112-43aa-9eaf-724dec2f805e")
+	)
+	(wire
+		(pts
+			(xy 46.99 91.44) (xy 46.99 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a9ec73fa-5711-4971-b825-137e5099f73f")
+	)
+	(wire
+		(pts
+			(xy 46.99 91.44) (xy 49.53 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc7d8aa2-3d4b-41a8-b6d3-cc227e990cd0")
+	)
+	(wire
+		(pts
+			(xy 36.83 91.44) (xy 46.99 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd586ae5-0537-4f35-a981-9b7109667b9e")
+	)
+	(wire
+		(pts
+			(xy 36.83 124.46) (xy 46.99 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be7eec14-74cd-4fcc-9459-f3aa02000d94")
+	)
+	(wire
+		(pts
+			(xy 36.83 49.53) (xy 46.99 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d00dc7c8-680d-4036-81fc-f655ede7bdb6")
+	)
+	(wire
+		(pts
+			(xy 46.99 134.62) (xy 49.53 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8a80b5c-ea04-4434-90a3-0eef28f8e12c")
+	)
+	(wire
+		(pts
+			(xy 80.01 139.7) (xy 90.17 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2943006-573d-4886-b579-04a40e33271b")
+	)
+	(wire
+		(pts
+			(xy 49.53 124.46) (xy 46.99 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eae99570-9313-46d4-9bc5-a0556c9487e8")
+	)
+	(wire
+		(pts
+			(xy 49.53 81.28) (xy 46.99 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef5b5d19-9f33-484b-a842-107f83d90be2")
+	)
+	(wire
+		(pts
+			(xy 62.23 52.07) (xy 62.23 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f97c0b9c-e835-4d7a-9e07-62f17c32bd17")
+	)
+	(wire
+		(pts
+			(xy 95.25 34.29) (xy 104.14 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe3d76d6-675b-4b05-9a91-e2d44c1a5ff4")
+	)
 	(hierarchical_label "AIR_NEG_IN"
 		(shape input)
-		(at 38.1 50.8 180)
+		(at 36.83 124.46 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -158,29 +1247,29 @@
 	)
 	(hierarchical_label "DRV_AIR_NEG_IN"
 		(shape input)
-		(at 38.1 38.1 180)
+		(at 90.17 139.7 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "09a50753-bc4e-48d8-b534-9856eefbc769")
 	)
 	(hierarchical_label "DRV_AIR_PRE_IN"
 		(shape input)
-		(at 38.1 33.02 180)
+		(at 105.41 54.61 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "0e85f1ce-4f12-4099-8ac6-bb519baa1006")
 	)
 	(hierarchical_label "AIR_PRE_IN"
 		(shape input)
-		(at 38.1 45.72 180)
+		(at 36.83 39.37 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -191,18 +1280,18 @@
 	)
 	(hierarchical_label "AIR_POS_OUT"
 		(shape output)
-		(at 68.58 48.26 0)
+		(at 36.83 91.44 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "423e59a2-7ddc-4b4c-8c48-02e47dad84cd")
 	)
 	(hierarchical_label "AIR_POS_IN"
 		(shape input)
-		(at 38.1 48.26 180)
+		(at 36.83 81.28 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -213,40 +1302,40 @@
 	)
 	(hierarchical_label "DRV_AIR_POS_IN"
 		(shape input)
-		(at 38.1 35.56 180)
+		(at 90.17 96.52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5c11c60c-28bd-49b9-ac2d-9c380e3e8c5f")
+	)
+	(hierarchical_label "AIR_PRE_OUT"
+		(shape output)
+		(at 36.83 49.53 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "5c11c60c-28bd-49b9-ac2d-9c380e3e8c5f")
-	)
-	(hierarchical_label "AIR_PRE_OUT"
-		(shape output)
-		(at 68.58 45.72 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
 		(uuid "6af90dea-3b9d-4fb2-8949-b3594286858b")
 	)
 	(hierarchical_label "AIR_NEG_OUT"
 		(shape output)
-		(at 68.58 50.8 0)
+		(at 36.83 134.62 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "8746bb4f-2535-483b-8b7c-99e2811bea1c")
 	)
 	(symbol
-		(lib_id "power:+12V")
-		(at 38.1 26.67 90)
+		(lib_id "G9KB_1A12V:G9KB-1A_DC12")
+		(at 95.25 34.29 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -255,9 +1344,103 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "fd17e828-76c4-4532-8e1d-a7faccb8d11e")
-		(property "Reference" "#PWR019"
-			(at 41.91 26.67 0)
+		(uuid "3f3f21d8-5828-4fbd-8155-230a52966774")
+		(property "Reference" "U2"
+			(at 80.01 26.67 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "G9KB-1A DC12"
+			(at 80.01 29.21 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "RELAY_G9KB-1A_OMR"
+			(at 95.25 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "G9KB-1A DC12"
+			(at 95.25 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 95.25 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "5"
+			(uuid "35f17890-365a-482f-a72c-3f3ed785af83")
+		)
+		(pin "6"
+			(uuid "d63cb503-3a1e-40cb-8920-738b8f8d81d1")
+		)
+		(pin "4"
+			(uuid "0644c2f1-a592-480c-a0ea-2e24139d6b22")
+		)
+		(pin "3"
+			(uuid "519cc717-b13e-46a2-a283-19f7fa5fd221")
+		)
+		(pin "2"
+			(uuid "67be80e6-d378-4e02-be3b-080ffa527778")
+		)
+		(pin "1"
+			(uuid "df4efebe-1da6-4bdf-8c3d-697f030b6f4b")
+		)
+		(instances
+			(project "precharge-controller"
+				(path "/d0dc5348-c362-4b06-85a5-76de80ed7055/13d5b94f-9e46-4abe-aa19-69cfaed72935"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 88.9 76.2 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "510f6605-2a68-4a02-ae8c-a3073e596938")
+		(property "Reference" "#PWR039"
+			(at 85.09 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -268,7 +1451,7 @@
 			)
 		)
 		(property "Value" "+12V_SHDW"
-			(at 34.29 26.6699 90)
+			(at 92.71 76.2001 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -279,7 +1462,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 38.1 26.67 0)
+			(at 88.9 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -290,7 +1473,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 38.1 26.67 0)
+			(at 88.9 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -301,7 +1484,433 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 38.1 26.67 0)
+			(at 88.9 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "72ecc2af-de81-4935-a524-f27300847454")
+		)
+		(instances
+			(project "precharge-controller"
+				(path "/d0dc5348-c362-4b06-85a5-76de80ed7055/13d5b94f-9e46-4abe-aa19-69cfaed72935"
+					(reference "#PWR039")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 50.8 49.53 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8b1a44a1-7e5f-48b3-90d2-6d7f68a57f8c")
+		(property "Reference" "R17"
+			(at 50.8 43.18 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R_US"
+			(at 50.8 45.72 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 51.054 48.514 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 50.8 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 50.8 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "5f66642f-2ae1-4e23-a7aa-ccc9edf8f542")
+		)
+		(pin "1"
+			(uuid "894270f3-bfb2-4dd2-9caf-967d849acaf0")
+		)
+		(instances
+			(project "precharge-controller"
+				(path "/d0dc5348-c362-4b06-85a5-76de80ed7055/13d5b94f-9e46-4abe-aa19-69cfaed72935"
+					(reference "R17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "G9KB_1A12V:G9KB-1A_DC12")
+		(at 80.01 119.38 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "aa27ec3e-71d7-4d8b-972f-84b0fcf4fbe9")
+		(property "Reference" "U4"
+			(at 64.77 111.76 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "G9KB-1A DC12"
+			(at 64.77 114.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "RELAY_G9KB-1A_OMR"
+			(at 80.01 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "G9KB-1A DC12"
+			(at 80.01 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 80.01 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "5"
+			(uuid "9e4c5ea0-d2a7-4624-8839-f16de322ddfd")
+		)
+		(pin "6"
+			(uuid "da299c9a-8a37-468f-9db5-cfaf38cbb04f")
+		)
+		(pin "4"
+			(uuid "3ea4a012-e74e-4f3c-b490-77a384e078a0")
+		)
+		(pin "3"
+			(uuid "36ffce18-7604-46cb-b481-409712f630fa")
+		)
+		(pin "2"
+			(uuid "697f5026-85bb-47aa-8baf-6efc78b5b9fc")
+		)
+		(pin "1"
+			(uuid "819dfa5b-30ce-430c-bc31-f85e8a1fcf97")
+		)
+		(instances
+			(project "precharge-controller"
+				(path "/d0dc5348-c362-4b06-85a5-76de80ed7055/13d5b94f-9e46-4abe-aa19-69cfaed72935"
+					(reference "U4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 88.9 119.38 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e318d919-ce59-48e2-a67a-c9acb230e109")
+		(property "Reference" "#PWR041"
+			(at 85.09 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+12V_SHDW"
+			(at 92.71 119.3801 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 88.9 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 88.9 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 88.9 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "52e57ab9-6ccd-4868-8113-fbc9da540343")
+		)
+		(instances
+			(project "precharge-controller"
+				(path "/d0dc5348-c362-4b06-85a5-76de80ed7055/13d5b94f-9e46-4abe-aa19-69cfaed72935"
+					(reference "#PWR041")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "G9KB_1A12V:G9KB-1A_DC12")
+		(at 80.01 76.2 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ea590c8c-36f2-4b34-b738-6be98c818146")
+		(property "Reference" "U3"
+			(at 64.77 68.58 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "G9KB-1A DC12"
+			(at 64.77 71.12 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "RELAY_G9KB-1A_OMR"
+			(at 80.01 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "G9KB-1A DC12"
+			(at 80.01 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 80.01 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "5"
+			(uuid "8c5b51db-1653-46d6-aa0e-30a716ed1dfe")
+		)
+		(pin "6"
+			(uuid "e136b783-1b37-4266-8513-9c5fd49eeae0")
+		)
+		(pin "4"
+			(uuid "e7b2fd98-396d-462b-9414-d92eb2302372")
+		)
+		(pin "3"
+			(uuid "b961d194-72b3-4717-a0e4-ed2b089dcfc9")
+		)
+		(pin "2"
+			(uuid "2f9f6073-c6ef-41fc-a425-bfec7c1532de")
+		)
+		(pin "1"
+			(uuid "114eb17d-e519-4e80-b7db-e1018f45b569")
+		)
+		(instances
+			(project "precharge-controller"
+				(path "/d0dc5348-c362-4b06-85a5-76de80ed7055/13d5b94f-9e46-4abe-aa19-69cfaed72935"
+					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 104.14 34.29 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fd17e828-76c4-4532-8e1d-a7faccb8d11e")
+		(property "Reference" "#PWR019"
+			(at 100.33 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+12V_SHDW"
+			(at 107.95 34.2899 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 104.14 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 104.14 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 104.14 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
