@@ -2415,7 +2415,7 @@
 			(color 0 0 0 0)
 		)
 		(uuid "1985261d-6d1b-4055-84ae-f12baea9cf66")
-		(property "Sheetname" "lv_rele_drive"
+		(property "Sheetname" "lv_relay_drive"
 			(at 97.79 53.8984 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2426,7 +2426,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "lv_rele_drive.kicad_sch"
+		(property "Sheetfile" "lv_relay_drive.kicad_sch"
 			(at 97.79 67.6406 0)
 			(show_name no)
 			(do_not_autoplace no)
