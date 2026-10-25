@@ -4222,7 +4222,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "??"
 			(at 114.3 156.2099 0)
 			(show_name no)
 			(do_not_autoplace no)

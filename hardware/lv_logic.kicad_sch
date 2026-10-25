@@ -3882,7 +3882,7 @@
 				)
 			)
 		)
-		(property "Value" "R_US"
+		(property "Value" "??"
 			(at 63.5 41.91 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4509,7 +4509,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R_US"
+		(property "Value" "??"
 			(at 102.87 71.1199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4949,7 +4949,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "?"
+		(property "Value" "??"
 			(at 73.66 40.6399 0)
 			(show_name no)
 			(do_not_autoplace no)
