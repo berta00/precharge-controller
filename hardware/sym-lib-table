@@ -2,4 +2,5 @@
 	(version 7)
 	(lib (name "Libary_Loader") (type "KiCad") (uri "${KIPRJMOD}/libs/SamacSys_Parts.kicad_sym") (options "") (descr ""))
 	(lib (name "G9KB_1A12V") (type "KiCad") (uri "${KIPRJMOD}/libs/G9KB_1A12V.kicad_sym") (options "") (descr ""))
+	(lib (name "DEP1-12-S12-M") (type "KiCad") (uri "${KIPRJMOD}/libs/DEP1-12-S12-M.kicad_sym") (options "") (descr ""))
 )

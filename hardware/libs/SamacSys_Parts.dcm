@@ -54,4 +54,10 @@ K
 F https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1-1773962-8&DocType=Data%20Sheet&DocLang=English&PartCntxt=DTF13-6P-G003&DocFormat=pdf
 $ENDCMP
 #
+$CMP LM393BIDR
+D Analog Comparators Dual standard comparator 8-SOIC -40 to 85
+K
+F https://www.ti.com/lit/gpn/LM393B
+$ENDCMP
+#
 #End Doc Library

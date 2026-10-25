@@ -817,8 +817,8 @@
 		)
 	)
 	(rectangle
-		(start 44.45 24.13)
-		(end 57.15 59.69)
+		(start 44.45 25.4)
+		(end 57.15 60.96)
 		(stroke
 			(width 0)
 			(type dash)
@@ -829,8 +829,8 @@
 		(uuid "1a9469f9-dc4e-4f95-bd40-421e7083b4f0")
 	)
 	(rectangle
-		(start 44.704 109.22)
-		(end 82.55 144.78)
+		(start 44.704 110.49)
+		(end 82.55 146.05)
 		(stroke
 			(width 0)
 			(type dash)
@@ -841,8 +841,8 @@
 		(uuid "5e4e7682-25ad-4cf7-aad5-16f62135f8fa")
 	)
 	(rectangle
-		(start 59.69 24.13)
-		(end 97.79 59.69)
+		(start 59.69 25.4)
+		(end 97.79 60.96)
 		(stroke
 			(width 0)
 			(type dash)
@@ -853,8 +853,8 @@
 		(uuid "d3211247-aac9-48c4-bac6-0349a5c06d43")
 	)
 	(rectangle
-		(start 44.704 66.04)
-		(end 82.55 101.6)
+		(start 44.704 67.31)
+		(end 82.55 102.87)
 		(stroke
 			(width 0)
 			(type dash)
@@ -866,7 +866,7 @@
 	)
 	(text "AIR PRE relay"
 		(exclude_from_sim no)
-		(at 59.436 22.86 0)
+		(at 59.436 24.13 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -877,7 +877,7 @@
 	)
 	(text "AIR POS relay"
 		(exclude_from_sim no)
-		(at 44.45 64.77 0)
+		(at 44.45 66.04 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -888,7 +888,7 @@
 	)
 	(text "Precharge\nresistor"
 		(exclude_from_sim no)
-		(at 44.196 20.32 0)
+		(at 44.196 21.59 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -899,7 +899,7 @@
 	)
 	(text "AIR NEG relay"
 		(exclude_from_sim no)
-		(at 44.45 107.95 0)
+		(at 44.45 109.22 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -909,44 +909,44 @@
 		(uuid "f1c100d5-eba8-48f0-813b-d91e94fbc7f9")
 	)
 	(junction
-		(at 46.99 91.44)
+		(at 46.99 92.71)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2245468f-625b-40ab-83d6-eb8d266921df")
 	)
 	(junction
-		(at 46.99 134.62)
+		(at 46.99 135.89)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "855f139a-201c-49fb-bcfa-937b21dc5d44")
 	)
 	(junction
-		(at 46.99 124.46)
+		(at 46.99 125.73)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9281abc0-c60b-42de-a459-22a7ac2385e9")
 	)
 	(junction
-		(at 62.23 49.53)
+		(at 62.23 50.8)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d0c1f1ed-9b4a-4e4e-8111-113ae4b4b680")
 	)
 	(junction
-		(at 62.23 39.37)
+		(at 62.23 40.64)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "db73c6ee-0017-4d38-bc2d-0beb5434af9b")
 	)
 	(junction
-		(at 46.99 81.28)
+		(at 46.99 82.55)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f80b19a7-a3b0-44a7-9509-d03da23a617f")
 	)
 	(wire
 		(pts
-			(xy 62.23 36.83) (xy 64.77 36.83)
+			(xy 62.23 38.1) (xy 64.77 38.1)
 		)
 		(stroke
 			(width 0)
@@ -956,7 +956,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 96.52) (xy 90.17 96.52)
+			(xy 80.01 97.79) (xy 90.17 97.79)
 		)
 		(stroke
 			(width 0)
@@ -966,7 +966,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 54.61) (xy 105.41 54.61)
+			(xy 95.25 55.88) (xy 105.41 55.88)
 		)
 		(stroke
 			(width 0)
@@ -976,7 +976,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 81.28) (xy 46.99 81.28)
+			(xy 36.83 82.55) (xy 46.99 82.55)
 		)
 		(stroke
 			(width 0)
@@ -986,7 +986,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 39.37) (xy 62.23 36.83)
+			(xy 62.23 40.64) (xy 62.23 38.1)
 		)
 		(stroke
 			(width 0)
@@ -996,7 +996,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 93.98) (xy 46.99 93.98)
+			(xy 49.53 95.25) (xy 46.99 95.25)
 		)
 		(stroke
 			(width 0)
@@ -1006,7 +1006,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 78.74) (xy 49.53 78.74)
+			(xy 46.99 80.01) (xy 49.53 80.01)
 		)
 		(stroke
 			(width 0)
@@ -1016,7 +1016,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 52.07) (xy 62.23 52.07)
+			(xy 64.77 53.34) (xy 62.23 53.34)
 		)
 		(stroke
 			(width 0)
@@ -1026,7 +1026,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 121.92) (xy 46.99 124.46)
+			(xy 46.99 123.19) (xy 46.99 125.73)
 		)
 		(stroke
 			(width 0)
@@ -1036,7 +1036,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 76.2) (xy 88.9 76.2)
+			(xy 80.01 77.47) (xy 88.9 77.47)
 		)
 		(stroke
 			(width 0)
@@ -1046,7 +1046,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 137.16) (xy 46.99 134.62)
+			(xy 46.99 138.43) (xy 46.99 135.89)
 		)
 		(stroke
 			(width 0)
@@ -1056,7 +1056,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 81.28) (xy 46.99 78.74)
+			(xy 46.99 82.55) (xy 46.99 80.01)
 		)
 		(stroke
 			(width 0)
@@ -1066,7 +1066,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 137.16) (xy 46.99 137.16)
+			(xy 49.53 138.43) (xy 46.99 138.43)
 		)
 		(stroke
 			(width 0)
@@ -1076,7 +1076,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 121.92) (xy 49.53 121.92)
+			(xy 46.99 123.19) (xy 49.53 123.19)
 		)
 		(stroke
 			(width 0)
@@ -1086,7 +1086,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 134.62) (xy 46.99 134.62)
+			(xy 36.83 135.89) (xy 46.99 135.89)
 		)
 		(stroke
 			(width 0)
@@ -1096,7 +1096,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 39.37) (xy 64.77 39.37)
+			(xy 36.83 40.64) (xy 64.77 40.64)
 		)
 		(stroke
 			(width 0)
@@ -1106,7 +1106,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 49.53) (xy 64.77 49.53)
+			(xy 54.61 50.8) (xy 64.77 50.8)
 		)
 		(stroke
 			(width 0)
@@ -1116,7 +1116,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 119.38) (xy 88.9 119.38)
+			(xy 80.01 120.65) (xy 88.9 120.65)
 		)
 		(stroke
 			(width 0)
@@ -1126,7 +1126,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 91.44) (xy 46.99 93.98)
+			(xy 46.99 92.71) (xy 46.99 95.25)
 		)
 		(stroke
 			(width 0)
@@ -1136,7 +1136,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 91.44) (xy 49.53 91.44)
+			(xy 46.99 92.71) (xy 49.53 92.71)
 		)
 		(stroke
 			(width 0)
@@ -1146,7 +1146,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 91.44) (xy 46.99 91.44)
+			(xy 36.83 92.71) (xy 46.99 92.71)
 		)
 		(stroke
 			(width 0)
@@ -1156,7 +1156,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 124.46) (xy 46.99 124.46)
+			(xy 36.83 125.73) (xy 46.99 125.73)
 		)
 		(stroke
 			(width 0)
@@ -1166,7 +1166,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 49.53) (xy 46.99 49.53)
+			(xy 36.83 50.8) (xy 46.99 50.8)
 		)
 		(stroke
 			(width 0)
@@ -1176,7 +1176,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 134.62) (xy 49.53 134.62)
+			(xy 46.99 135.89) (xy 49.53 135.89)
 		)
 		(stroke
 			(width 0)
@@ -1186,7 +1186,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 139.7) (xy 90.17 139.7)
+			(xy 80.01 140.97) (xy 90.17 140.97)
 		)
 		(stroke
 			(width 0)
@@ -1196,7 +1196,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 124.46) (xy 46.99 124.46)
+			(xy 49.53 125.73) (xy 46.99 125.73)
 		)
 		(stroke
 			(width 0)
@@ -1206,7 +1206,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 81.28) (xy 46.99 81.28)
+			(xy 49.53 82.55) (xy 46.99 82.55)
 		)
 		(stroke
 			(width 0)
@@ -1216,7 +1216,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 52.07) (xy 62.23 49.53)
+			(xy 62.23 53.34) (xy 62.23 50.8)
 		)
 		(stroke
 			(width 0)
@@ -1226,7 +1226,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 34.29) (xy 104.14 34.29)
+			(xy 95.25 35.56) (xy 104.14 35.56)
 		)
 		(stroke
 			(width 0)
@@ -1236,7 +1236,7 @@
 	)
 	(hierarchical_label "AIR_NEG_IN"
 		(shape input)
-		(at 36.83 124.46 180)
+		(at 36.83 125.73 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1247,7 +1247,7 @@
 	)
 	(hierarchical_label "DRV_AIR_NEG_IN"
 		(shape input)
-		(at 90.17 139.7 0)
+		(at 90.17 140.97 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1258,7 +1258,7 @@
 	)
 	(hierarchical_label "DRV_AIR_PRE_IN"
 		(shape input)
-		(at 105.41 54.61 0)
+		(at 105.41 55.88 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1269,7 +1269,7 @@
 	)
 	(hierarchical_label "AIR_PRE_IN"
 		(shape input)
-		(at 36.83 39.37 180)
+		(at 36.83 40.64 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1280,7 +1280,7 @@
 	)
 	(hierarchical_label "AIR_POS_OUT"
 		(shape output)
-		(at 36.83 91.44 180)
+		(at 36.83 92.71 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1291,7 +1291,7 @@
 	)
 	(hierarchical_label "AIR_POS_IN"
 		(shape input)
-		(at 36.83 81.28 180)
+		(at 36.83 82.55 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1302,7 +1302,7 @@
 	)
 	(hierarchical_label "DRV_AIR_POS_IN"
 		(shape input)
-		(at 90.17 96.52 0)
+		(at 90.17 97.79 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1313,7 +1313,7 @@
 	)
 	(hierarchical_label "AIR_PRE_OUT"
 		(shape output)
-		(at 36.83 49.53 180)
+		(at 36.83 50.8 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1324,7 +1324,7 @@
 	)
 	(hierarchical_label "AIR_NEG_OUT"
 		(shape output)
-		(at 36.83 134.62 180)
+		(at 36.83 135.89 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1335,7 +1335,7 @@
 	)
 	(symbol
 		(lib_id "G9KB_1A12V:G9KB-1A_DC12")
-		(at 95.25 34.29 0)
+		(at 95.25 35.56 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1346,7 +1346,7 @@
 		(fields_autoplaced yes)
 		(uuid "3f3f21d8-5828-4fbd-8155-230a52966774")
 		(property "Reference" "U2"
-			(at 80.01 26.67 0)
+			(at 80.01 27.94 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1356,7 +1356,7 @@
 			)
 		)
 		(property "Value" "G9KB-1A DC12"
-			(at 80.01 29.21 0)
+			(at 80.01 30.48 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1366,7 +1366,7 @@
 			)
 		)
 		(property "Footprint" "RELAY_G9KB-1A_OMR"
-			(at 95.25 34.29 0)
+			(at 95.25 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1378,7 +1378,7 @@
 			)
 		)
 		(property "Datasheet" "G9KB-1A DC12"
-			(at 95.25 34.29 0)
+			(at 95.25 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1390,7 +1390,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 95.25 34.29 0)
+			(at 95.25 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1429,7 +1429,7 @@
 	)
 	(symbol
 		(lib_id "power:+12V")
-		(at 88.9 76.2 270)
+		(at 88.9 77.47 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1440,7 +1440,7 @@
 		(fields_autoplaced yes)
 		(uuid "510f6605-2a68-4a02-ae8c-a3073e596938")
 		(property "Reference" "#PWR039"
-			(at 85.09 76.2 0)
+			(at 85.09 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1451,7 +1451,7 @@
 			)
 		)
 		(property "Value" "+12V_SHDW"
-			(at 92.71 76.2001 90)
+			(at 92.71 77.4701 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1462,7 +1462,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 88.9 76.2 0)
+			(at 88.9 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1473,7 +1473,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 88.9 76.2 0)
+			(at 88.9 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1484,7 +1484,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 88.9 76.2 0)
+			(at 88.9 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1508,7 +1508,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 50.8 49.53 90)
+		(at 50.8 50.8 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1519,7 +1519,7 @@
 		(fields_autoplaced yes)
 		(uuid "8b1a44a1-7e5f-48b3-90d2-6d7f68a57f8c")
 		(property "Reference" "R17"
-			(at 50.8 43.18 90)
+			(at 50.8 44.45 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1529,7 +1529,7 @@
 			)
 		)
 		(property "Value" "R_US"
-			(at 50.8 45.72 90)
+			(at 50.8 46.99 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1539,7 +1539,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 51.054 48.514 90)
+			(at 51.054 49.784 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1550,7 +1550,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 50.8 49.53 0)
+			(at 50.8 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1561,7 +1561,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 50.8 49.53 0)
+			(at 50.8 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1588,7 +1588,7 @@
 	)
 	(symbol
 		(lib_id "G9KB_1A12V:G9KB-1A_DC12")
-		(at 80.01 119.38 0)
+		(at 80.01 120.65 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1599,7 +1599,7 @@
 		(fields_autoplaced yes)
 		(uuid "aa27ec3e-71d7-4d8b-972f-84b0fcf4fbe9")
 		(property "Reference" "U4"
-			(at 64.77 111.76 0)
+			(at 64.77 113.03 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1609,7 +1609,7 @@
 			)
 		)
 		(property "Value" "G9KB-1A DC12"
-			(at 64.77 114.3 0)
+			(at 64.77 115.57 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1619,7 +1619,7 @@
 			)
 		)
 		(property "Footprint" "RELAY_G9KB-1A_OMR"
-			(at 80.01 119.38 0)
+			(at 80.01 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1631,7 +1631,7 @@
 			)
 		)
 		(property "Datasheet" "G9KB-1A DC12"
-			(at 80.01 119.38 0)
+			(at 80.01 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1643,7 +1643,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 80.01 119.38 0)
+			(at 80.01 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1682,7 +1682,7 @@
 	)
 	(symbol
 		(lib_id "power:+12V")
-		(at 88.9 119.38 270)
+		(at 88.9 120.65 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1693,7 +1693,7 @@
 		(fields_autoplaced yes)
 		(uuid "e318d919-ce59-48e2-a67a-c9acb230e109")
 		(property "Reference" "#PWR041"
-			(at 85.09 119.38 0)
+			(at 85.09 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1704,7 +1704,7 @@
 			)
 		)
 		(property "Value" "+12V_SHDW"
-			(at 92.71 119.3801 90)
+			(at 92.71 120.6501 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1715,7 +1715,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 88.9 119.38 0)
+			(at 88.9 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1726,7 +1726,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 88.9 119.38 0)
+			(at 88.9 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1737,7 +1737,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 88.9 119.38 0)
+			(at 88.9 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1761,7 +1761,7 @@
 	)
 	(symbol
 		(lib_id "G9KB_1A12V:G9KB-1A_DC12")
-		(at 80.01 76.2 0)
+		(at 80.01 77.47 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1772,7 +1772,7 @@
 		(fields_autoplaced yes)
 		(uuid "ea590c8c-36f2-4b34-b738-6be98c818146")
 		(property "Reference" "U3"
-			(at 64.77 68.58 0)
+			(at 64.77 69.85 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1782,7 +1782,7 @@
 			)
 		)
 		(property "Value" "G9KB-1A DC12"
-			(at 64.77 71.12 0)
+			(at 64.77 72.39 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1792,7 +1792,7 @@
 			)
 		)
 		(property "Footprint" "RELAY_G9KB-1A_OMR"
-			(at 80.01 76.2 0)
+			(at 80.01 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1804,7 +1804,7 @@
 			)
 		)
 		(property "Datasheet" "G9KB-1A DC12"
-			(at 80.01 76.2 0)
+			(at 80.01 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1816,7 +1816,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 80.01 76.2 0)
+			(at 80.01 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1855,7 +1855,7 @@
 	)
 	(symbol
 		(lib_id "power:+12V")
-		(at 104.14 34.29 270)
+		(at 104.14 35.56 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1866,7 +1866,7 @@
 		(fields_autoplaced yes)
 		(uuid "fd17e828-76c4-4532-8e1d-a7faccb8d11e")
 		(property "Reference" "#PWR019"
-			(at 100.33 34.29 0)
+			(at 100.33 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1877,7 +1877,7 @@
 			)
 		)
 		(property "Value" "+12V_SHDW"
-			(at 107.95 34.2899 90)
+			(at 107.95 35.5599 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1888,7 +1888,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 104.14 34.29 0)
+			(at 104.14 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1899,7 +1899,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 104.14 34.29 0)
+			(at 104.14 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1910,7 +1910,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 104.14 34.29 0)
+			(at 104.14 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
