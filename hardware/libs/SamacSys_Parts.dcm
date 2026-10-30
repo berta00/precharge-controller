@@ -66,4 +66,16 @@ K
 F http://www.ti.com/lit/gpn/cd4071b
 $ENDCMP
 #
+$CMP SI3437DV-T1-GE3
+D Vishay SI3437DV-T1-GE3 P-channel MOSFET Transistor, 1.1 A, 150 V, 6-Pin TSOP
+K
+F https://www.vishay.com/docs/73899/si3437dv.pdf
+$ENDCMP
+#
+$CMP APC-817D1-SL
+D Optoisolator Transistor Output 5000Vrms 1 Channel 4-SMD
+K
+F https://www.digikey.com/en/products/detail/american-bright-optoelectronics-corporation/APC-817D1-SL/16273156
+$ENDCMP
+#
 #End Doc Library
