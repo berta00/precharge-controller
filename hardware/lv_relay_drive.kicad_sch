@@ -1294,8 +1294,8 @@
 		)
 	)
 	(rectangle
-		(start 68.58 25.4)
-		(end 101.6 57.658)
+		(start 88.9 63.5)
+		(end 121.92 95.758)
 		(stroke
 			(width 0)
 			(type dash)
@@ -1303,7 +1303,31 @@
 		(fill
 			(type none)
 		)
-		(uuid "70ed232b-3085-405b-a075-996199a726e7")
+		(uuid "69de2e47-ff73-4de4-ae12-8fbe11910b2e")
+	)
+	(rectangle
+		(start 88.9 25.4)
+		(end 121.92 57.658)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "6cf2d504-6661-4021-afe6-64af05287d1a")
+	)
+	(rectangle
+		(start 88.9 101.6)
+		(end 121.92 133.858)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "706f7685-2bb4-463c-88b8-7dfe4e61dd90")
 	)
 	(rectangle
 		(start 25.654 101.346)
@@ -1318,8 +1342,8 @@
 		(uuid "759e882a-7563-4395-bfeb-6518dedb33ee")
 	)
 	(rectangle
-		(start 104.14 101.6)
-		(end 121.92 133.858)
+		(start 68.58 101.6)
+		(end 86.36 133.858)
 		(stroke
 			(width 0)
 			(type dash)
@@ -1342,30 +1366,6 @@
 		(uuid "b514dfe4-ddc2-497c-b476-2b500d22b57f")
 	)
 	(rectangle
-		(start 68.58 101.6)
-		(end 101.6 133.858)
-		(stroke
-			(width 0)
-			(type dash)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "b7e2c7bc-3d68-4f92-a30f-f0a70aa70acb")
-	)
-	(rectangle
-		(start 68.58 63.5)
-		(end 101.6 95.758)
-		(stroke
-			(width 0)
-			(type dash)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "c6ef7594-6834-4c7c-9e2c-2b412bbe6958")
-	)
-	(rectangle
 		(start 25.654 25.146)
 		(end 66.04 57.404)
 		(stroke
@@ -1378,8 +1378,8 @@
 		(uuid "ce8a1b2a-e354-4ff9-8509-957dea45da6c")
 	)
 	(rectangle
-		(start 104.14 25.4)
-		(end 121.92 57.658)
+		(start 68.58 25.4)
+		(end 86.36 57.658)
 		(stroke
 			(width 0)
 			(type dash)
@@ -1390,8 +1390,8 @@
 		(uuid "d9b17805-e874-42e1-9229-64a2348b34c6")
 	)
 	(rectangle
-		(start 104.14 63.5)
-		(end 121.92 95.758)
+		(start 68.58 63.5)
+		(end 86.36 95.758)
 		(stroke
 			(width 0)
 			(type dash)
@@ -1403,13 +1403,33 @@
 	)
 	(text "Holding voltage"
 		(exclude_from_sim no)
-		(at 111.506 100.33 0)
+		(at 75.946 100.584 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "07c270b1-7750-4304-8c3e-10d64dc005ab")
+		(uuid "3374cd39-3d43-4a06-ae3d-9350497dfabb")
+	)
+	(text "Flywheel protection"
+		(exclude_from_sim no)
+		(at 98.044 62.23 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "47df3100-ed88-45e0-8e9e-b4a71c72c8db")
+	)
+	(text "Flywheel protection"
+		(exclude_from_sim no)
+		(at 98.044 24.13 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "4dc36bb4-4635-4bdd-873e-b7be867f601d")
 	)
 	(text "Driver AIR POS"
 		(exclude_from_sim no)
@@ -1423,23 +1443,13 @@
 	)
 	(text "Holding voltage"
 		(exclude_from_sim no)
-		(at 111.506 62.23 0)
+		(at 75.946 62.23 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
 		(uuid "665adb10-1abb-4092-ac6e-5b623fab3f58")
-	)
-	(text "Flywheel protection"
-		(exclude_from_sim no)
-		(at 77.724 100.33 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "6b829cdb-8286-4db4-828a-ae0393c92e83")
 	)
 	(text "Driver AIR PRE"
 		(exclude_from_sim no)
@@ -1453,27 +1463,17 @@
 	)
 	(text "Flywheel protection"
 		(exclude_from_sim no)
-		(at 77.724 24.13 0)
+		(at 98.044 100.33 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "92ab09bf-bfd4-4e76-809f-9ee6bfeafd08")
-	)
-	(text "Flywheel protection"
-		(exclude_from_sim no)
-		(at 77.724 62.23 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "e8aed62e-0ff2-4438-988b-89821ca5ba5d")
+		(uuid "9cc0e979-af33-41e8-aa28-369c6ff2cb66")
 	)
 	(text "Holding voltage"
 		(exclude_from_sim no)
-		(at 111.506 24.13 0)
+		(at 75.946 24.13 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1492,40 +1492,40 @@
 		(uuid "fa63ea40-0565-4898-becb-52aee94a70d9")
 	)
 	(junction
-		(at 72.39 33.02)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "04937a46-e3b4-42e3-b151-de243afe400e")
-	)
-	(junction
-		(at 119.38 33.02)
+		(at 83.82 33.02)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "23c057aa-9066-4425-873a-32133e8d8328")
 	)
 	(junction
-		(at 119.38 71.12)
+		(at 71.12 33.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2b4874fb-ec85-434a-9790-877f9272310b")
+	)
+	(junction
+		(at 92.71 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4ec60eb6-c663-4773-b748-eb7964b2e918")
+	)
+	(junction
+		(at 83.82 71.12)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7bed0868-7267-46f1-9ff8-043207387cbc")
 	)
 	(junction
-		(at 72.39 71.12)
+		(at 71.12 71.12)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "95ee1a0c-d746-409e-9440-a994a90fa31e")
+		(uuid "a7c834aa-1df3-4001-be98-26aa01eaa701")
 	)
 	(junction
-		(at 106.68 109.22)
+		(at 92.71 71.12)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "9bf61089-d6b1-43eb-9ad0-165c57151bcb")
-	)
-	(junction
-		(at 72.39 109.22)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a7589563-c5e8-4664-8ea4-198c84d071ee")
+		(uuid "bfe83eff-7d65-4038-9393-f7ce5fd3667c")
 	)
 	(junction
 		(at 58.42 120.65)
@@ -1534,22 +1534,22 @@
 		(uuid "cb20f157-5ffd-494d-ad53-54db2c3f5146")
 	)
 	(junction
+		(at 92.71 33.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ce3c3b61-a5b5-43bb-9557-07f77003fc16")
+	)
+	(junction
+		(at 71.12 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cec6f8a7-c781-4bae-89c8-562cb8ce4053")
+	)
+	(junction
 		(at 58.42 43.18)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cf8ca13c-f1cf-4ef1-8b36-50a41ca79758")
-	)
-	(junction
-		(at 106.68 33.02)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d5a7079f-6741-4385-8686-7c5b87c6723d")
-	)
-	(junction
-		(at 106.68 71.12)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d99ee0bf-52ae-4693-9674-0d16e718568e")
 	)
 	(junction
 		(at 58.42 82.55)
@@ -1558,10 +1558,20 @@
 		(uuid "e30f8d07-b341-4b50-b8b8-c03ee2546c8f")
 	)
 	(junction
-		(at 119.38 109.22)
+		(at 83.82 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e495a7b9-4800-4904-b923-17f02b10d394")
+	)
+	(wire
+		(pts
+			(xy 92.71 46.99) (xy 92.71 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07290eed-6382-4d29-aa41-cd3ea4a6b9a2")
 	)
 	(wire
 		(pts
@@ -1575,63 +1585,23 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 109.22) (xy 119.38 109.22)
+			(xy 92.71 123.19) (xy 92.71 125.73)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0c84caa4-14f7-4f18-89da-675cec76d83f")
+		(uuid "0f110b91-75ea-43d0-a145-1b729edd3e7b")
 	)
 	(wire
 		(pts
-			(xy 63.5 33.02) (xy 72.39 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0f641123-3a3e-4e93-9a84-2d2623ac77dd")
-	)
-	(wire
-		(pts
-			(xy 119.38 71.12) (xy 119.38 83.82)
+			(xy 83.82 71.12) (xy 83.82 83.82)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "0fb25624-e833-4f08-b56a-3164171f6eec")
-	)
-	(wire
-		(pts
-			(xy 129.54 33.02) (xy 119.38 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1575b697-dc46-45b3-a7d4-1bfc5e727aa8")
-	)
-	(wire
-		(pts
-			(xy 63.5 109.22) (xy 72.39 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "167776fd-f096-429e-9edc-2c926e9c5c9e")
-	)
-	(wire
-		(pts
-			(xy 82.55 49.53) (xy 85.09 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2098349f-84e5-4244-bc4d-993a3ae0418a")
 	)
 	(wire
 		(pts
@@ -1645,26 +1615,6 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 46.99) (xy 72.39 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "234a0661-529a-4396-b74b-3aa89f34fc87")
-	)
-	(wire
-		(pts
-			(xy 72.39 71.12) (xy 106.68 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "26535550-2273-45e1-a816-bcca48961849")
-	)
-	(wire
-		(pts
 			(xy 53.34 33.02) (xy 45.72 33.02)
 		)
 		(stroke
@@ -1675,7 +1625,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 83.82) (xy 116.84 83.82)
+			(xy 83.82 83.82) (xy 81.28 83.82)
 		)
 		(stroke
 			(width 0)
@@ -1695,7 +1645,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 45.72) (xy 116.84 45.72)
+			(xy 83.82 45.72) (xy 81.28 45.72)
 		)
 		(stroke
 			(width 0)
@@ -1715,7 +1665,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 71.12) (xy 119.38 71.12)
+			(xy 81.28 71.12) (xy 83.82 71.12)
 		)
 		(stroke
 			(width 0)
@@ -1725,17 +1675,27 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 49.53) (xy 74.93 49.53)
+			(xy 92.71 87.63) (xy 95.25 87.63)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3e0a00a0-5e9b-4f9c-93af-c957a287780e")
+		(uuid "39fabe0a-364d-4514-94d7-f9bdda6bf498")
 	)
 	(wire
 		(pts
-			(xy 119.38 109.22) (xy 119.38 121.92)
+			(xy 102.87 125.73) (xy 105.41 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ef39eb2-f3c1-4e17-96e2-8a0b5b13619e")
+	)
+	(wire
+		(pts
+			(xy 83.82 109.22) (xy 83.82 121.92)
 		)
 		(stroke
 			(width 0)
@@ -1745,7 +1705,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 83.82) (xy 106.68 83.82)
+			(xy 73.66 83.82) (xy 71.12 83.82)
 		)
 		(stroke
 			(width 0)
@@ -1765,13 +1725,23 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 109.22) (xy 106.68 121.92)
+			(xy 71.12 109.22) (xy 71.12 121.92)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "4e1ef084-d66d-445b-b17b-af58bd35fc31")
+	)
+	(wire
+		(pts
+			(xy 92.71 109.22) (xy 92.71 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f1823cd-9495-4c05-bbbc-2cb5aafe4ac9")
 	)
 	(wire
 		(pts
@@ -1785,23 +1755,23 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 71.12) (xy 72.39 71.12)
+			(xy 83.82 33.02) (xy 92.71 33.02)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "556bb02c-81a8-4a45-9c36-ff8df691122a")
+		(uuid "529aca24-6668-4aa9-8248-4cd4e8109700")
 	)
 	(wire
 		(pts
-			(xy 72.39 33.02) (xy 106.68 33.02)
+			(xy 102.87 87.63) (xy 105.41 87.63)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "59ae6e46-b62c-4a3c-9829-804cfe2ea256")
+		(uuid "57aa56e4-9558-44a5-a84d-4cf56413169d")
 	)
 	(wire
 		(pts
@@ -1825,6 +1795,16 @@
 	)
 	(wire
 		(pts
+			(xy 63.5 109.22) (xy 71.12 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67a16f45-859a-403d-a9e9-b4657251c2cc")
+	)
+	(wire
+		(pts
 			(xy 58.42 120.65) (xy 55.88 120.65)
 		)
 		(stroke
@@ -1845,37 +1825,17 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 87.63) (xy 74.93 87.63)
+			(xy 63.5 33.02) (xy 71.12 33.02)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "793fafff-e4cf-4684-8cc1-73bfbdeadac4")
+		(uuid "6e459ad2-7e9b-4262-9db4-49578b92bc0b")
 	)
 	(wire
 		(pts
-			(xy 129.54 71.12) (xy 119.38 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7d8c1448-7a20-4206-9695-2f89c258e2bb")
-	)
-	(wire
-		(pts
-			(xy 82.55 125.73) (xy 85.09 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7e91164c-f6e1-416d-b9d4-3cbfcebd0f21")
-	)
-	(wire
-		(pts
-			(xy 106.68 71.12) (xy 106.68 83.82)
+			(xy 71.12 71.12) (xy 71.12 83.82)
 		)
 		(stroke
 			(width 0)
@@ -1885,13 +1845,23 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 109.22) (xy 119.38 109.22)
+			(xy 81.28 109.22) (xy 83.82 109.22)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "90a41006-c866-4acf-a182-0844abd9efc2")
+	)
+	(wire
+		(pts
+			(xy 92.71 109.22) (xy 129.54 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92420ee9-94bd-4c7b-951b-3a63c3719fff")
 	)
 	(wire
 		(pts
@@ -1905,7 +1875,17 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 33.02) (xy 109.22 33.02)
+			(xy 83.82 71.12) (xy 92.71 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9763f28e-8c38-403f-8317-743f13b25141")
+	)
+	(wire
+		(pts
+			(xy 71.12 33.02) (xy 73.66 33.02)
 		)
 		(stroke
 			(width 0)
@@ -1915,7 +1895,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 121.92) (xy 106.68 121.92)
+			(xy 73.66 121.92) (xy 71.12 121.92)
 		)
 		(stroke
 			(width 0)
@@ -1925,23 +1905,13 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 123.19) (xy 72.39 125.73)
+			(xy 92.71 71.12) (xy 129.54 71.12)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9b56dcc3-4f4c-4cc8-ab16-1b6896392de9")
-	)
-	(wire
-		(pts
-			(xy 72.39 85.09) (xy 72.39 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9d2b239f-5647-43f6-9d9e-74ff08acdb26")
+		(uuid "a0128054-80ec-4098-9840-91f7f8f7497f")
 	)
 	(wire
 		(pts
@@ -1975,13 +1945,23 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 109.22) (xy 106.68 109.22)
+			(xy 92.71 71.12) (xy 92.71 77.47)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a8e0a002-836c-4bd6-a64c-6af0ed90ccaa")
+		(uuid "aa378658-3cfa-4043-a2cb-1a579bac6e37")
+	)
+	(wire
+		(pts
+			(xy 102.87 49.53) (xy 105.41 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab034370-54dc-4998-92ca-115aed2ff522")
 	)
 	(wire
 		(pts
@@ -2005,7 +1985,27 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 71.12) (xy 109.22 71.12)
+			(xy 92.71 125.73) (xy 95.25 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b14edd06-67a7-4696-9d0c-a9efbe9acaeb")
+	)
+	(wire
+		(pts
+			(xy 92.71 33.02) (xy 129.54 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b79982ae-b431-43ee-922a-250103a4aeec")
+	)
+	(wire
+		(pts
+			(xy 71.12 71.12) (xy 73.66 71.12)
 		)
 		(stroke
 			(width 0)
@@ -2015,7 +2015,17 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 33.02) (xy 119.38 33.02)
+			(xy 63.5 71.12) (xy 71.12 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9b3841b-2505-4155-886f-1ff4774bcba9")
+	)
+	(wire
+		(pts
+			(xy 81.28 33.02) (xy 83.82 33.02)
 		)
 		(stroke
 			(width 0)
@@ -2035,7 +2045,17 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 109.22) (xy 109.22 109.22)
+			(xy 83.82 109.22) (xy 92.71 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d066c2df-1711-4371-abf6-7bb914aeb1ce")
+	)
+	(wire
+		(pts
+			(xy 71.12 109.22) (xy 73.66 109.22)
 		)
 		(stroke
 			(width 0)
@@ -2045,17 +2065,17 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 109.22) (xy 72.39 115.57)
+			(xy 92.71 33.02) (xy 92.71 39.37)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e2d3bdaf-f22d-4b49-9087-b5723d8123eb")
+		(uuid "e287a20b-71a6-4111-8014-1ed206b92842")
 	)
 	(wire
 		(pts
-			(xy 119.38 121.92) (xy 116.84 121.92)
+			(xy 83.82 121.92) (xy 81.28 121.92)
 		)
 		(stroke
 			(width 0)
@@ -2065,33 +2085,33 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 87.63) (xy 85.09 87.63)
+			(xy 92.71 85.09) (xy 92.71 87.63)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f1a5a249-8529-4ae8-9594-e9055cf82857")
+		(uuid "f0836ca1-b210-4167-ad3f-9ac84afa17b1")
 	)
 	(wire
 		(pts
-			(xy 72.39 33.02) (xy 72.39 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f3d5918e-a6a3-46b5-99d4-ab6f84c7f7e8")
-	)
-	(wire
-		(pts
-			(xy 119.38 33.02) (xy 119.38 45.72)
+			(xy 83.82 33.02) (xy 83.82 45.72)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "f4cecd23-457a-4cb8-b419-aada0b97bc0e")
+	)
+	(wire
+		(pts
+			(xy 92.71 49.53) (xy 95.25 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4ff18fd-7b4f-4723-9a61-d53761913d36")
 	)
 	(wire
 		(pts
@@ -2105,17 +2125,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 125.73) (xy 74.93 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f8ef6855-e524-4303-8eba-f08caee304d6")
-	)
-	(wire
-		(pts
-			(xy 106.68 33.02) (xy 106.68 45.72)
+			(xy 71.12 33.02) (xy 71.12 45.72)
 		)
 		(stroke
 			(width 0)
@@ -2125,23 +2135,13 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 45.72) (xy 106.68 45.72)
+			(xy 73.66 45.72) (xy 71.12 45.72)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "fd52c905-c189-4f50-92ce-6f53b196fdff")
-	)
-	(wire
-		(pts
-			(xy 72.39 71.12) (xy 72.39 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ff3807cb-164f-40ea-a2af-5eebc073257d")
 	)
 	(wire
 		(pts
@@ -2218,164 +2218,6 @@
 			(justify left)
 		)
 		(uuid "f87deb6a-52d5-425b-bbfd-9b0f33272672")
-	)
-	(symbol
-		(lib_id "Device:D_Zener")
-		(at 78.74 49.53 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "0a8077a1-3d7f-4c75-b910-9eef8c1c1889")
-		(property "Reference" "D7"
-			(at 78.74 52.832 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "D_Zener"
-			(at 78.74 55.372 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 78.74 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 78.74 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Zener diode"
-			(at 78.74 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "9b5ccbed-7102-43a9-bffb-9abc16797975")
-		)
-		(pin "1"
-			(uuid "27bdd748-59d4-4f29-be8d-fceeb927456f")
-		)
-		(instances
-			(project "precharge-controller"
-				(path "/d0dc5348-c362-4b06-85a5-76de80ed7055/1985261d-6d1b-4055-84ae-f12baea9cf66"
-					(reference "D7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+12V")
-		(at 85.09 49.53 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "12c9072b-1c9c-4155-ba04-2a00841f838c")
-		(property "Reference" "#PWR035"
-			(at 81.28 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+12V_SHDW"
-			(at 88.9 49.5299 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 85.09 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 85.09 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 85.09 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e66c1e1b-ece9-4ffb-b1e3-b6729150f290")
-		)
-		(instances
-			(project "precharge-controller"
-				(path "/d0dc5348-c362-4b06-85a5-76de80ed7055/1985261d-6d1b-4055-84ae-f12baea9cf66"
-					(reference "#PWR035")
-					(unit 1)
-				)
-			)
-		)
 	)
 	(symbol
 		(lib_id "Simulation_SPICE:NMOS")
@@ -2692,8 +2534,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_US")
-		(at 113.03 71.12 90)
+		(lib_id "power:+12V")
+		(at 105.41 125.73 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2701,9 +2543,11 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "3efa1ed4-ae78-4a7d-a076-5357bf40df7e")
-		(property "Reference" "R26"
-			(at 113.03 74.168 90)
+		(fields_autoplaced yes)
+		(uuid "3e53bfac-bd87-4809-8e37-0ebad84ecbda")
+		(property "Reference" "#PWR038"
+			(at 101.6 125.73 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2712,18 +2556,19 @@
 				)
 			)
 		)
-		(property "Value" "R_US"
-			(at 113.03 76.708 90)
+		(property "Value" "+12V_SHDW"
+			(at 109.22 125.7299 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 113.284 70.104 90)
+			(at 105.41 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2734,7 +2579,83 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 113.03 71.12 0)
+			(at 105.41 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 105.41 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3cdcd7c7-fae5-43ed-b740-c488fc0191d5")
+		)
+		(instances
+			(project "precharge-controller"
+				(path "/d0dc5348-c362-4b06-85a5-76de80ed7055/1985261d-6d1b-4055-84ae-f12baea9cf66"
+					(reference "#PWR038")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 77.47 71.12 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3efa1ed4-ae78-4a7d-a076-5357bf40df7e")
+		(property "Reference" "R26"
+			(at 77.47 74.168 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R_US"
+			(at 77.47 76.708 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 77.724 70.104 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 77.47 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2745,7 +2666,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 113.03 71.12 0)
+			(at 77.47 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2850,6 +2771,189 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+12V")
+		(at 105.41 87.63 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "49574710-ebff-46e6-a50f-a3537c63c798")
+		(property "Reference" "#PWR036"
+			(at 101.6 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+12V_SHDW"
+			(at 109.22 87.6299 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 105.41 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 105.41 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 105.41 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a6c97f3a-dee4-4d31-ae17-dd8ea7ede3ce")
+		)
+		(instances
+			(project "precharge-controller"
+				(path "/d0dc5348-c362-4b06-85a5-76de80ed7055/1985261d-6d1b-4055-84ae-f12baea9cf66"
+					(reference "#PWR036")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4004")
+		(at 92.71 81.28 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4e6a219c-13e5-4cf4-b65c-ce26dc2307c2")
+		(property "Reference" "D8"
+			(at 95.25 80.0099 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1N4004"
+			(at 95.25 82.5499 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
+			(at 88.265 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.vishay.com/docs/88503/1n4001.pdf"
+			(at 92.71 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "400V 1A General Purpose Rectifier Diode, DO-41"
+			(at 92.71 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 92.71 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 92.71 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "c97699e1-1fb5-45ef-9ed2-6bea2f649c47")
+		)
+		(pin "1"
+			(uuid "49c0fd5d-a43f-413d-8d96-12e3686a9781")
+		)
+		(instances
+			(project "precharge-controller"
+				(path "/d0dc5348-c362-4b06-85a5-76de80ed7055/1985261d-6d1b-4055-84ae-f12baea9cf66"
+					(reference "D8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_US")
 		(at 52.07 125.73 270)
 		(unit 1)
@@ -2930,7 +3034,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 113.03 83.82 270)
+		(at 77.47 83.82 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2940,7 +3044,7 @@
 		(dnp no)
 		(uuid "51fb48e2-89a3-47a7-925c-24d32e6dcea9")
 		(property "Reference" "C15"
-			(at 113.03 88.138 90)
+			(at 77.47 88.138 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2950,7 +3054,7 @@
 			)
 		)
 		(property "Value" "C"
-			(at 113.03 90.678 90)
+			(at 77.47 90.678 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2960,7 +3064,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 109.22 84.7852 0)
+			(at 73.66 84.7852 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2971,7 +3075,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 113.03 83.82 0)
+			(at 77.47 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2982,7 +3086,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 113.03 83.82 0)
+			(at 77.47 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3002,6 +3106,85 @@
 			(project "precharge-controller"
 				(path "/d0dc5348-c362-4b06-85a5-76de80ed7055/1985261d-6d1b-4055-84ae-f12baea9cf66"
 					(reference "C15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Zener")
+		(at 99.06 49.53 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5480a773-c6c8-4dff-a901-f34d693c5032")
+		(property "Reference" "D7"
+			(at 99.06 52.832 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D_Zener"
+			(at 99.06 55.372 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 99.06 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.06 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Zener diode"
+			(at 99.06 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "85ba8fdf-d957-4cce-ae76-4ccac845890c")
+		)
+		(pin "1"
+			(uuid "00d84c67-99ee-470e-86f8-badb36000c18")
+		)
+		(instances
+			(project "precharge-controller"
+				(path "/d0dc5348-c362-4b06-85a5-76de80ed7055/1985261d-6d1b-4055-84ae-f12baea9cf66"
+					(reference "D7")
 					(unit 1)
 				)
 			)
@@ -3205,216 +3388,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N4004")
-		(at 72.39 119.38 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "57710392-bcd4-493f-a52c-e14e31e905a6")
-		(property "Reference" "D10"
-			(at 74.93 118.1099 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1N4004"
-			(at 74.93 120.6499 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
-			(at 67.945 119.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "http://www.vishay.com/docs/88503/1n4001.pdf"
-			(at 72.39 119.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "400V 1A General Purpose Rectifier Diode, DO-41"
-			(at 72.39 119.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 72.39 119.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 72.39 119.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "2eed9853-79c7-455b-8384-aa17b7d271a1")
-		)
-		(pin "1"
-			(uuid "7352dd12-eff7-40c3-b60f-1e405786c087")
-		)
-		(instances
-			(project "precharge-controller"
-				(path "/d0dc5348-c362-4b06-85a5-76de80ed7055/1985261d-6d1b-4055-84ae-f12baea9cf66"
-					(reference "D10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Diode:1N4004")
-		(at 72.39 43.18 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "707da1b4-5a58-4f02-888f-27187d57a357")
-		(property "Reference" "D6"
-			(at 74.93 41.9099 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1N4004"
-			(at 74.93 44.4499 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
-			(at 67.945 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "http://www.vishay.com/docs/88503/1n4001.pdf"
-			(at 72.39 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "400V 1A General Purpose Rectifier Diode, DO-41"
-			(at 72.39 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 72.39 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 72.39 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "50752849-47a4-45b1-a347-402b26af8658")
-		)
-		(pin "1"
-			(uuid "44d502b9-8033-443e-8597-9134af3d26cb")
-		)
-		(instances
-			(project "precharge-controller"
-				(path "/d0dc5348-c362-4b06-85a5-76de80ed7055/1985261d-6d1b-4055-84ae-f12baea9cf66"
-					(reference "D6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+12V")
-		(at 85.09 87.63 270)
+		(at 105.41 49.53 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3423,9 +3398,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "73d3aaf5-91d6-46c2-ad0d-262b04c4eced")
-		(property "Reference" "#PWR036"
-			(at 81.28 87.63 0)
+		(uuid "6dd41498-7ae7-4520-9655-c7200aedbdbd")
+		(property "Reference" "#PWR035"
+			(at 101.6 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3436,7 +3411,7 @@
 			)
 		)
 		(property "Value" "+12V_SHDW"
-			(at 88.9 87.6299 90)
+			(at 109.22 49.5299 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3447,7 +3422,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 85.09 87.63 0)
+			(at 105.41 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3458,7 +3433,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 85.09 87.63 0)
+			(at 105.41 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3469,7 +3444,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 85.09 87.63 0)
+			(at 105.41 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3480,12 +3455,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "9a701d80-7cf0-4631-b86b-896ab851516f")
+			(uuid "bcf8cb39-9275-4676-83bd-12bf19e4c4e3")
 		)
 		(instances
 			(project "precharge-controller"
 				(path "/d0dc5348-c362-4b06-85a5-76de80ed7055/1985261d-6d1b-4055-84ae-f12baea9cf66"
-					(reference "#PWR036")
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -3651,6 +3626,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D_Zener")
+		(at 99.06 125.73 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7e2b749c-d7c5-47ee-8227-e17c626a81fb")
+		(property "Reference" "D11"
+			(at 99.06 129.032 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D_Zener"
+			(at 99.06 131.572 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 99.06 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.06 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Zener diode"
+			(at 99.06 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "800bf45e-521f-4ed4-a5e9-daf0b4f4b6da")
+		)
+		(pin "1"
+			(uuid "08502dcd-85ea-490b-a433-5537e6412a76")
+		)
+		(instances
+			(project "precharge-controller"
+				(path "/d0dc5348-c362-4b06-85a5-76de80ed7055/1985261d-6d1b-4055-84ae-f12baea9cf66"
+					(reference "D11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_US")
 		(at 52.07 82.55 270)
 		(mirror x)
@@ -3732,87 +3786,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_Zener")
-		(at 78.74 87.63 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "8c9716e1-ce04-43b6-b6a5-2b58ea6b83fc")
-		(property "Reference" "D9"
-			(at 78.74 90.932 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "D_Zener"
-			(at 78.74 93.472 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 78.74 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 78.74 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Zener diode"
-			(at 78.74 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "4feb1a0f-b54b-443a-8e79-05655bf54cd4")
-		)
-		(pin "1"
-			(uuid "913091ca-0825-4e58-b543-d664f9e7292e")
-		)
-		(instances
-			(project "precharge-controller"
-				(path "/d0dc5348-c362-4b06-85a5-76de80ed7055/1985261d-6d1b-4055-84ae-f12baea9cf66"
-					(reference "D9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_US")
-		(at 113.03 33.02 90)
+		(at 77.47 33.02 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3822,7 +3797,7 @@
 		(dnp no)
 		(uuid "a77412d5-08fa-4df1-bd78-2117d27201a6")
 		(property "Reference" "R25"
-			(at 113.03 36.068 90)
+			(at 77.47 36.068 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3832,7 +3807,7 @@
 			)
 		)
 		(property "Value" "R_US"
-			(at 113.03 38.608 90)
+			(at 77.47 38.608 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3842,7 +3817,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 113.284 32.004 90)
+			(at 77.724 32.004 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3853,7 +3828,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 113.03 33.02 0)
+			(at 77.47 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3864,7 +3839,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 113.03 33.02 0)
+			(at 77.47 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3971,6 +3946,110 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:1N4004")
+		(at 92.71 43.18 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "afff7d8d-c679-4491-a087-08cd0f7e51a2")
+		(property "Reference" "D6"
+			(at 95.25 41.9099 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1N4004"
+			(at 95.25 44.4499 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
+			(at 88.265 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.vishay.com/docs/88503/1n4001.pdf"
+			(at 92.71 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "400V 1A General Purpose Rectifier Diode, DO-41"
+			(at 92.71 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 92.71 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 92.71 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "d4035832-94fb-4c2b-9aae-a8878636a958")
+		)
+		(pin "1"
+			(uuid "14d77e5e-d998-4fa0-8f5e-28aca5aed593")
+		)
+		(instances
+			(project "precharge-controller"
+				(path "/d0dc5348-c362-4b06-85a5-76de80ed7055/1985261d-6d1b-4055-84ae-f12baea9cf66"
+					(reference "D6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 45.72 43.18 270)
 		(mirror x)
@@ -4051,166 +4130,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+12V")
-		(at 85.09 125.73 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b894d256-6c1d-439f-878f-d226986d65df")
-		(property "Reference" "#PWR038"
-			(at 81.28 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+12V_SHDW"
-			(at 88.9 125.7299 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 85.09 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 85.09 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 85.09 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1a933a55-9249-41a7-a4cb-b61e8ce78f24")
-		)
-		(instances
-			(project "precharge-controller"
-				(path "/d0dc5348-c362-4b06-85a5-76de80ed7055/1985261d-6d1b-4055-84ae-f12baea9cf66"
-					(reference "#PWR038")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_Zener")
-		(at 78.74 125.73 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "ba8bd25d-236a-4406-b3ed-7fd10af12f59")
-		(property "Reference" "D11"
-			(at 78.74 129.032 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "D_Zener"
-			(at 78.74 131.572 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 78.74 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 78.74 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Zener diode"
-			(at 78.74 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "5d4a8877-2e9d-4147-80e3-a63b5d39cdbd")
-		)
-		(pin "1"
-			(uuid "326c9ef6-b914-4261-9c51-768d28b02c04")
-		)
-		(instances
-			(project "precharge-controller"
-				(path "/d0dc5348-c362-4b06-85a5-76de80ed7055/1985261d-6d1b-4055-84ae-f12baea9cf66"
-					(reference "D11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_US")
-		(at 113.03 109.22 90)
+		(at 77.47 109.22 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4220,7 +4141,7 @@
 		(dnp no)
 		(uuid "becf78dc-0744-4f26-8082-61ecaec26dca")
 		(property "Reference" "R27"
-			(at 113.03 112.268 90)
+			(at 77.47 112.268 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4230,7 +4151,7 @@
 			)
 		)
 		(property "Value" "R_US"
-			(at 113.03 114.808 90)
+			(at 77.47 114.808 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4240,7 +4161,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 113.284 108.204 90)
+			(at 77.724 108.204 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4251,7 +4172,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 113.03 109.22 0)
+			(at 77.47 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4262,7 +4183,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 113.03 109.22 0)
+			(at 77.47 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4282,110 +4203,6 @@
 			(project "precharge-controller"
 				(path "/d0dc5348-c362-4b06-85a5-76de80ed7055/1985261d-6d1b-4055-84ae-f12baea9cf66"
 					(reference "R27")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Diode:1N4004")
-		(at 72.39 81.28 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cc94b626-b96b-40b4-a8d3-def3d5f82743")
-		(property "Reference" "D8"
-			(at 74.93 80.0099 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1N4004"
-			(at 74.93 82.5499 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
-			(at 67.945 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "http://www.vishay.com/docs/88503/1n4001.pdf"
-			(at 72.39 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "400V 1A General Purpose Rectifier Diode, DO-41"
-			(at 72.39 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 72.39 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 72.39 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "559efed2-44b7-463a-a744-a7dca4840d7e")
-		)
-		(pin "1"
-			(uuid "1d70737f-6c86-4add-a531-31afbb4a0df1")
-		)
-		(instances
-			(project "precharge-controller"
-				(path "/d0dc5348-c362-4b06-85a5-76de80ed7055/1985261d-6d1b-4055-84ae-f12baea9cf66"
-					(reference "D8")
 					(unit 1)
 				)
 			)
@@ -4474,7 +4291,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 113.03 121.92 270)
+		(at 77.47 121.92 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4484,7 +4301,7 @@
 		(dnp no)
 		(uuid "d898a953-bbb9-4f89-b0c3-a2c090ae7940")
 		(property "Reference" "C16"
-			(at 113.03 126.238 90)
+			(at 77.47 126.238 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4494,7 +4311,7 @@
 			)
 		)
 		(property "Value" "C"
-			(at 113.03 128.778 90)
+			(at 77.47 128.778 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4504,7 +4321,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 109.22 122.8852 0)
+			(at 73.66 122.8852 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4515,7 +4332,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 113.03 121.92 0)
+			(at 77.47 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4526,7 +4343,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 113.03 121.92 0)
+			(at 77.47 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4546,6 +4363,85 @@
 			(project "precharge-controller"
 				(path "/d0dc5348-c362-4b06-85a5-76de80ed7055/1985261d-6d1b-4055-84ae-f12baea9cf66"
 					(reference "C16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Zener")
+		(at 99.06 87.63 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d9c3ac2d-9ae2-48ec-8e48-60f74a81a7ee")
+		(property "Reference" "D9"
+			(at 99.06 90.932 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D_Zener"
+			(at 99.06 93.472 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 99.06 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.06 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Zener diode"
+			(at 99.06 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "8036107b-50ee-407f-875d-2a4eb23d4880")
+		)
+		(pin "1"
+			(uuid "4afc62e1-a72f-450f-8b42-886a4b1b7419")
+		)
+		(instances
+			(project "precharge-controller"
+				(path "/d0dc5348-c362-4b06-85a5-76de80ed7055/1985261d-6d1b-4055-84ae-f12baea9cf66"
+					(reference "D9")
 					(unit 1)
 				)
 			)
@@ -4626,6 +4522,110 @@
 			(project "precharge-controller"
 				(path "/d0dc5348-c362-4b06-85a5-76de80ed7055/1985261d-6d1b-4055-84ae-f12baea9cf66"
 					(reference "#PWR037")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4004")
+		(at 92.71 119.38 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fba48ebd-ba41-4d8e-831e-2c9212d031da")
+		(property "Reference" "D10"
+			(at 95.25 118.1099 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1N4004"
+			(at 95.25 120.6499 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
+			(at 88.265 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.vishay.com/docs/88503/1n4001.pdf"
+			(at 92.71 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "400V 1A General Purpose Rectifier Diode, DO-41"
+			(at 92.71 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 92.71 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 92.71 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "4a5e0f09-9ab3-4531-8cde-f45fcf05f670")
+		)
+		(pin "1"
+			(uuid "c3fa10b4-ba5c-488e-b371-4d9340323e4c")
+		)
+		(instances
+			(project "precharge-controller"
+				(path "/d0dc5348-c362-4b06-85a5-76de80ed7055/1985261d-6d1b-4055-84ae-f12baea9cf66"
+					(reference "D10")
 					(unit 1)
 				)
 			)
@@ -4713,7 +4713,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 113.03 45.72 270)
+		(at 77.47 45.72 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4723,7 +4723,7 @@
 		(dnp no)
 		(uuid "fe0ecd5a-7bc4-4048-919c-8161b7a8195f")
 		(property "Reference" "C14"
-			(at 113.03 50.038 90)
+			(at 77.47 50.038 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4733,7 +4733,7 @@
 			)
 		)
 		(property "Value" "C"
-			(at 113.03 52.578 90)
+			(at 77.47 52.578 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4743,7 +4743,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 109.22 46.6852 0)
+			(at 73.66 46.6852 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4754,7 +4754,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 113.03 45.72 0)
+			(at 77.47 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4765,7 +4765,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 113.03 45.72 0)
+			(at 77.47 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

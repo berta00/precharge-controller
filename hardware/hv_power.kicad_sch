@@ -1365,7 +1365,7 @@
 				)
 			)
 		)
-		(property "Footprint" "RELAY_G9KB-1A_OMR"
+		(property "Footprint" "G9KB_Parts:G9KB_1A12V"
 			(at 95.25 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -1618,7 +1618,7 @@
 				)
 			)
 		)
-		(property "Footprint" "RELAY_G9KB-1A_OMR"
+		(property "Footprint" "G9KB_Parts:G9KB_1A12V"
 			(at 80.01 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -1791,7 +1791,7 @@
 				)
 			)
 		)
-		(property "Footprint" "RELAY_G9KB-1A_OMR"
+		(property "Footprint" "G9KB_Parts:G9KB_1A12V"
 			(at 80.01 77.47 0)
 			(hide yes)
 			(show_name no)

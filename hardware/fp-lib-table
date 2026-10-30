@@ -1,4 +1,6 @@
 (fp_lib_table
 	(version 7)
 	(lib (name "Library_Loader") (type "KiCad") (uri "${KIPRJMOD}/libs/SamacSys_Parts.pretty") (options "") (descr ""))
+	(lib (name "G9KB_Parts") (type "KiCad") (uri "${KIPRJMOD}/libs/G9KB_Parts.pretty") (options "") (descr ""))
+	(lib (name "DEP1-12-S12-M") (type "KiCad") (uri "${KIPRJMOD}/libs/DEP1-12-S12-M.pretty") (options "") (descr ""))
 )

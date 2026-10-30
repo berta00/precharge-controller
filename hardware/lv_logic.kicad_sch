@@ -2300,6 +2300,12 @@
 		(uuid "685bf883-63c7-457d-ac03-2dae51990c42")
 	)
 	(junction
+		(at 153.67 133.35)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6c387368-a526-47d1-84e0-82265ebe0887")
+	)
+	(junction
 		(at 118.11 133.35)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2310,6 +2316,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7961fa76-6f8f-48d4-b3d5-3b599de5c525")
+	)
+	(junction
+		(at 157.48 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7be7f223-4f39-4fea-a647-4693be7b088d")
 	)
 	(junction
 		(at 165.1 59.69)
@@ -2358,6 +2370,10 @@
 	(no_connect
 		(at 151.13 128.27)
 		(uuid "b085ac42-3b60-4a8b-ad20-13a8d53fefdd")
+	)
+	(no_connect
+		(at 151.13 93.98)
+		(uuid "ebd0b783-1b9c-43a2-908e-1cc0c8a94ebd")
 	)
 	(wire
 		(pts
@@ -2428,6 +2444,16 @@
 			(type default)
 		)
 		(uuid "0d9bc791-4719-4746-a193-abdc3ea3eac9")
+	)
+	(wire
+		(pts
+			(xy 151.13 91.44) (xy 157.48 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10fcabdd-de98-4197-81c1-66e35eb91fd4")
 	)
 	(wire
 		(pts
@@ -2638,6 +2664,16 @@
 			(type default)
 		)
 		(uuid "47b6d291-9260-4cba-be6d-0b60e085320e")
+	)
+	(wire
+		(pts
+			(xy 151.13 88.9) (xy 157.48 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49fe9d07-08b9-4249-b399-10020d5c2220")
 	)
 	(wire
 		(pts
@@ -3041,6 +3077,26 @@
 	)
 	(wire
 		(pts
+			(xy 157.48 91.44) (xy 157.48 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "acc6745c-57b7-4e84-8894-675c0ee3fb50")
+	)
+	(wire
+		(pts
+			(xy 157.48 88.9) (xy 157.48 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aef20b6b-9a10-44ac-8920-ac076bbecd6e")
+	)
+	(wire
+		(pts
 			(xy 120.65 99.06) (xy 113.03 99.06)
 		)
 		(stroke
@@ -3271,7 +3327,7 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 125.73) (xy 153.67 130.81)
+			(xy 153.67 125.73) (xy 153.67 133.35)
 		)
 		(stroke
 			(width 0)
@@ -3498,7 +3554,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SOIC127P600X175-14N"
+		(property "Footprint" "Library_Loader:SOIC127P600X175-14N"
 			(at 147.32 181.28 0)
 			(hide yes)
 			(show_name no)
@@ -4173,7 +4229,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SOIC127P600X175-14N"
+		(property "Footprint" "Library_Loader:SOIC127P600X175-14N"
 			(at 147.32 215.57 0)
 			(hide yes)
 			(show_name no)
@@ -4929,6 +4985,84 @@
 			(project "precharge-controller"
 				(path "/d0dc5348-c362-4b06-85a5-76de80ed7055/56fb71d1-0eb8-422f-888e-b936ea8ae617"
 					(reference "#PWR044")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 157.48 102.87 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8a79d34f-1f8c-4832-9946-c63ce87c1f30")
+		(property "Reference" "#PWR049"
+			(at 157.48 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 157.48 107.95 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 157.48 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 157.48 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 157.48 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "80a2846f-8358-4c6c-b991-e8036352e5da")
+		)
+		(instances
+			(project "precharge-controller"
+				(path "/d0dc5348-c362-4b06-85a5-76de80ed7055/56fb71d1-0eb8-422f-888e-b936ea8ae617"
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
@@ -5897,7 +6031,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "??"
+		(property "Value" "10k"
 			(at 121.92 81.2799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6145,7 +6279,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SOIC127P600X175-14N"
+		(property "Footprint" "Library_Loader:SOIC127P600X175-14N"
 			(at 142.24 130.48 0)
 			(hide yes)
 			(show_name no)

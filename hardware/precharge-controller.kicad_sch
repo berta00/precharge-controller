@@ -1691,7 +1691,7 @@
 				)
 			)
 		)
-		(property "Footprint" "9500630000"
+		(property "Footprint" "Library_Loader:9500630000"
 			(at 106.68 215.57 0)
 			(hide yes)
 			(show_name no)
@@ -2117,7 +2117,7 @@
 				)
 			)
 		)
-		(property "Footprint" "9500630000"
+		(property "Footprint" "Library_Loader:9500630000"
 			(at 53.34 186.36 0)
 			(hide yes)
 			(show_name no)
