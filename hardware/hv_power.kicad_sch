@@ -5,195 +5,6 @@
 	(uuid "df87a490-335f-4f2e-80cc-6614d7ec6312")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Device:R_US"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "R"
-				(at 2.54 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "R_US"
-				(at -2.54 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 1.016 -0.254 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Resistor, US symbol"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "R res resistor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "R_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "R_US_0_1"
-				(polyline
-					(pts
-						(xy 0 2.286) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.286) (xy 1.016 1.905) (xy 0 1.524) (xy -1.016 1.143) (xy 0 0.762)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0.762) (xy 1.016 0.381) (xy 0 0) (xy -1.016 -0.381) (xy 0 -0.762)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -0.762) (xy 1.016 -1.143) (xy 0 -1.524) (xy -1.016 -1.905) (xy 0 -2.286)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -2.286) (xy 0 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_US_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "G9KB_1A12V:G9KB-1A_DC12"
 			(pin_names
 				(offset 0.254)
@@ -817,18 +628,6 @@
 		)
 	)
 	(rectangle
-		(start 44.45 25.4)
-		(end 57.15 60.96)
-		(stroke
-			(width 0)
-			(type dash)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "1a9469f9-dc4e-4f95-bd40-421e7083b4f0")
-	)
-	(rectangle
 		(start 44.704 110.49)
 		(end 82.55 146.05)
 		(stroke
@@ -841,8 +640,8 @@
 		(uuid "5e4e7682-25ad-4cf7-aad5-16f62135f8fa")
 	)
 	(rectangle
-		(start 59.69 25.4)
-		(end 97.79 60.96)
+		(start 44.45 25.4)
+		(end 82.55 60.96)
 		(stroke
 			(width 0)
 			(type dash)
@@ -866,7 +665,7 @@
 	)
 	(text "AIR PRE relay"
 		(exclude_from_sim no)
-		(at 59.436 24.13 0)
+		(at 44.196 24.13 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -885,17 +684,6 @@
 			(justify left)
 		)
 		(uuid "3fd0b99e-2c9c-433e-863f-1680fc9476c4")
-	)
-	(text "Precharge\nresistor"
-		(exclude_from_sim no)
-		(at 44.196 21.59 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "de4aee45-0b1f-40e6-9e89-b19b404572fb")
 	)
 	(text "AIR NEG relay"
 		(exclude_from_sim no)
@@ -927,13 +715,13 @@
 		(uuid "9281abc0-c60b-42de-a459-22a7ac2385e9")
 	)
 	(junction
-		(at 62.23 50.8)
+		(at 46.99 50.8)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d0c1f1ed-9b4a-4e4e-8111-113ae4b4b680")
 	)
 	(junction
-		(at 62.23 40.64)
+		(at 46.99 40.64)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "db73c6ee-0017-4d38-bc2d-0beb5434af9b")
@@ -946,7 +734,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 38.1) (xy 64.77 38.1)
+			(xy 46.99 38.1) (xy 49.53 38.1)
 		)
 		(stroke
 			(width 0)
@@ -966,7 +754,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 55.88) (xy 105.41 55.88)
+			(xy 80.01 55.88) (xy 90.17 55.88)
 		)
 		(stroke
 			(width 0)
@@ -986,7 +774,17 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 40.64) (xy 62.23 38.1)
+			(xy 36.83 40.64) (xy 49.53 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27e3d65e-1286-47e2-a0d8-81c4d8ac6865")
+	)
+	(wire
+		(pts
+			(xy 46.99 40.64) (xy 46.99 38.1)
 		)
 		(stroke
 			(width 0)
@@ -1016,7 +814,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 53.34) (xy 62.23 53.34)
+			(xy 49.53 53.34) (xy 46.99 53.34)
 		)
 		(stroke
 			(width 0)
@@ -1096,26 +894,6 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 40.64) (xy 64.77 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "79cbbc5b-21e4-4844-99e1-346b0708d363")
-	)
-	(wire
-		(pts
-			(xy 54.61 50.8) (xy 64.77 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9369b320-3fc8-41e1-b09d-590c4a3459a4")
-	)
-	(wire
-		(pts
 			(xy 80.01 120.65) (xy 88.9 120.65)
 		)
 		(stroke
@@ -1166,7 +944,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 50.8) (xy 46.99 50.8)
+			(xy 36.83 50.8) (xy 49.53 50.8)
 		)
 		(stroke
 			(width 0)
@@ -1216,7 +994,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 53.34) (xy 62.23 50.8)
+			(xy 46.99 53.34) (xy 46.99 50.8)
 		)
 		(stroke
 			(width 0)
@@ -1226,7 +1004,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 35.56) (xy 104.14 35.56)
+			(xy 80.01 35.56) (xy 88.9 35.56)
 		)
 		(stroke
 			(width 0)
@@ -1258,7 +1036,7 @@
 	)
 	(hierarchical_label "DRV_AIR_PRE_IN"
 		(shape input)
-		(at 105.41 55.88 0)
+		(at 90.17 55.88 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1335,7 +1113,7 @@
 	)
 	(symbol
 		(lib_id "G9KB_1A12V:G9KB-1A_DC12")
-		(at 95.25 35.56 0)
+		(at 80.01 35.56 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1346,7 +1124,7 @@
 		(fields_autoplaced yes)
 		(uuid "3f3f21d8-5828-4fbd-8155-230a52966774")
 		(property "Reference" "U2"
-			(at 80.01 27.94 0)
+			(at 64.77 27.94 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1356,7 +1134,7 @@
 			)
 		)
 		(property "Value" "G9KB-1A DC12"
-			(at 80.01 30.48 0)
+			(at 64.77 30.48 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1366,7 +1144,7 @@
 			)
 		)
 		(property "Footprint" "G9KB_Parts:G9KB_1A12V"
-			(at 95.25 35.56 0)
+			(at 80.01 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1378,7 +1156,7 @@
 			)
 		)
 		(property "Datasheet" "G9KB-1A DC12"
-			(at 95.25 35.56 0)
+			(at 80.01 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1390,7 +1168,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 95.25 35.56 0)
+			(at 80.01 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1501,86 +1279,6 @@
 			(project "precharge-controller"
 				(path "/d0dc5348-c362-4b06-85a5-76de80ed7055/13d5b94f-9e46-4abe-aa19-69cfaed72935"
 					(reference "#PWR039")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 50.8 50.8 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8b1a44a1-7e5f-48b3-90d2-6d7f68a57f8c")
-		(property "Reference" "R17"
-			(at 50.8 44.45 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "R_US"
-			(at 50.8 46.99 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 51.054 49.784 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 50.8 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 50.8 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "5f66642f-2ae1-4e23-a7aa-ccc9edf8f542")
-		)
-		(pin "1"
-			(uuid "894270f3-bfb2-4dd2-9caf-967d849acaf0")
-		)
-		(instances
-			(project "precharge-controller"
-				(path "/d0dc5348-c362-4b06-85a5-76de80ed7055/13d5b94f-9e46-4abe-aa19-69cfaed72935"
-					(reference "R17")
 					(unit 1)
 				)
 			)
@@ -1855,7 +1553,7 @@
 	)
 	(symbol
 		(lib_id "power:+12V")
-		(at 104.14 35.56 270)
+		(at 88.9 35.56 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1866,7 +1564,7 @@
 		(fields_autoplaced yes)
 		(uuid "fd17e828-76c4-4532-8e1d-a7faccb8d11e")
 		(property "Reference" "#PWR019"
-			(at 100.33 35.56 0)
+			(at 85.09 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1877,7 +1575,7 @@
 			)
 		)
 		(property "Value" "+12V_SHDW"
-			(at 107.95 35.5599 90)
+			(at 92.71 35.5599 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1888,7 +1586,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 104.14 35.56 0)
+			(at 88.9 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1899,7 +1597,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 104.14 35.56 0)
+			(at 88.9 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1910,7 +1608,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 104.14 35.56 0)
+			(at 88.9 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
