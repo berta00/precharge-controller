@@ -2633,7 +2633,7 @@
 				)
 			)
 		)
-		(property "Value" "R_US"
+		(property "Value" "51"
 			(at 77.47 76.708 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2712,7 +2712,7 @@
 				)
 			)
 		)
-		(property "Value" "??"
+		(property "Value" "1k"
 			(at 52.07 52.832 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2974,7 +2974,7 @@
 				)
 			)
 		)
-		(property "Value" "??"
+		(property "Value" "1k"
 			(at 52.07 129.54 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3053,7 +3053,7 @@
 				)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "3300u"
 			(at 77.47 90.678 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3132,7 +3132,7 @@
 				)
 			)
 		)
-		(property "Value" "D_Zener"
+		(property "Value" "36V"
 			(at 99.06 55.372 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3567,7 +3567,7 @@
 				)
 			)
 		)
-		(property "Value" "??"
+		(property "Value" "1k"
 			(at 52.07 91.44 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3646,7 +3646,7 @@
 				)
 			)
 		)
-		(property "Value" "D_Zener"
+		(property "Value" "36V"
 			(at 99.06 131.572 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3806,7 +3806,7 @@
 				)
 			)
 		)
-		(property "Value" "R_US"
+		(property "Value" "51"
 			(at 77.47 38.608 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4150,7 +4150,7 @@
 				)
 			)
 		)
-		(property "Value" "R_US"
+		(property "Value" "51"
 			(at 77.47 114.808 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4310,7 +4310,7 @@
 				)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "3300u"
 			(at 77.47 128.778 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4389,7 +4389,7 @@
 				)
 			)
 		)
-		(property "Value" "D_Zener"
+		(property "Value" "36V"
 			(at 99.06 93.472 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4732,7 +4732,7 @@
 				)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "3300u"
 			(at 77.47 52.578 90)
 			(show_name no)
 			(do_not_autoplace no)

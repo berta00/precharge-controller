@@ -135,7 +135,7 @@ Given these specs, we can size the whole timer.
 
 Capacitor charge:
 $$
-V(t) = V_{DD} \cdot (1 - e^{-\frac{t}{R6 \cdot C6}})
+V_C(t) = V_{DD} \cdot (1 - e^{-\frac{t}{R6 \cdot C6}})
 $$
 
 The inverted formula, in order to calculate $RC \space (= \tau)$:
@@ -198,4 +198,70 @@ Chossen Texas Instrument's (CD4071B) specs:
 
 All the logic chips are choosen with the M96 SMD package ensuring higher fatigue failure and a reduction to parassite inductances. All the chips have a decoupling capacitor of $0.1\space \mu\text{F}$.
 
+
 ## 3. LV Relay drive
+
+### 3.1 Driver
+
+The NMOSs (Q3, Q5, Q6) act as electronic switches to energize and control the high-capacity Omron G9KB-1A12V relay coils. 
+
+NMOS (Q3, Q5, Q6) required specs:
+- **max $V_{DS} \ge 20\text{ V}$:** To safely withstand the 12V supply line and inductive transients.
+- **max $I_{D} \ge 250\text{ mA}$**
+- **Low $R_{DS(on)}$**
+
+Chosen Diodes Incorporated's DMN6140L specs:
+- $V_{DS} = 60\text{ V}$
+- $I_{D} = 1.6\text{ A}$
+- $V_{GS(th)} = 3.0\text{ V} \leq 12\text{ V}$ logic
+
+**Gate Pull-Down Resistors (R11, R12, R13):** to mitigate flactuations when CMD_XXX_IN is down.
+
+**Gate Series Resistors (R14, R15, R16):** Sized to limit the gate current and prevent. Choosing $R_{gate} = 1\text{ k}\Omega$, the peak gate current from a 12V control signal is limited to:
+  $$
+  I_{gate} = \frac{12\text{ V}}{1\text{ k}\Omega} = 12\text{ mA}
+  $$
+  This safely protects the upstream logic outputs.
+
+### 3.2 Holding voltage
+
+As Omron G9KB relay's datasheet recommendations for optimize power consumption and coil preservation, a power-saving holding circuit is implemented using a parallel RC network ($R25$ / $R26$ / $R27$ and $C14$ / $C15$ / $C16$) placed in series with each relay coil. This circuit applies full rated voltage ($12\text{ V}$) instantaneously for reliable pull-in, and then exponentially reduces the voltage to a safe holding level ($V_{\text{hold}} = 6\text{ V}$, corresponding to 50% of the rated voltage) after an initial actuation window of $t = 0.1\text{ s}$.
+
+#### Sizing Calculation:
+Given the relay coil resistance $R_{\text{coil}} = 51\text{ }\Omega$, the steady-state holding current required to maintain the relay in the energized state with $V_{\text{hold}} = 6\text{ V}$ is:
+$$
+I_{\text{hold}} = \frac{V_{\text{hold}}}{R_{\text{coil}}} = \frac{6\text{ V}}{51\text{ }\Omega} \approx 117.6\text{ mA}
+$$
+
+To drop the remaining $6\text{ V}$ across the series resistor $R25$ / $R26$ / $R27$ at steady state:
+$$
+R = \frac{V_{\text{CC}} - V_{\text{hold}}}{I_{\text{hold}}} = \frac{12\text{ V} - 6\text{ V}}{117.6\text{ mA}} \approx 51\text{ }\Omega
+$$
+
+To determine the required capacitance $C14$ / $C15$ / $C16$ that dictates the time constant for the voltage transition, we utilize the standard exponential charging formula for the RC network.
+
+Base formula:
+$$
+V_C(t) = V_{\text{max}} \cdot \left(1 - e^{-\frac{t}{R_{eq} \cdot C}}\right)
+$$
+
+Inverting the formula to find $C14$ / $C15$ / $C16$:
+$$
+C = -\frac{t}{R_{\text{eq}} \cdot \ln\left(1 - \frac{V_C(t)}{V_{\text{max}}}\right)}
+$$
+
+Considering the equivalent resistance $R_{\text{eq}} = R \parallel R_{\text{coil}} = 25.5\text{ }\Omega$, $t = 0.1\text{ s}$, $V_f = 6\text{ V}$, and the target voltage $V_C(t) = 4.2\text{ V}$ corresponding to a 70% threshold:
+$$
+C = -\frac{0.1\text{ s}}{25.5\space \Omega \cdot \ln\left(1 - \frac{4.2\text{ V}}{6\text{ V}}\right)} = \frac{0.1}{25.5 \cdot 1.2039} \approx 3300\text{ }\mu\text{F}
+$$
+
+### 3.3 Flywheel protection
+
+As recommended by the relay manufacturer, using only a standard freewheeling diode delays the release time of the relay contacts. Adding a Zener diode in series solves this by increasing the discharge voltage, allowing the coil current to decay much faster while protecting the driver from overvoltage.
+
+**Flywheel Diodes (D6, D8, D10) required specs:** Fast recovery or standard silicon diode with a repetitive peak reverse voltage $V_{RRM}$ at least 10 times the coil rated voltage ($\ge 120\text{ V}$), and a forward current $I_F$ exceeding the nominal coil current ($\ge 300\text{ mA}$).
+
+**Zener Diodes (D7, D9, D11) required specs:** The manufacturer recommends a Zener voltage approximately 3 times the rated coil voltage to ensure optimal release time and energy dissipation:
+$$
+V_{Zener} \approx 3 \cdot V_{\text{coil}} = 3 \cdot 12\text{ V} = 36\text{ V}
+$$
