@@ -1,12 +1,36 @@
 # Precharge controller's sizing file
 
-## Index
-1. [LV Power supply]()
-2. [LV Logic]()
-3. [LV Relay drive]()
-4. [HV Sense]()
-5. [HV Power]()
-6. [Connectors]()
+## Table of Contentss
+- [Precharge controller's sizing file](#precharge-controllers-sizing-file)
+  - [Table of Contentss](#table-of-contentss)
+  - [1. LV Power Supply](#1-lv-power-supply)
+    - [1.1 Reverse polarity \& Gate protection (lv\_supply and shutdown lines)](#11-reverse-polarity--gate-protection-lv_supply-and-shutdown-lines)
+    - [1.2 Transient overvoltage protection (lv\_supply and shutdown lines)](#12-transient-overvoltage-protection-lv_supply-and-shutdown-lines)
+    - [1.3 Linear voltage stabilizer (lv\_supply line)](#13-linear-voltage-stabilizer-lv_supply-line)
+    - [1.4 Bypass filters (shutdown line)](#14-bypass-filters-shutdown-line)
+  - [2. LV Logic](#2-lv-logic)
+    - [2.1 Enable level shifter](#21-enable-level-shifter)
+    - [2.2 Enable timer](#22-enable-timer)
+    - [2.3 Logic chips](#23-logic-chips)
+  - [3. LV Relay drive](#3-lv-relay-drive)
+    - [3.1 Driver](#31-driver)
+    - [3.2 Holding voltage](#32-holding-voltage)
+    - [3.3 Flywheel protection](#33-flywheel-protection)
+  - [4. HV Sense](#4-hv-sense)
+    - [4.1 DC\_LINK voltage partitioner (100%)](#41-dc_link-voltage-partitioner-100)
+    - [4.2 TS\_POS voltage partitioner (95%)](#42-ts_pos-voltage-partitioner-95)
+    - [4.3 RC low pass filter (DC\_LINK and TS\_POS lines)](#43-rc-low-pass-filter-dc_link-and-ts_pos-lines)
+    - [4.4 Transient overvoltage protection (DC\_LINK and TS\_POS lines)](#44-transient-overvoltage-protection-dc_link-and-ts_pos-lines)
+    - [4.5 Comparation](#45-comparation)
+    - [4.6 Galvanic isolation](#46-galvanic-isolation)
+      - [4.6.1 Optoisolator for CHARGE\_REQUIRED signal](#461-optoisolator-for-charge_required-signal)
+      - [4.6.2 DCDC converter for low voltage supply](#462-dcdc-converter-for-low-voltage-supply)
+  - [5. HV Power](#5-hv-power)
+    - [5.1 Precharge resistor](#51-precharge-resistor)
+    - [5.2 Relays](#52-relays)
+  - [6. Connectors](#6-connectors)
+    - [6.1 Low Voltage Connector](#61-low-voltage-connector)
+    - [6.2 High Voltage Terminal Blocks](#62-high-voltage-terminal-blocks)
 
 ## 1. LV Power Supply
 
@@ -338,7 +362,7 @@ Chosen Texas Instruments LM393BIDR specs:
 
 ### 4.6 Galvanic isolation
 
-#### 4.6.A Optoisolator for CHARGE_REQUIRED signal
+#### 4.6.1 Optoisolator for CHARGE_REQUIRED signal
 
 Optoisolator (Q7) required specs:
 - **Galvanic isolation rating $\ge 1\text{ kV}$:** To ensure complete electrical safety between the high-voltage Traction System and low-voltage control domain.
@@ -354,7 +378,7 @@ $$
 R9 = \frac{V_{CC} - V_F}{I_F} \approx 4.7\text{ k}\Omega
 $$
 
-#### 4.6.B DCDC converter for low voltage supply
+#### 4.6.2 DCDC converter for low voltage supply
 
 DC-DC Converter (PS1) required specs:
 - **Input voltage range:** Compatible with the main low-voltage logic line ($12\text{ V}$).
@@ -437,9 +461,9 @@ Chosen Omron G9KB-1A DC12 specs:
 
 ## 6. Connectors
 
-### 6.1 Low Voltage Connector (J1)
+### 6.1 Low Voltage Connector
 
-Low Voltage Connector ($J1$) required specs:
+Low Voltage Connector (J1) required specs:
 - **Automotive Environment Compliance:** Must withstand high vibration, mechanical shock, moisture, and thermal cycles typical of a Formula SAE racing vehicle.
 - **Current and Voltage Rating:** Fully compatible with the unregulated low-voltage auxiliary supply ($16-24\text{ VDC}$) and the $12\text{ VDC}$ shutdown safety circuit.
 - **Keying and Positive Latching:** Must feature a robust mechanical locking mechanism to prevent accidental disconnection under severe vehicle vibrations.
@@ -449,9 +473,9 @@ Chosen TE Connectivity / Deutsch's DTF13-4P-G003 specs:
 - Gold-plated copper alloy pins ensuring superior corrosion resistance and highly reliable electrical contact.
 - Robust PA46 GF30 housing rated for wide operating temperature ranges and mechanical stress.
 
-### 6.2 High Voltage Terminal Blocks (J2, J3, J4)
+### 6.2 High Voltage Terminal Blocks
 
-High Voltage Terminal Blocks ($J2, J3, J4$) required specs:
+High Voltage Terminal Blocks (J2, J3, J4) required specs:
 - **Voltage Rating $\ge 600\text{ VDC}$:** To safely handle Traction System potentials and prevent flashover or breakdown.
 - **Current Rating:** Capable of carrying continuous currents (up to $5\text{ A}$ through main AIRs) and withstanding transient precharge currents.
 
