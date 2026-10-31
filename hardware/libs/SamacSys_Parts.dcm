@@ -78,4 +78,10 @@ K
 F https://www.digikey.com/en/products/detail/american-bright-optoelectronics-corporation/APC-817D1-SL/16273156
 $ENDCMP
 #
+$CMP 2N7002K
+D Low RDS(on); Surface Mount Package; This is a Pb-Free Device; ESD Protected; RoHS Compliant
+K
+F https://www.onsemi.com/pub/Collateral/2N7002K-FSC-D.PDF
+$ENDCMP
+#
 #End Doc Library
