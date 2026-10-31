@@ -1,13 +1,18 @@
 # Precharge-controller's description file
 
-## Index
-1. [Architecture overview]()
-2. [Power supply & Current Budget]()
-3. [Low voltage logic]()
-4. [Relay drivers]()
-5. [High voltage sensing & Galvanic isolation]()
-6. [Precharge power circuit sizing]()
-7. [External interfacing of the board]()
+## Table of Contents
+- [Precharge-controller's description file](#precharge-controllers-description-file)
+  - [Table of Contents](#table-of-contents)
+  - [1. Architecture overview](#1-architecture-overview)
+  - [2. Power supply \& Current Budget](#2-power-supply--current-budget)
+    - [2.1 Protection circuit and regulation](#21-protection-circuit-and-regulation)
+    - [2.2 Current budget](#22-current-budget)
+    - [2.3 Regulator power dissipation](#23-regulator-power-dissipation)
+  - [3. Low voltage logic](#3-low-voltage-logic)
+    - [3.1 ENABLE Level Shifter and Timer](#31-enable-level-shifter-and-timer)
+    - [3.2 SR latch and completion memory](#32-sr-latch-and-completion-memory)
+    - [3.3 Loss of supply protection](#33-loss-of-supply-protection)
+
 
 ## 1. Architecture overview
 
@@ -22,6 +27,10 @@ The low voltage domain features:
 The high voltage domain features:
 - **Sensing** block: Utilizes dual high-impedance voltage dividers, an isolated DC/DC converter, and an analog comparator to safely confirm the 95% DC-link charge state.
 - **block**: Contains the external accumulator insulation relays (AIR+, AIR-), the precharge relay, and the precharge power resistor.
+
+<p align="center">
+    <img src="../docs/img/Root_sheet.png" style="width: 600px; float: center;" >
+</p>
 
 
 ## 2. Power supply & Current Budget
@@ -70,15 +79,26 @@ This result is not concerning for heat dissipation, therefore IC1 does not requi
 
 ## 3. Low voltage logic
 
-This section details the logic circuit responsible for controlling the relay drive block. Based on two primary inputs: an external ENABLE signal and a CHARGE_REQUIRED signal from the high-voltage sensing block. The logic drives three distinct outputs: CMD_AIR_PRE (precharge relay), CMD_AIR_POS (positive AIR), and CMD_AIR_NEG (negative AIR).
+This section details the logic circuit responsible of controlling the relay drive block, based on two primary inputs: an external ENABLE signal and a CHARGE_REQUIRED signal from the high-voltage sensing block. The logic drives three distinct outputs: CMD_AIR_PRE (precharge relay), CMD_AIR_POS (positive AIR), and CMD_AIR_NEG (negative AIR).
 
 ### 3.1 ENABLE Level Shifter and Timer
 
 The external ENABLE signal is level-shifted by an N-MOSFET to safely match the internal 12V CMOS logic domain. The shifted line is connected to a 50 ms timer implemented using an RC network and a Schmitt trigger inverter (IC3). At board startup, if the enable signal is low, the capacitor charges towards 12V imediatly. If the enable signal is high, the capacitor is held discharged to ground; the inverter reads a low input and its output goes high. During operation, if the enable signal goes low, the capacitor starts to charge. Once the $V_p = 7.1\space V$ threshold of the Schmitt trigger is reached, the inverter interprets the input as a logic high, which results in a delayed falling edge of the final output.
-Below a simulation of this circuit done with LTspice, available [here](/hardware/sim/enabe_timer.asc).
-
-
+A simulation of this circuit, done with LTspice, is available [here](/hardware/sim/enabe_timer.asc).
 
 ### 3.2 SR latch and completion memory
 
+The core sequencing and state retention are managed by a discrete set-reset (SR) latch architecture built using cross-coupled logic gates. 
+- **Sequence Initiation:** When the system is powered on, the shutdown supply is verified, and the ENABLE signal is asserted high, the latch initiates the precharge sequence by closing AIR− and the precharge relay, while keeping positive AIR open.
+- **Completion Memory:** Once the high-voltage sensing circuit determines that the DC-link voltage has reached $95\%$ of the traction system potential, the CHARGE_REQUIRED signal goes down. This event triggers the completion memory logic, switching the SR latch state to decouple the precharge resistor branch and command the closure of the positive AIR contactor (CMD_AIR_POS), ensuring the system remains latched in the fully operational state until a shutdown command occurs.
+
 ### 3.3 Loss of supply protection
+
+To comply with safety requirements regarding power loss and fault contingencies, a robust monitoring and reset mechanism is integrated into the logic domain:
+- **Shutdown and Low-Voltage Supervision:** The circuit continuously tracks the integrity of both the $12\text{ V}$ shutdown safety supply and the unregulated low-voltage lines.
+- **Fail-Safe Response:** If the shutdown supply or the low-voltage auxiliary supply drops below operating thresholds, or if the ENABLE signal is removed for more than $50\text{ ms}$, the protection logic overrides the SR latch state. This forces all relay control outputs (CMD_AIR_PRE, CMD_AIR_POS, CMD_AIR_NEG) to actively open within a maximum of $250\text{ ms}$, safely isolating the high-voltage Traction System from the inverter.
+
+<TODO calculate precise opening time>
+
+
+

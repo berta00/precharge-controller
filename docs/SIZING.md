@@ -32,6 +32,7 @@
     - [6.1 Low Voltage Connector](#61-low-voltage-connector)
     - [6.2 High Voltage Terminal Blocks](#62-high-voltage-terminal-blocks)
 
+
 ## 1. LV Power Supply
 
 ### 1.1 Reverse polarity & Gate protection (lv_supply and shutdown lines)
