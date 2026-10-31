@@ -105,7 +105,7 @@ NMOS (Q4) required specs:
 - **Max $I_{DS} \geq 120\text{ mA}$**
 - **Max $V_{GS(th)} \leq 3\text{ V}$**
 
-Choosen Onsemi's 2N7002K:
+Choosen Onsemi's 2N7002K specs:
 - Inner diode protection
 - $V_{DS} = 60\text{ V}$
 - $I_{DS} = 800\text{ mA}$
@@ -227,7 +227,6 @@ Chosen Diodes Incorporated's DMN6140L specs:
 
 As Omron G9KB relay's datasheet recommendations for optimize power consumption and coil preservation, a power-saving holding circuit is implemented using a parallel RC network ($R25$ / $R26$ / $R27$ and $C14$ / $C15$ / $C16$) placed in series with each relay coil. This circuit applies full rated voltage ($12\text{ V}$) instantaneously for reliable pull-in, and then exponentially reduces the voltage to a safe holding level ($V_{\text{hold}} = 6\text{ V}$, corresponding to 50% of the rated voltage) after an initial actuation window of $t = 0.1\text{ s}$.
 
-#### Sizing Calculation:
 Given the relay coil resistance $R_{\text{coil}} = 51\text{ }\Omega$, the steady-state holding current required to maintain the relay in the energized state with $V_{\text{hold}} = 6\text{ V}$ is:
 $$
 I_{\text{hold}} = \frac{V_{\text{hold}}}{R_{\text{coil}}} = \frac{6\text{ V}}{51\text{ }\Omega} \approx 117.6\text{ mA}
@@ -265,3 +264,97 @@ As recommended by the relay manufacturer, using only a standard freewheeling dio
 $$
 V_{Zener} \approx 3 \cdot V_{\text{coil}} = 3 \cdot 12\text{ V} = 36\text{ V}
 $$
+
+
+## 4. HV Sense
+
+### 4.1 DC_LINK voltage partitioner (100%)
+
+The DC_LINK voltage partitioner scales the high-voltage of the inverter down to a safe, scaled sensing voltage compatible with the comparator inputs.
+
+**Required specifications:** 
+- Maximum inverter voltage: $V_{\text{TS max}} = 600\text{ VDC}$.
+- Target maximum sense voltage: $V_{\text{sense max}} \approx 12.0\text{ V}$ (matching the isolated logic supply rail).
+- High voltage resistor string to limit power dissipation and comply with component voltage ratings.
+
+To distribute the voltage stress safely across multiple surface-mount resistors (preventing arc-over and exceeding maximum working voltage per resistor), three resistors in series are used:
+$$
+R3 = R4 = R5 = 330\text{ k}\Omega \quad (\text{Total series } R_{series} = 990\text{ k}\Omega)
+$$
+Using a paralel resistor $R7 = 20\text{ k}\Omega$, the voltage division ratio is:
+$$
+V_{out} = V_{in} \cdot \left(\frac{R7}{R_{series} + R7}\right) = 600\text{ V} \cdot \left(\frac{20\text{ k}\Omega}{990\text{ k}\Omega + 20\text{ k}\Omega}\right) \approx 11.88\text{ V}
+$$
+This safely maps $600\text{ V}$ to just under $12\text{ V}$.
+
+### 4.2 TS_POS voltage partitioner (95%)
+
+The TS_POS voltage partitioner scales the battery-side positive line so that it can be directly compared against the scaled DC_LINK voltage. Precharge completion is evaluated by monitoring when the inverter-side voltage rises to reach $95\%$ of the battery-side voltage.
+
+To properly establish the comparison threshold, the attenuation of this divider is adjusted. Using identical high-side resistors:
+$$
+R20 = R21 = R22 = 330\text{ k}\Omega \quad (\text{Total } R_{series} = 990\text{ k}\Omega)
+$$
+The bottom resistor $R23$ is calculated to scale the battery voltage reference:
+$$
+R23 = 21\text{ k}\Omega
+$$
+This ensures accurate level matching for the dual-comparator evaluation stage.
+
+### 4.3 RC low pass filter (DC_LINK and TS_POS lines)
+
+To eliminate high-frequency switching noise and electromagnetic interference (EMI) originating from the inverter, an RC low-pass filter is implemented on both sensing lines.
+
+The Thevenin resistance seen by the filter capacitor is approximately equal to the bottom divider resistor ($R_{\text{th}} \approx R_7 \approx 20\text{ k}\Omega$). Targeting a cutoff frequency of $f_c \approx 10\text{ Hz}$:
+$$
+C = \frac{1}{2 \pi \cdot R_{\text{th}} \cdot f_c} = \frac{1}{2 \pi \cdot 19600\space \Omega \cdot 10\text{ Hz}} \approx 1\text{ }\mu\text{F}
+$$
+
+### 4.4 Transient overvoltage protection (DC_LINK and TS_POS lines)
+
+To protect the sensitive comparator inputs from voltage spikes, clamping diodes are placed on the filtered sense lines.
+
+$12\text{ V}$ Zener diodes are selected to clamp any voltage exceeding the comparator's internal isolated supply line ($V_{\text{CC}} = 12\text{ V}$), safely shunting excessive transient energy to ground and protecting the chip.
+
+### 4.5 Comparation
+
+Comparator (IC4) required specs:
+- **Supply voltage range $\ge 12\text{ V}$:** To operate reliably from the isolated logic rail.
+- **Low input offset voltage and high precision:** To accurately resolve small differential voltage thresholds during precharge completion.
+- **Open-collector / open-drain output:** To interface seamlessly with pull-up networks and galvanic isolation stages.
+
+Chosen Texas Instruments LM393BIDR specs:
+- Dual differential comparator configuration.
+- Wide supply voltage range up to $36\text{ V}$.
+- Low input offset voltage ($\pm 2.0\text{ mV}$ typ.).
+- Low input bias current and open-collector outputs suitable for robust digital level translation.
+
+### 4.6 Galvanic isolation
+
+#### 4.6.A Optoisolator for CHARGE_REQUIRED signal
+
+Optoisolator (Q7) required specs:
+- **Galvanic isolation rating $\ge 1\text{ kV}$:** To ensure complete electrical safety between the high-voltage Traction System and low-voltage control domain.
+- **Current transfer ratio (CTR):** High enough to guarantee reliable transistor saturation on the receiving side under low LED drive currents.
+
+Chosen American Bright's APC-81701-SL specs:
+- High isolation voltage between input and output ($AC 5,000\text{ Vrms}$).
+- High Collector-Emitter voltage ($V_{CEO} \ge 35\text{ V}$).
+- Fast switching response tailored for digital status signaling.
+
+Current-limiting resistor R9 is sized to establish the required forward LED current. With an isolated logic supply of $12\text{ V}$ and a standard LED forward voltage $V_F \approx 1.2\text{ V}$:
+$$
+R9 = \frac{V_{\text{CC}} - V_F}{I_F} \approx 4.7\text{ k}\Omega
+$$
+
+#### 4.6.B DCDC converter for low voltage supply
+
+DC-DC Converter (PS1) required specs:
+- **Input voltage range:** Compatible with the main vehicle low-voltage rail ($12\text{ V\_LOGIC}$).
+- **Output voltage:** Regulated $12\text{ V}$ output to power the isolated sensing and comparison circuitry.
+- **Isolation rating:** Reinforced galvanic isolation to separate high-voltage reference grounds from low-voltage electronics.
+
+Chosen Cui's DEP1-12-512-M specs:
+- Designed specifically for isolated low-power auxiliary rails in electric vehicle architectures.
+- Low output ripple and noise performance when paired with input/output ceramic bypass capacitors ($C10$, $C11$, $C12$).
+
