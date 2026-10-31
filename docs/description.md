@@ -31,8 +31,8 @@ This section details the power distribution, protection mechanisms, and thermal 
 ### 2.1 Protection circuit and regulation
 
 Both LV_LOGIC and LV_SHUTDOWN lines are protected against: 
-- Reverse polarity: using a PMOS transistor configured with a Zener diode, ensuring $V_{GS}$ protection to the PMOS.
-- Transient overvoltage: using a TVS diode, chosen because of its ability to withstand high voltage spikes.
+- **Reverse polarity:** using a PMOS transistor configured with a Zener diode, ensuring $V_{GS}$ protection to the PMOS.
+- **Transient overvoltage:** using a TVS diode, chosen because of its ability to withstand high voltage spikes.
 
 LV_LOGIC line is stabilized by a L7812ABV linear voltage stabilizer to generate a linear +12V supply. 
 LV_SHDW already comes stabilized, but it needs bypass filters in order to protect the line by the EMI of relay coils.
@@ -40,22 +40,22 @@ LV_SHDW already comes stabilized, but it needs bypass filters in order to protec
 ### 2.2 Current budget
 
 The current consumption is divided between two independent supplies:
-- **+12_LOGIC**:  The logic chips draws negligible quiescent current (under 1 mA). The primary load is the DEP1-12-S12-M DC/DC converter, which supplies an LM393B comparator and a APC817D1 optocoupler used to galvanically isolate low and high domain. The total maximum continous current draw is around $4.0\space mA$
+- **+12_LOGIC:**  The logic chips draws negligible quiescent current (under 1 mA). The primary loads are the linear regulator and the DEP1-12-S12-M DC/DC converter (with an efficienzy of 80%), which supplies a LM393B comparator and a APC817D1 optocoupler used to galvanically isolate low and high domain. The total maximum continous current draw on the linear regulator is around $4.0\space mA$.
 
 $$
 I_{max} = I_{IC1} + I_{IC2} + I_{IC3} + I_{IC5} + I_{PS1}
 $$
 $$
-I_{PS1} = \frac{I_{DCDCout}}{\text{DCDC efficiency}} = \frac{\frac{12\space V - V_{Q7}}{R9} + I_{IC4}}{\text{DCDC efficiency}}
+I_{PS1} = \frac{I_{DCDCout}}{\text{DCDC efficiency}} = \frac{\frac{12\space V - V_{Q7}}{R9} + I_{IC4}}{\text{0.80}}
 $$
 $$
-I_{max} \approx 4.3\space mA + 5\space \mu A + 5\space \mu A + 5\space \mu A +  \frac{\frac{12\space V - 1.24\space V}{4.7\space k\Omega} + 0.8\space mA}{0.80} \approx 8 \space mA
+I_{max} \approx 4.3\text{ mA} + 5\space \mu\text{A} + 5\space \mu\text{A} + 5\space \mu\text{A} +  \frac{\frac{12\text{ V} - 1.2\text{ V}}{4.7\text{ k}\Omega} + 0.8\text{ mA}}{0.80} \approx 8 \text{ mA}
 $$
 
-- **+12_SHDW**: The G9KB-1A12V relays are powered only by the shutdown circuit. Using the RC voltage holder, the consumption per coil is reduced approximately to $117\space mA$ at $6\space V$ (according to datasheet). A maximum of two relays are energized at the same time. Therefore, the maximum, continuous current draw is around $234\space mA$.
+- **+12_SHDW:** The three G9KB-1A12V relays are powered only by the shutdown circuit. Using an RC voltage holder, the consumption per coil is reduced approximately to $117\text{ mA}$ at $6\text{ V}$ (according to datasheet). A maximum of two relays are energized at the same time. Therefore, the maximum, continuous current draw is around $234\text{ mA}$.
 
 $$
-I_{max} = I_{U2} + I_{U3} \approx 117\space mA + 117\space mA= 234\space mA
+I_{max} = I_{U2} + I_{U3} \approx 117\text{ mA} + 117\text{ mA}= 234\text{ mA}
 $$
 
 ### 2.3 Regulator power dissipation
@@ -64,7 +64,7 @@ The L7812ABV regulator steps down the 16-24V input to stable 12V, because the re
 The worst-case continous power disipation is calculated as:
 
 $$ P_{dis} = (V_{in \space max} - V_{out}) \cdot I_{logic \space max} + V_{in \space max} \cdot I_{IC1} $$
-$$ P_{dis} \approx (24 \space V - 12 \space V) \cdot 4 \space mA + 24\space V \cdot 4.3\space mA \approx 151 \space mW $$
+$$ P_{dis} \approx (24 \text{ V} - 12 \text{ V}) \cdot 4 \text{ mA} + 24\text{ V} \cdot 4.3\text{ mA} \approx 151 \text{ mW} $$
 
 This result is not concerning for heat dissipation, therefore IC1 does not require additional cooling components
 
@@ -74,7 +74,7 @@ This section details the logic circuit responsible for controlling the relay dri
 
 ### 3.1 ENABLE Level Shifter and Timer
 
-The external ENABLE signal is level-shifted by an N-MOSFET to safely match the internal 12V CMOS logic domain. The shifted line is connected to a 50 ms timer implemented using an RC network and a Schmitt trigger inverter (IC3). At board startup, if the enable signal is low, the capacitor charges towards 12V. If the enable signal is high, the capacitor is held discharged to ground; the inverter reads a low input and its output goes high. During operation, if the enable signal goes low, the capacitor starts to charge. Once the $V_p = 7.1\space V$ threshold of the Schmitt trigger is reached, the inverter interprets the input as a logic high, which results in a delayed falling edge of the final output.
+The external ENABLE signal is level-shifted by an N-MOSFET to safely match the internal 12V CMOS logic domain. The shifted line is connected to a 50 ms timer implemented using an RC network and a Schmitt trigger inverter (IC3). At board startup, if the enable signal is low, the capacitor charges towards 12V imediatly. If the enable signal is high, the capacitor is held discharged to ground; the inverter reads a low input and its output goes high. During operation, if the enable signal goes low, the capacitor starts to charge. Once the $V_p = 7.1\space V$ threshold of the Schmitt trigger is reached, the inverter interprets the input as a logic high, which results in a delayed falling edge of the final output.
 Below a simulation of this circuit done with LTspice, available [here](/hardware/sim/enabe_timer.asc).
 
 
