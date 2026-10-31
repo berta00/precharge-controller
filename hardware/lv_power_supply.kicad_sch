@@ -1539,7 +1539,7 @@
 	)
 	(rectangle
 		(start 45.847 157.099)
-		(end 148.59 186.69)
+		(end 149.86 186.69)
 		(stroke
 			(width 0)
 			(type dash)
@@ -1563,7 +1563,7 @@
 	)
 	(rectangle
 		(start 120.904 121.92)
-		(end 148.59 156.21)
+		(end 149.86 156.21)
 		(stroke
 			(width 0)
 			(type dash)
@@ -1824,7 +1824,7 @@
 		(uuid "e02c9139-17fe-46ce-9fd3-cf7140295fd0")
 	)
 	(junction
-		(at 156.21 130.81)
+		(at 157.48 130.81)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ec946ca8-a16a-4a2e-9ac6-10b5517c88cc")
@@ -1871,7 +1871,7 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 130.81) (xy 158.75 130.81)
+			(xy 157.48 130.81) (xy 160.02 130.81)
 		)
 		(stroke
 			(width 0)
@@ -1881,7 +1881,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 134.62) (xy 156.21 134.62)
+			(xy 160.02 134.62) (xy 157.48 134.62)
 		)
 		(stroke
 			(width 0)
@@ -2371,7 +2371,7 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 134.62) (xy 156.21 130.81)
+			(xy 157.48 134.62) (xy 157.48 130.81)
 		)
 		(stroke
 			(width 0)
@@ -2461,7 +2461,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 130.81) (xy 156.21 130.81)
+			(xy 139.7 130.81) (xy 157.48 130.81)
 		)
 		(stroke
 			(width 0)
@@ -3265,7 +3265,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 158.75 134.62 270)
+		(at 160.02 134.62 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3276,7 +3276,7 @@
 		(fields_autoplaced yes)
 		(uuid "269704a2-fb95-4dd6-a4c9-3493621374f2")
 		(property "Reference" "#FLG02"
-			(at 160.655 134.62 0)
+			(at 161.925 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3287,7 +3287,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 162.56 134.6199 90)
+			(at 163.83 134.6199 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3298,7 +3298,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 158.75 134.62 0)
+			(at 160.02 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3309,7 +3309,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 158.75 134.62 0)
+			(at 160.02 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3320,7 +3320,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 158.75 134.62 0)
+			(at 160.02 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3515,7 +3515,7 @@
 	)
 	(symbol
 		(lib_id "power:+12V")
-		(at 158.75 130.81 270)
+		(at 160.02 130.81 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3526,7 +3526,7 @@
 		(fields_autoplaced yes)
 		(uuid "3356696c-931f-487e-86ab-fe0333dbdc62")
 		(property "Reference" "#PWR02"
-			(at 154.94 130.81 0)
+			(at 156.21 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3537,7 +3537,7 @@
 			)
 		)
 		(property "Value" "+12V_SHDW"
-			(at 162.56 130.8099 90)
+			(at 163.83 130.8099 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3548,7 +3548,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 158.75 130.81 0)
+			(at 160.02 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3559,7 +3559,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 158.75 130.81 0)
+			(at 160.02 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3570,7 +3570,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 158.75 130.81 0)
+			(at 160.02 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4399,7 +4399,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "??"
+		(property "Value" "234u"
 			(at 143.51 142.24 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4723,7 +4723,7 @@
 				)
 			)
 		)
-		(property "Value" "R_US"
+		(property "Value" "10"
 			(at 100.33 30.48 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4964,7 +4964,7 @@
 				)
 			)
 		)
-		(property "Value" "R_US"
+		(property "Value" "10"
 			(at 100.33 127 90)
 			(show_name no)
 			(do_not_autoplace no)
