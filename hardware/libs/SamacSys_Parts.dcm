@@ -84,4 +84,10 @@ K
 F https://www.onsemi.com/pub/Collateral/2N7002K-FSC-D.PDF
 $ENDCMP
 #
+$CMP DMN6140LQ-7
+D MOSFET 60V N-Ch Enh FET 60Vdss 20Vgss 10A
+K
+F https://www.diodes.com//assets/Datasheets/DMN6140LQ.pdf
+$ENDCMP
+#
 #End Doc Library
