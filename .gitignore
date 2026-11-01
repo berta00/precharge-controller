@@ -22,3 +22,6 @@ fp-info-cache
 *.op.raw
 *.log
 *.bck
+
+# lock files
+.~lock.*#
