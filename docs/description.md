@@ -12,6 +12,16 @@
     - [3.1 ENABLE Level Shifter and Timer](#31-enable-level-shifter-and-timer)
     - [3.2 SR latch and completion memory](#32-sr-latch-and-completion-memory)
     - [3.3 Loss of supply protection](#33-loss-of-supply-protection)
+  - [4. Low voltage relay drive](#4-low-voltage-relay-drive)
+    - [4.1 Driver](#41-driver)
+    - [4.2 Coil holding voltage](#42-coil-holding-voltage)
+    - [4.3 Freewheeling](#43-freewheeling)
+  - [5. High voltage sensing](#5-high-voltage-sensing)
+    - [5.1 DC\_LINK mesurement (100%)](#51-dc_link-mesurement-100)
+    - [5.2 TS\_POS mesurement (95%)](#52-ts_pos-mesurement-95)
+    - [5.3 Galvanic insulation](#53-galvanic-insulation)
+    - [5.4 Comparation](#54-comparation)
+  - [6. High voltage power](#6-high-voltage-power)
 
 
 ## 1. Architecture overview
@@ -29,7 +39,7 @@ The high voltage domain features:
 - **block**: Contains the external accumulator insulation relays (AIR+, AIR-), the precharge relay, and the precharge power resistor.
 
 <p align="center">
-    <img src="../docs/img/Root_sheet.png" style="width: 600px; float: center;" >
+    <img src="../docs/img/root_sheet.png" style="width: 700px; float: center;" >
 </p>
 
 
@@ -45,6 +55,11 @@ Both LV_LOGIC and LV_SHUTDOWN lines are protected against:
 
 LV_LOGIC line is stabilized by a L7812ABV linear voltage stabilizer to generate a linear +12V supply. 
 LV_SHDW already comes stabilized, but it needs bypass filters in order to protect the line by the EMI of relay coils.
+
+<p align="center">
+    <img src="../docs/img/lv_power_supply_1_sheet.png" style="width: 1000px; float: center;" >
+    <img src="../docs/img/lv_power_supply_2_sheet.png" style="width: 1000px; float: center;" >
+</p>
 
 ### 2.2 Current budget
 
@@ -81,10 +96,18 @@ This result is not concerning for heat dissipation, therefore IC1 does not requi
 
 This section details the logic circuit responsible of controlling the relay drive block, based on two primary inputs: an external ENABLE signal and a CHARGE_REQUIRED signal from the high-voltage sensing block. The logic drives three distinct outputs: CMD_AIR_PRE (precharge relay), CMD_AIR_POS (positive AIR), and CMD_AIR_NEG (negative AIR).
 
+<p align="center">
+    <img src="../docs/img/final_logic_diagram.jpeg" style="width: 900px; float: center;" >
+</p>
+
 ### 3.1 ENABLE Level Shifter and Timer
 
 The external ENABLE signal is level-shifted by an N-MOSFET to safely match the internal 12V CMOS logic domain. The shifted line is connected to a 50 ms timer implemented using an RC network and a Schmitt trigger inverter (IC3). At board startup, if the enable signal is low, the capacitor charges towards 12V imediatly. If the enable signal is high, the capacitor is held discharged to ground; the inverter reads a low input and its output goes high. During operation, if the enable signal goes low, the capacitor starts to charge. Once the $V_p = 7.1\space V$ threshold of the Schmitt trigger is reached, the inverter interprets the input as a logic high, which results in a delayed falling edge of the final output.
 A simulation of this circuit, done with LTspice, is available [here](/hardware/sim/enabe_timer.asc).
+
+<p align="center">
+    <img src="../docs/img/lv_logic_1_sheet.png" style="width: 400px; float: center;" >
+</p>
 
 ### 3.2 SR latch and completion memory
 
@@ -94,11 +117,90 @@ The core sequencing and state retention are managed by a discrete set-reset (SR)
 
 ### 3.3 Loss of supply protection
 
-To comply with safety requirements regarding power loss and fault contingencies, a robust monitoring and reset mechanism is integrated into the logic domain:
+To comply with safety requirements regarding power loss and fault contingencies, a monitoring and reset and gate is integrated into the logic domain:
 - **Shutdown and Low-Voltage Supervision:** The circuit continuously tracks the integrity of both the $12\text{ V}$ shutdown safety supply and the unregulated low-voltage lines.
 - **Fail-Safe Response:** If the shutdown supply or the low-voltage auxiliary supply drops below operating thresholds, or if the ENABLE signal is removed for more than $50\text{ ms}$, the protection logic overrides the SR latch state. This forces all relay control outputs (CMD_AIR_PRE, CMD_AIR_POS, CMD_AIR_NEG) to actively open within a maximum of $250\text{ ms}$, safely isolating the high-voltage Traction System from the inverter.
+
+<p align="center">
+    <img src="../docs/img/lv_logic_3_sheet.png" style="width: 700px; float: center;" >
+</p>
 
 <TODO calculate precise opening time>
 
 
+## 4. Low voltage relay drive
+
+This section details the low-voltage relay driver circuitry responsible for translating control signals from the logic domain into higher current coils supplied with the shutdown line.
+
+### 4.1 Driver
+
+The relay driver stage interfaces the $12\text{ V}$ outputs of the low-voltage logic block with the higher current demands of the relay coils. Each driver command channel uses a low-side switching transistor configuration to complete the coil circuit to ground. The input stage includes current-limiting and pull-down protection resistors to prevent floating states and ensure fail-safe behavior if a control line is accidentally disconnected.
+
+### 4.2 Coil holding voltage
+
+To optimize thermal performance and reduce continuous power consumption from the auxiliary supply during long endurance events, the relay driver incorporates an optimized coil drive architecture matching the Omron G9KB-1A DC12 specifications.
+
+### 4.3 Freewheeling
+
+When an electromechanical relay coil is switched off, the sudden collapse of the magnetic field induces a severe reverse-voltage transient (back-EMF) that can exceed hundreds of volts, risking permanent damage to the board.
+- **Clamp Diodes:** A fast-switching flyback diode is placed in a reverse-biased configuration directly across each relay coil terminals. 
+- **Transient Dissipation:** Upon turn-off, the induced inductive current safely circulates through the freewheeling diode, dissipating the stored magnetic energy as thermal loss across the diode's forward voltage drop and parasitic resistance.
+
+<p align="center">
+    <img src="../docs/img/lv_relay_drive_1_sheet.png" style="width: 850px; float: center;" >
+    <img src="../docs/img/lv_relay_drive_2_sheet.png" style="width: 850px; float: center;" >
+    <img src="../docs/img/lv_relay_drive_3_sheet.png" style="width: 850px; float: center;" >
+</p>
+
+
+## 5. High voltage sensing
+
+### 5.1 DC_LINK mesurement (100%)
+
+The DC_LINK sensing branch measures the actual voltage on the inverter side, directly monitoring the charge state of the internal DC-Link capacitor. The measurement point is located downstream of the positive relays to read the actual voltage present at the inverter terminals. A high-impedance resistive divider scales the signal to $100\%$ of the nominal measurement range, while Zener clamping diodes and a low-pass RC filter protect the input stage against overvoltage transients and high-frequency noise.
+
+<p align="center">
+    <img src="../docs/img/hv_sensing_1_sheet.png" style="width: 650px; float: center;" >
+</p>
+
+### 5.2 TS_POS mesurement (95%)
+
+The TS_POS sensing branch measures the high-voltage battery pack (TS) voltage upstream of the positive relays. Even TS_NEG is mesured upstream of the relays, because when the board is operational the AIR NEG relay is always closed. This resistive divider is scaled to output $95\%$ of the measured voltage relative to the DC_LINK scale, setting the hardware precharge completion threshold ($V_{\text{DC\_LINK}} = 0.95 \cdot V_{\text{TS\_POS}}$). The input line is protected by high-voltage current-limiting resistors, Zener clamping diodes, and a low-pass RC filter.
+
+<p align="center">
+    <img src="../docs/img/hv_sensing_2_sheet.png" style="width: 650px; float: center;" >
+</p>
+
+### 5.3 Galvanic insulation
+
+To ensure complete electrical separation between the high-voltage domain and the low-voltage logic, the circuit implements a dual galvanic isolation barrier without a shared ground:
+- **Power isolation:** an isolated DC/DC converter locally generates the supply line for the HV analog sensing and comparison stages starting from the low-voltage supply line.
+- **Signal isolation:** the digital output of the comparison stage is transmitted across the barrier to the LV logic (CHARGE_REQUIRED_IN) through an optocoupler, preserving full galvanic isolation.
+
+<p align="center">
+    <img src="../docs/img/hv_sensing_3_sheet.png" style="width: 700px; float: center;" >
+    <img src="../docs/img/hv_sensing_4_sheet.png" style="width: 650px; float: center;" >
+</p>
+
+### 5.4 Comparation
+
+DC_LINK (scaled to 100%) and TS_POS (scaled to 95%) are fed into the inputs of a voltage comparator. As long as the inverter capacitor voltage remains below 95% of the battery pack voltage, the comparator keeps the CHARGE_REQUIRED_IN signal up. As soon as the DC_LINK voltage exceeds the 95% TS_POS threshold, the comparator output switches state, signaling precharge completion to the LV logic.
+
+<p align="center">
+    <img src="../docs/img/hv_sensing_5_sheet.png" style="width: 250px; float: center;" >
+</p>
+
+
+## 6. High voltage power
+
+The high-voltage power stage (hv_power) performs the final actuation of the system, interfacing the battery pack with the inverter through the three main relays (negative AIR, precharge relay with series current-limiting resistor, and positive AIR). The relay coils are powered directly by the +12V_SHDW line (Shutdown Circuit) on the high side and switched to ground (GND) on the low side via N-channel MOSFETs driven by the CMD_AIR_NEG_OUT, CMD_AIR_PRE_OUT, and CMD_AIR_POS_OUT logic outputs:
+1. **Precharge start:** with the Shutdown Circuit closed and a valid ENABLE_IN signal, the logic closes the negative AIR and the precharge relay, gradually charging the DC-Link capacitor through the precharge resistor.
+2. **Completion and run state:** once 95% of the battery voltage is reached (CHARGE_REQUIRED_IN low), the positive AIR closes and the precharge relay simultaneously opens, holding the state latched via the SR latch.
+3. **Safe state:** any opening of the Shutdown Circuit (+12V_SHDW) immediately removes coil power and resets the control logic, physically opening all high-voltage contacts.
+
+<p align="center">
+    <img src="../docs/img/hv_power_1_sheet.png" style="width: 650px; float: center;" >
+    <img src="../docs/img/hv_power_2_sheet.png" style="width: 650px; float: center;" >
+    <img src="../docs/img/hv_power_3_sheet.png" style="width: 650px; float: center;" >
+</p>
 
