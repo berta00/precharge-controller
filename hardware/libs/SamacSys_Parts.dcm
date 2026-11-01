@@ -90,4 +90,40 @@ K
 F https://www.diodes.com//assets/Datasheets/DMN6140LQ.pdf
 $ENDCMP
 #
+$CMP C0805X104K5RACAUTO
+D SMD, MLCC, FT-CAP, Automotive Grade
+K
+F https://www.yageogroup.com/content/datasheet/asset/file/KEM_C1078_X7R_FT-CAP_AUTO_SMD
+$ENDCMP
+#
+$CMP C0805C334J5RACAUTO
+D SMD, MLCC, Temperature Stable, Automotive Grade
+K
+F https://www.yageogroup.com/content/datasheet/asset/file/KEM_C1023_X7R_AUTO_SMD
+$ENDCMP
+#
+$CMP 35PZE270M10X9
+D 270F 35V Aluminum Polymer Capacitor Radial, Can 20mOhm 10000 Hrs @ 105C
+K
+F http://www.rubycon.co.jp/en/catalog/e_pdfs/pzcap/e_PZE.pdf
+$ENDCMP
+#
+$CMP MMSZ5245BHE3-TP
+D Zener Diode 15 V 500 mW +/-5% Surface Mount SOD-123
+K
+F https://www.mccsemi.com/pdf/Products/MMSZ5221BHE3-MMSZ5261BHE3(SOD-123).pdf
+$ENDCMP
+#
+$CMP MMSZ5255BQ-7-F
+D Zener Diodes Zener Diode SOD123 T&R 3K
+K
+F https://www.diodes.com/assets/Datasheets/ds18010.pdf
+$ENDCMP
+#
+$CMP BZT52C12-HE3-08
+D Diode Zener Single 12V 5% 500mW Automotive 2-Pin SOD-123 T/R
+K
+F http://www.vishay.com/docs/85760/bzt52.pdf
+$ENDCMP
+#
 #End Doc Library

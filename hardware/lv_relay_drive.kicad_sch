@@ -702,12 +702,9 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Simulation_SPICE:NMOS"
-			(pin_numbers
-				(hide yes)
-			)
+		(symbol "Libary_Loader:DMN6140LQ-7"
 			(pin_names
-				(offset 0)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -715,40 +712,29 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "Q"
-				(at 5.08 1.27 0)
+				(at 11.43 3.81 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
+					(justify left top)
 				)
 			)
-			(property "Value" "NMOS"
-				(at 5.08 -1.27 0)
+			(property "Value" "DMN6140LQ-7"
+				(at 11.43 1.27 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
+					(justify left top)
 				)
 			)
-			(property "Footprint" ""
-				(at 5.08 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
-				(at 0 -12.7 0)
+			(property "Footprint" "SOT96P240X110-3N"
+				(at 11.43 -98.73 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -756,9 +742,22 @@
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left top)
 				)
 			)
-			(property "Description" "N-MOSFET transistor, drain/source/gate"
+			(property "Datasheet" "https://www.diodes.com//assets/Datasheets/DMN6140LQ.pdf"
+				(at 11.43 -198.73 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Description" "MOSFET 60V N-Ch Enh FET 60Vdss 20Vgss 10A"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -769,8 +768,8 @@
 					)
 				)
 			)
-			(property "Sim.Device" "NMOS"
-				(at 0 -17.145 0)
+			(property "Height" "1.1"
+				(at 11.43 -398.73 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -778,10 +777,11 @@
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left top)
 				)
 			)
-			(property "Sim.Type" "VDMOS"
-				(at 0 -19.05 0)
+			(property "Manufacturer_Name" "Diodes Incorporated"
+				(at 11.43 -498.73 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -789,10 +789,11 @@
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left top)
 				)
 			)
-			(property "Sim.Pins" "1=D 2=G 3=S"
-				(at 0 -15.24 0)
+			(property "Manufacturer_Part_Number" "DMN6140LQ-7"
+				(at 11.43 -598.73 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -800,10 +801,11 @@
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left top)
 				)
 			)
-			(property "ki_keywords" "transistor NMOS N-MOS N-MOSFET simulation"
-				(at 0 0 0)
+			(property "Mouser Part Number" "621-DMN6140LQ-7"
+				(at 11.43 -698.73 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -811,12 +813,49 @@
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left top)
 				)
 			)
-			(symbol "NMOS_0_1"
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/DMN6140LQ-7?qs=wtVJq%252Be05r%252B05hOLE8kNlg%3D%3D"
+				(at 11.43 -798.73 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Arrow Part Number" "DMN6140LQ-7"
+				(at 11.43 -898.73 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Arrow Price/Stock" "https://www.arrow.com/en/products/dmn6140lq-7/diodes-incorporated?region=nac"
+				(at 11.43 -998.73 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(symbol "DMN6140LQ-7_1_1"
 				(polyline
 					(pts
-						(xy 0.254 1.905) (xy 0.254 -1.905)
+						(xy 2.54 0) (xy 5.08 0)
 					)
 					(stroke
 						(width 0.254)
@@ -828,19 +867,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0.254 0) (xy -2.54 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 2.286) (xy 0.762 1.27)
+						(xy 5.08 5.08) (xy 5.08 0)
 					)
 					(stroke
 						(width 0.254)
@@ -852,7 +879,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0.762 0.508) (xy 0.762 -0.508)
+						(xy 5.842 5.588) (xy 5.842 4.572)
 					)
 					(stroke
 						(width 0.254)
@@ -864,79 +891,10 @@
 				)
 				(polyline
 					(pts
-						(xy 0.762 -1.27) (xy 0.762 -2.286)
+						(xy 5.842 2.54) (xy 6.858 3.048) (xy 6.858 2.032) (xy 5.842 2.54)
 					)
 					(stroke
 						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.778) (xy 3.302 -1.778) (xy 3.302 1.778) (xy 0.762 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 1.651 0)
-					(radius 2.794)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 2.54) (xy 2.54 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.54 1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 2.54 -1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
 						(type default)
 					)
 					(fill
@@ -945,10 +903,10 @@
 				)
 				(polyline
 					(pts
-						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
+						(xy 5.842 2.032) (xy 5.842 3.048)
 					)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -957,10 +915,10 @@
 				)
 				(polyline
 					(pts
-						(xy 2.794 0.508) (xy 2.921 0.381) (xy 3.683 0.381) (xy 3.81 0.254)
+						(xy 5.842 0) (xy 7.62 0)
 					)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -969,22 +927,79 @@
 				)
 				(polyline
 					(pts
-						(xy 3.302 0.381) (xy 2.921 -0.254) (xy 3.683 -0.254) (xy 3.302 0.381)
+						(xy 5.842 -0.508) (xy 5.842 0.508)
 					)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
-			)
-			(symbol "NMOS_1_1"
+				(circle
+					(center 6.35 2.54)
+					(radius 3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 5.08) (xy 5.842 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 5.08) (xy 7.62 7.62)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 2.54) (xy 5.842 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 2.54) (xy 7.62 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(pin passive line
-					(at 2.54 5.08 270)
+					(at 0 0 0)
 					(length 2.54)
-					(name "D"
+					(name "G"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -999,10 +1014,10 @@
 						)
 					)
 				)
-				(pin input line
-					(at -5.08 0 0)
+				(pin passive line
+					(at 7.62 -5.08 90)
 					(length 2.54)
-					(name "G"
+					(name "S"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1018,9 +1033,9 @@
 					)
 				)
 				(pin passive line
-					(at 2.54 -5.08 90)
+					(at 7.62 10.16 270)
 					(length 2.54)
-					(name "S"
+					(name "D"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1294,8 +1309,8 @@
 		)
 	)
 	(rectangle
-		(start 88.9 63.5)
-		(end 121.92 95.758)
+		(start 93.98 63.5)
+		(end 127 95.758)
 		(stroke
 			(width 0)
 			(type dash)
@@ -1306,8 +1321,8 @@
 		(uuid "69de2e47-ff73-4de4-ae12-8fbe11910b2e")
 	)
 	(rectangle
-		(start 88.9 25.4)
-		(end 121.92 57.658)
+		(start 93.98 25.4)
+		(end 127 57.658)
 		(stroke
 			(width 0)
 			(type dash)
@@ -1318,8 +1333,8 @@
 		(uuid "6cf2d504-6661-4021-afe6-64af05287d1a")
 	)
 	(rectangle
-		(start 88.9 101.6)
-		(end 121.92 133.858)
+		(start 93.98 101.6)
+		(end 127 133.858)
 		(stroke
 			(width 0)
 			(type dash)
@@ -1331,7 +1346,7 @@
 	)
 	(rectangle
 		(start 25.654 101.346)
-		(end 66.04 133.604)
+		(end 71.12 133.604)
 		(stroke
 			(width 0)
 			(type dash)
@@ -1342,8 +1357,8 @@
 		(uuid "759e882a-7563-4395-bfeb-6518dedb33ee")
 	)
 	(rectangle
-		(start 68.58 101.6)
-		(end 86.36 133.858)
+		(start 73.66 101.6)
+		(end 91.44 133.858)
 		(stroke
 			(width 0)
 			(type dash)
@@ -1355,7 +1370,7 @@
 	)
 	(rectangle
 		(start 25.4 63.246)
-		(end 66.04 95.504)
+		(end 71.12 95.504)
 		(stroke
 			(width 0)
 			(type dash)
@@ -1367,7 +1382,7 @@
 	)
 	(rectangle
 		(start 25.654 25.146)
-		(end 66.04 57.404)
+		(end 71.12 57.404)
 		(stroke
 			(width 0)
 			(type dash)
@@ -1378,8 +1393,8 @@
 		(uuid "ce8a1b2a-e354-4ff9-8509-957dea45da6c")
 	)
 	(rectangle
-		(start 68.58 25.4)
-		(end 86.36 57.658)
+		(start 73.66 25.4)
+		(end 91.44 57.658)
 		(stroke
 			(width 0)
 			(type dash)
@@ -1390,8 +1405,8 @@
 		(uuid "d9b17805-e874-42e1-9229-64a2348b34c6")
 	)
 	(rectangle
-		(start 68.58 63.5)
-		(end 86.36 95.758)
+		(start 73.66 63.5)
+		(end 91.44 95.758)
 		(stroke
 			(width 0)
 			(type dash)
@@ -1403,7 +1418,7 @@
 	)
 	(text "Holding voltage"
 		(exclude_from_sim no)
-		(at 75.946 100.584 0)
+		(at 81.026 100.584 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1413,7 +1428,7 @@
 	)
 	(text "Flywheel protection"
 		(exclude_from_sim no)
-		(at 98.044 62.23 0)
+		(at 103.124 62.23 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1423,7 +1438,7 @@
 	)
 	(text "Flywheel protection"
 		(exclude_from_sim no)
-		(at 98.044 24.13 0)
+		(at 103.124 24.13 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1443,7 +1458,7 @@
 	)
 	(text "Holding voltage"
 		(exclude_from_sim no)
-		(at 75.946 62.23 0)
+		(at 81.026 62.23 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1463,7 +1478,7 @@
 	)
 	(text "Flywheel protection"
 		(exclude_from_sim no)
-		(at 98.044 100.33 0)
+		(at 103.124 100.33 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1473,7 +1488,7 @@
 	)
 	(text "Holding voltage"
 		(exclude_from_sim no)
-		(at 75.946 24.13 0)
+		(at 81.026 24.13 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1492,37 +1507,37 @@
 		(uuid "fa63ea40-0565-4898-becb-52aee94a70d9")
 	)
 	(junction
-		(at 83.82 33.02)
+		(at 88.9 33.02)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "23c057aa-9066-4425-873a-32133e8d8328")
 	)
 	(junction
-		(at 71.12 33.02)
+		(at 76.2 33.02)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2b4874fb-ec85-434a-9790-877f9272310b")
 	)
 	(junction
-		(at 92.71 109.22)
+		(at 97.79 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4ec60eb6-c663-4773-b748-eb7964b2e918")
 	)
 	(junction
-		(at 83.82 71.12)
+		(at 88.9 71.12)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7bed0868-7267-46f1-9ff8-043207387cbc")
 	)
 	(junction
-		(at 71.12 71.12)
+		(at 76.2 71.12)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a7c834aa-1df3-4001-be98-26aa01eaa701")
 	)
 	(junction
-		(at 92.71 71.12)
+		(at 97.79 71.12)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bfe83eff-7d65-4038-9393-f7ce5fd3667c")
@@ -1534,13 +1549,13 @@
 		(uuid "cb20f157-5ffd-494d-ad53-54db2c3f5146")
 	)
 	(junction
-		(at 92.71 33.02)
+		(at 97.79 33.02)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ce3c3b61-a5b5-43bb-9557-07f77003fc16")
 	)
 	(junction
-		(at 71.12 109.22)
+		(at 76.2 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cec6f8a7-c781-4bae-89c8-562cb8ce4053")
@@ -1558,14 +1573,24 @@
 		(uuid "e30f8d07-b341-4b50-b8b8-c03ee2546c8f")
 	)
 	(junction
-		(at 83.82 109.22)
+		(at 88.9 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e495a7b9-4800-4904-b923-17f02b10d394")
 	)
 	(wire
 		(pts
-			(xy 92.71 46.99) (xy 92.71 49.53)
+			(xy 45.72 109.22) (xy 53.34 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05da7f93-f776-4d57-800f-9eb850442753")
+	)
+	(wire
+		(pts
+			(xy 97.79 46.99) (xy 97.79 49.53)
 		)
 		(stroke
 			(width 0)
@@ -1585,7 +1610,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 123.19) (xy 92.71 125.73)
+			(xy 97.79 123.19) (xy 97.79 125.73)
 		)
 		(stroke
 			(width 0)
@@ -1595,7 +1620,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 71.12) (xy 83.82 83.82)
+			(xy 88.9 71.12) (xy 88.9 83.82)
 		)
 		(stroke
 			(width 0)
@@ -1615,7 +1640,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 33.02) (xy 45.72 33.02)
+			(xy 45.72 33.02) (xy 53.34 33.02)
 		)
 		(stroke
 			(width 0)
@@ -1625,7 +1650,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 83.82) (xy 81.28 83.82)
+			(xy 88.9 83.82) (xy 86.36 83.82)
 		)
 		(stroke
 			(width 0)
@@ -1645,7 +1670,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 45.72) (xy 81.28 45.72)
+			(xy 88.9 45.72) (xy 86.36 45.72)
 		)
 		(stroke
 			(width 0)
@@ -1665,7 +1690,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 71.12) (xy 83.82 71.12)
+			(xy 86.36 71.12) (xy 88.9 71.12)
 		)
 		(stroke
 			(width 0)
@@ -1675,7 +1700,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 87.63) (xy 95.25 87.63)
+			(xy 97.79 87.63) (xy 100.33 87.63)
 		)
 		(stroke
 			(width 0)
@@ -1685,7 +1710,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 125.73) (xy 105.41 125.73)
+			(xy 107.95 125.73) (xy 110.49 125.73)
 		)
 		(stroke
 			(width 0)
@@ -1695,7 +1720,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 109.22) (xy 83.82 121.92)
+			(xy 88.9 109.22) (xy 88.9 121.92)
 		)
 		(stroke
 			(width 0)
@@ -1705,7 +1730,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 83.82) (xy 71.12 83.82)
+			(xy 78.74 83.82) (xy 76.2 83.82)
 		)
 		(stroke
 			(width 0)
@@ -1725,7 +1750,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 109.22) (xy 71.12 121.92)
+			(xy 76.2 109.22) (xy 76.2 121.92)
 		)
 		(stroke
 			(width 0)
@@ -1735,7 +1760,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 109.22) (xy 92.71 115.57)
+			(xy 97.79 109.22) (xy 97.79 115.57)
 		)
 		(stroke
 			(width 0)
@@ -1755,7 +1780,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 33.02) (xy 92.71 33.02)
+			(xy 88.9 33.02) (xy 97.79 33.02)
 		)
 		(stroke
 			(width 0)
@@ -1765,7 +1790,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 87.63) (xy 105.41 87.63)
+			(xy 107.95 87.63) (xy 110.49 87.63)
 		)
 		(stroke
 			(width 0)
@@ -1785,17 +1810,17 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 109.22) (xy 45.72 109.22)
+			(xy 68.58 33.02) (xy 76.2 33.02)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5d2ee877-7fc6-4bb5-9783-6067d974f95a")
+		(uuid "609ea40d-25b6-4be2-b87a-68bdd00f554f")
 	)
 	(wire
 		(pts
-			(xy 63.5 109.22) (xy 71.12 109.22)
+			(xy 68.58 109.22) (xy 76.2 109.22)
 		)
 		(stroke
 			(width 0)
@@ -1825,17 +1850,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 33.02) (xy 71.12 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6e459ad2-7e9b-4262-9db4-49578b92bc0b")
-	)
-	(wire
-		(pts
-			(xy 71.12 71.12) (xy 71.12 83.82)
+			(xy 76.2 71.12) (xy 76.2 83.82)
 		)
 		(stroke
 			(width 0)
@@ -1845,7 +1860,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 109.22) (xy 83.82 109.22)
+			(xy 86.36 109.22) (xy 88.9 109.22)
 		)
 		(stroke
 			(width 0)
@@ -1855,7 +1870,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 109.22) (xy 129.54 109.22)
+			(xy 97.79 109.22) (xy 134.62 109.22)
 		)
 		(stroke
 			(width 0)
@@ -1875,7 +1890,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 71.12) (xy 92.71 71.12)
+			(xy 88.9 71.12) (xy 97.79 71.12)
 		)
 		(stroke
 			(width 0)
@@ -1885,7 +1900,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 33.02) (xy 73.66 33.02)
+			(xy 76.2 33.02) (xy 78.74 33.02)
 		)
 		(stroke
 			(width 0)
@@ -1895,7 +1910,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 121.92) (xy 71.12 121.92)
+			(xy 78.74 121.92) (xy 76.2 121.92)
 		)
 		(stroke
 			(width 0)
@@ -1905,7 +1920,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 71.12) (xy 129.54 71.12)
+			(xy 97.79 71.12) (xy 134.62 71.12)
 		)
 		(stroke
 			(width 0)
@@ -1945,7 +1960,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 71.12) (xy 92.71 77.47)
+			(xy 97.79 71.12) (xy 97.79 77.47)
 		)
 		(stroke
 			(width 0)
@@ -1955,7 +1970,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 49.53) (xy 105.41 49.53)
+			(xy 107.95 49.53) (xy 110.49 49.53)
 		)
 		(stroke
 			(width 0)
@@ -1985,7 +2000,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 125.73) (xy 95.25 125.73)
+			(xy 97.79 125.73) (xy 100.33 125.73)
 		)
 		(stroke
 			(width 0)
@@ -1995,7 +2010,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 33.02) (xy 129.54 33.02)
+			(xy 97.79 33.02) (xy 134.62 33.02)
 		)
 		(stroke
 			(width 0)
@@ -2005,7 +2020,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 71.12) (xy 73.66 71.12)
+			(xy 76.2 71.12) (xy 78.74 71.12)
 		)
 		(stroke
 			(width 0)
@@ -2015,7 +2030,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 71.12) (xy 71.12 71.12)
+			(xy 68.58 71.12) (xy 76.2 71.12)
 		)
 		(stroke
 			(width 0)
@@ -2025,7 +2040,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 33.02) (xy 83.82 33.02)
+			(xy 86.36 33.02) (xy 88.9 33.02)
 		)
 		(stroke
 			(width 0)
@@ -2045,7 +2060,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 109.22) (xy 92.71 109.22)
+			(xy 88.9 109.22) (xy 97.79 109.22)
 		)
 		(stroke
 			(width 0)
@@ -2055,7 +2070,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 109.22) (xy 73.66 109.22)
+			(xy 76.2 109.22) (xy 78.74 109.22)
 		)
 		(stroke
 			(width 0)
@@ -2065,7 +2080,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 33.02) (xy 92.71 39.37)
+			(xy 97.79 33.02) (xy 97.79 39.37)
 		)
 		(stroke
 			(width 0)
@@ -2075,7 +2090,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 121.92) (xy 81.28 121.92)
+			(xy 88.9 121.92) (xy 86.36 121.92)
 		)
 		(stroke
 			(width 0)
@@ -2085,7 +2100,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 85.09) (xy 92.71 87.63)
+			(xy 97.79 85.09) (xy 97.79 87.63)
 		)
 		(stroke
 			(width 0)
@@ -2095,7 +2110,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 33.02) (xy 83.82 45.72)
+			(xy 88.9 33.02) (xy 88.9 45.72)
 		)
 		(stroke
 			(width 0)
@@ -2105,7 +2120,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 49.53) (xy 95.25 49.53)
+			(xy 97.79 49.53) (xy 100.33 49.53)
 		)
 		(stroke
 			(width 0)
@@ -2125,7 +2140,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 33.02) (xy 71.12 45.72)
+			(xy 76.2 33.02) (xy 76.2 45.72)
 		)
 		(stroke
 			(width 0)
@@ -2135,7 +2150,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 45.72) (xy 71.12 45.72)
+			(xy 78.74 45.72) (xy 76.2 45.72)
 		)
 		(stroke
 			(width 0)
@@ -2166,7 +2181,7 @@
 	)
 	(hierarchical_label "DRV_AIR_POS_OUT"
 		(shape output)
-		(at 129.54 71.12 0)
+		(at 134.62 71.12 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2177,7 +2192,7 @@
 	)
 	(hierarchical_label "DRV_AIR_PRE_OUT"
 		(shape output)
-		(at 129.54 33.02 0)
+		(at 134.62 33.02 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2210,7 +2225,7 @@
 	)
 	(hierarchical_label "DRV_AIR_NEG_OUT"
 		(shape output)
-		(at 129.54 109.22 0)
+		(at 134.62 109.22 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2220,8 +2235,8 @@
 		(uuid "f87deb6a-52d5-425b-bbfd-9b0f33272672")
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:NMOS")
-		(at 58.42 35.56 270)
+		(lib_id "Libary_Loader:DMN6140LQ-7")
+		(at 58.42 78.74 270)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -2230,10 +2245,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3cd43e02-2120-4eb6-a0c1-c67c5366700e")
-		(property "Reference" "Q3"
-			(at 58.42 26.67 90)
+		(uuid "27b4137b-8fd8-44da-8588-8fde73592399")
+		(property "Reference" "Q5"
+			(at 60.96 64.77 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2242,8 +2256,8 @@
 				)
 			)
 		)
-		(property "Value" "NMOS"
-			(at 58.42 29.21 90)
+		(property "Value" "DMN6140LQ-7"
+			(at 60.96 67.31 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2252,8 +2266,32 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 60.96 30.48 0)
+		(property "Footprint" "SOT96P240X110-3N"
+			(at -40.31 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Datasheet" "https://www.diodes.com//assets/Datasheets/DMN6140LQ.pdf"
+			(at -140.31 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Description" "MOSFET 60V N-Ch Enh FET 60Vdss 20Vgss 10A"
+			(at 58.42 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2263,8 +2301,92 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
-			(at 45.72 35.56 0)
+		(property "Height" "1.1"
+			(at -340.31 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Name" "Diodes Incorporated"
+			(at -440.31 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Part_Number" "DMN6140LQ-7"
+			(at -540.31 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Part Number" "621-DMN6140LQ-7"
+			(at -640.31 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/DMN6140LQ-7?qs=wtVJq%252Be05r%252B05hOLE8kNlg%3D%3D"
+			(at -740.31 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Arrow Part Number" "DMN6140LQ-7"
+			(at -840.31 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/dmn6140lq-7/diodes-incorporated?region=nac"
+			(at -940.31 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 58.42 78.74 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2274,41 +2396,8 @@
 				)
 			)
 		)
-		(property "Description" "N-MOSFET transistor, drain/source/gate"
-			(at 58.42 35.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "NMOS"
-			(at 41.275 35.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" "VDMOS"
-			(at 39.37 35.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=D 2=G 3=S"
-			(at 43.18 35.56 0)
+		(property "MANUFACTURER" "Diodes Incorporated"
+			(at 58.42 78.74 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2319,13 +2408,204 @@
 			)
 		)
 		(pin "3"
-			(uuid "2d6d295d-0e3f-4cbd-9d6e-7846b206208f")
-		)
-		(pin "1"
-			(uuid "3eef2ac3-bb28-42a8-a2b9-7bd4fed28994")
+			(uuid "d240045d-d7ba-470c-a554-21aee8ef9bb1")
 		)
 		(pin "2"
-			(uuid "5aec6be0-53f0-431c-a0ea-f4d3613ab79a")
+			(uuid "0b147e2e-609c-404a-aaa6-5d9c90663d64")
+		)
+		(pin "1"
+			(uuid "f4bdc009-08ce-468b-aab1-152680b215f0")
+		)
+		(instances
+			(project "precharge-controller"
+				(path "/d0dc5348-c362-4b06-85a5-76de80ed7055/1985261d-6d1b-4055-84ae-f12baea9cf66"
+					(reference "Q5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Libary_Loader:DMN6140LQ-7")
+		(at 58.42 40.64 270)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "31d92a3e-bfe6-4f87-928c-769d188baaf0")
+		(property "Reference" "Q3"
+			(at 60.96 26.67 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DMN6140LQ-7"
+			(at 60.96 29.21 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SOT96P240X110-3N"
+			(at -40.31 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Datasheet" "https://www.diodes.com//assets/Datasheets/DMN6140LQ.pdf"
+			(at -140.31 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Description" "MOSFET 60V N-Ch Enh FET 60Vdss 20Vgss 10A"
+			(at 58.42 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" "1.1"
+			(at -340.31 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Name" "Diodes Incorporated"
+			(at -440.31 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Part_Number" "DMN6140LQ-7"
+			(at -540.31 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Part Number" "621-DMN6140LQ-7"
+			(at -640.31 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/DMN6140LQ-7?qs=wtVJq%252Be05r%252B05hOLE8kNlg%3D%3D"
+			(at -740.31 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Arrow Part Number" "DMN6140LQ-7"
+			(at -840.31 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/dmn6140lq-7/diodes-incorporated?region=nac"
+			(at -940.31 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 58.42 40.64 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER" "Diodes Incorporated"
+			(at 58.42 40.64 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "53599a45-a42c-4470-aedf-16b8e3c13095")
+		)
+		(pin "2"
+			(uuid "e9a00344-c957-412e-837c-1dd31fd9b914")
+		)
+		(pin "1"
+			(uuid "f96dbefa-6913-4e49-8ddc-c7cb05a85900")
 		)
 		(instances
 			(project "precharge-controller"
@@ -2417,125 +2697,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:NMOS")
-		(at 58.42 73.66 270)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3e284fdf-3ebc-45b8-8131-f7edf5cd3143")
-		(property "Reference" "Q5"
-			(at 58.42 64.77 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "NMOS"
-			(at 58.42 67.31 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 60.96 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
-			(at 45.72 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "N-MOSFET transistor, drain/source/gate"
-			(at 58.42 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "NMOS"
-			(at 41.275 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" "VDMOS"
-			(at 39.37 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=D 2=G 3=S"
-			(at 43.18 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "237796ab-cb37-4b93-9ebe-221ecb6fe761")
-		)
-		(pin "1"
-			(uuid "e414ff2d-cae2-4531-84a1-d884dbb151a2")
-		)
-		(pin "2"
-			(uuid "6cd3ca30-d948-4f26-a6ce-fd3760362e4f")
-		)
-		(instances
-			(project "precharge-controller"
-				(path "/d0dc5348-c362-4b06-85a5-76de80ed7055/1985261d-6d1b-4055-84ae-f12baea9cf66"
-					(reference "Q5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+12V")
-		(at 105.41 125.73 270)
+		(at 110.49 125.73 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2546,7 +2709,7 @@
 		(fields_autoplaced yes)
 		(uuid "3e53bfac-bd87-4809-8e37-0ebad84ecbda")
 		(property "Reference" "#PWR038"
-			(at 101.6 125.73 0)
+			(at 106.68 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2557,7 +2720,7 @@
 			)
 		)
 		(property "Value" "+12V_SHDW"
-			(at 109.22 125.7299 90)
+			(at 114.3 125.7299 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2568,7 +2731,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 105.41 125.73 0)
+			(at 110.49 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2579,7 +2742,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 105.41 125.73 0)
+			(at 110.49 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2590,7 +2753,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 105.41 125.73 0)
+			(at 110.49 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2614,7 +2777,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 77.47 71.12 90)
+		(at 82.55 71.12 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2624,7 +2787,7 @@
 		(dnp no)
 		(uuid "3efa1ed4-ae78-4a7d-a076-5357bf40df7e")
 		(property "Reference" "R26"
-			(at 77.47 74.168 90)
+			(at 82.55 74.168 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2634,7 +2797,7 @@
 			)
 		)
 		(property "Value" "51"
-			(at 77.47 76.708 90)
+			(at 82.55 76.708 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2644,7 +2807,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 77.724 70.104 90)
+			(at 82.804 70.104 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2654,8 +2817,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 77.47 71.12 0)
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/YAGEO-RSF_DATASHEET"
+			(at 82.55 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2666,7 +2829,51 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 77.47 71.12 0)
+			(at 82.55 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 82.55 71.12 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER" "YAGEO "
+			(at 82.55 71.12 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RSF2WSJR-52-51R "
+			(at 82.55 71.12 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" "603-RSF2WSJR-52-51R "
+			(at 82.55 71.12 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2733,7 +2940,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/YAGEO_PYu_RC_Group_51_RoHS_L_12.pdf"
 			(at 52.07 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -2746,6 +2953,50 @@
 		)
 		(property "Description" "Resistor, US symbol"
 			(at 52.07 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 52.07 49.53 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER" "YAGEO "
+			(at 52.07 49.53 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RC0805FR-071KL "
+			(at 52.07 49.53 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" "603-RC0805FR-071KL "
+			(at 52.07 49.53 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2772,7 +3023,7 @@
 	)
 	(symbol
 		(lib_id "power:+12V")
-		(at 105.41 87.63 270)
+		(at 110.49 87.63 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2783,7 +3034,7 @@
 		(fields_autoplaced yes)
 		(uuid "49574710-ebff-46e6-a50f-a3537c63c798")
 		(property "Reference" "#PWR036"
-			(at 101.6 87.63 0)
+			(at 106.68 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2794,7 +3045,7 @@
 			)
 		)
 		(property "Value" "+12V_SHDW"
-			(at 109.22 87.6299 90)
+			(at 114.3 87.6299 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2805,7 +3056,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 105.41 87.63 0)
+			(at 110.49 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2816,7 +3067,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 105.41 87.63 0)
+			(at 110.49 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2827,7 +3078,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 105.41 87.63 0)
+			(at 110.49 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2851,7 +3102,7 @@
 	)
 	(symbol
 		(lib_id "Diode:1N4004")
-		(at 92.71 81.28 270)
+		(at 97.79 81.28 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2862,7 +3113,7 @@
 		(fields_autoplaced yes)
 		(uuid "4e6a219c-13e5-4cf4-b65c-ce26dc2307c2")
 		(property "Reference" "D8"
-			(at 95.25 80.0099 90)
+			(at 100.33 80.0099 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2872,8 +3123,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1N4004"
-			(at 95.25 82.5499 90)
+		(property "Value" "400V"
+			(at 100.33 82.5499 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2883,8 +3134,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
-			(at 88.265 81.28 0)
+		(property "Footprint" ""
+			(at 93.345 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2895,7 +3146,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.vishay.com/docs/88503/1n4001.pdf"
-			(at 92.71 81.28 0)
+			(at 97.79 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2905,8 +3156,8 @@
 				)
 			)
 		)
-		(property "Description" "400V 1A General Purpose Rectifier Diode, DO-41"
-			(at 92.71 81.28 0)
+		(property "Description" "Rectifiers 400V 1A GLASS PASSIVE MAX DC a. 25C 10uA"
+			(at 97.79 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2917,7 +3168,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 92.71 81.28 0)
+			(at 97.79 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2928,7 +3179,51 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 92.71 81.28 0)
+			(at 97.79 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 97.79 81.28 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER" "YAGEO "
+			(at 97.79 81.28 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "S1G "
+			(at 97.79 81.28 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" "603-S1G "
+			(at 97.79 81.28 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2995,7 +3290,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/YAGEO_PYu_RC_Group_51_RoHS_L_12.pdf"
 			(at 52.07 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -3008,6 +3303,50 @@
 		)
 		(property "Description" "Resistor, US symbol"
 			(at 52.07 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 52.07 125.73 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER" "YAGEO "
+			(at 52.07 125.73 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RC0805FR-071KL "
+			(at 52.07 125.73 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" "603-RC0805FR-071KL "
+			(at 52.07 125.73 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3034,7 +3373,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 77.47 83.82 270)
+		(at 82.55 83.82 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3044,7 +3383,7 @@
 		(dnp no)
 		(uuid "51fb48e2-89a3-47a7-925c-24d32e6dcea9")
 		(property "Reference" "C15"
-			(at 77.47 88.138 90)
+			(at 82.55 88.138 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3053,8 +3392,8 @@
 				)
 			)
 		)
-		(property "Value" "3300u"
-			(at 77.47 90.678 90)
+		(property "Value" "3600u"
+			(at 82.55 90.678 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3064,7 +3403,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 84.7852 0)
+			(at 78.74 84.7852 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3074,8 +3413,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 77.47 83.82 0)
+		(property "Datasheet" "https://www.mouser.it/datasheet/3/508/1/KEM_A4123_PHH223.pdf"
+			(at 82.55 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3086,7 +3425,51 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 77.47 83.82 0)
+			(at 82.55 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 82.55 83.82 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER" "KEMET "
+			(at 82.55 83.82 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "PHH223HKP4360ME4 "
+			(at 82.55 83.82 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" "80-PHH223HKP4360ME4 "
+			(at 82.55 83.82 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3113,7 +3496,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_Zener")
-		(at 99.06 49.53 180)
+		(at 104.14 49.53 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3123,7 +3506,7 @@
 		(dnp no)
 		(uuid "5480a773-c6c8-4dff-a901-f34d693c5032")
 		(property "Reference" "D7"
-			(at 99.06 52.832 0)
+			(at 104.14 52.832 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3133,7 +3516,7 @@
 			)
 		)
 		(property "Value" "36V"
-			(at 99.06 55.372 0)
+			(at 104.14 55.372 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3143,7 +3526,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 99.06 49.53 0)
+			(at 104.14 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3153,8 +3536,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 99.06 49.53 0)
+		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/1sma5913bt3-d.pdf"
+			(at 104.14 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3165,7 +3548,51 @@
 			)
 		)
 		(property "Description" "Zener diode"
-			(at 99.06 49.53 0)
+			(at 104.14 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 104.14 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER" "onsemi "
+			(at 104.14 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "1SMA5938BT3G "
+			(at 104.14 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" "863-1SMA5938BT3G "
+			(at 104.14 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3271,125 +3698,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:NMOS")
-		(at 58.42 111.76 270)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "56729ae5-dd3d-43d3-aafc-ea17dc9335e0")
-		(property "Reference" "Q6"
-			(at 58.42 102.87 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "NMOS"
-			(at 58.42 105.41 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 60.96 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
-			(at 45.72 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "N-MOSFET transistor, drain/source/gate"
-			(at 58.42 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "NMOS"
-			(at 41.275 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" "VDMOS"
-			(at 39.37 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=D 2=G 3=S"
-			(at 43.18 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "75262164-031e-46ac-925e-0fe65532d993")
-		)
-		(pin "1"
-			(uuid "e39830d0-8c26-4479-aa2f-4e19e2f7597f")
-		)
-		(pin "2"
-			(uuid "5469da66-15bc-4094-b07b-c6dc77ab06ca")
-		)
-		(instances
-			(project "precharge-controller"
-				(path "/d0dc5348-c362-4b06-85a5-76de80ed7055/1985261d-6d1b-4055-84ae-f12baea9cf66"
-					(reference "Q6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+12V")
-		(at 105.41 49.53 270)
+		(at 110.49 49.53 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3400,7 +3710,7 @@
 		(fields_autoplaced yes)
 		(uuid "6dd41498-7ae7-4520-9655-c7200aedbdbd")
 		(property "Reference" "#PWR035"
-			(at 101.6 49.53 0)
+			(at 106.68 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3411,7 +3721,7 @@
 			)
 		)
 		(property "Value" "+12V_SHDW"
-			(at 109.22 49.5299 90)
+			(at 114.3 49.5299 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3422,7 +3732,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 105.41 49.53 0)
+			(at 110.49 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3433,7 +3743,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 105.41 49.53 0)
+			(at 110.49 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3444,7 +3754,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 105.41 49.53 0)
+			(at 110.49 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3588,7 +3898,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/YAGEO_PYu_RC_Group_51_RoHS_L_12.pdf"
 			(at 52.07 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -3601,6 +3911,50 @@
 		)
 		(property "Description" "Resistor, US symbol"
 			(at 52.07 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 52.07 87.63 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER" "YAGEO "
+			(at 52.07 87.63 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RC0805FR-071KL "
+			(at 52.07 87.63 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" "603-RC0805FR-071KL "
+			(at 52.07 87.63 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3627,7 +3981,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_Zener")
-		(at 99.06 125.73 180)
+		(at 104.14 125.73 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3637,7 +3991,7 @@
 		(dnp no)
 		(uuid "7e2b749c-d7c5-47ee-8227-e17c626a81fb")
 		(property "Reference" "D11"
-			(at 99.06 129.032 0)
+			(at 104.14 129.032 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3647,7 +4001,7 @@
 			)
 		)
 		(property "Value" "36V"
-			(at 99.06 131.572 0)
+			(at 104.14 131.572 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3657,7 +4011,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 99.06 125.73 0)
+			(at 104.14 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3667,8 +4021,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 99.06 125.73 0)
+		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/1sma5913bt3-d.pdf"
+			(at 104.14 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3679,7 +4033,51 @@
 			)
 		)
 		(property "Description" "Zener diode"
-			(at 99.06 125.73 0)
+			(at 104.14 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 104.14 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER" "onsemi "
+			(at 104.14 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "1SMA5938BT3G "
+			(at 104.14 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" "863-1SMA5938BT3G "
+			(at 104.14 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3705,6 +4103,197 @@
 		)
 	)
 	(symbol
+		(lib_id "Libary_Loader:DMN6140LQ-7")
+		(at 58.42 116.84 270)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8661465e-ca29-41b3-b407-73d58d789785")
+		(property "Reference" "Q6"
+			(at 60.96 102.87 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DMN6140LQ-7"
+			(at 60.96 105.41 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SOT96P240X110-3N"
+			(at -40.31 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Datasheet" "https://www.diodes.com//assets/Datasheets/DMN6140LQ.pdf"
+			(at -140.31 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Description" "MOSFET 60V N-Ch Enh FET 60Vdss 20Vgss 10A"
+			(at 58.42 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" "1.1"
+			(at -340.31 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Name" "Diodes Incorporated"
+			(at -440.31 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Part_Number" "DMN6140LQ-7"
+			(at -540.31 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Part Number" "621-DMN6140LQ-7"
+			(at -640.31 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/DMN6140LQ-7?qs=wtVJq%252Be05r%252B05hOLE8kNlg%3D%3D"
+			(at -740.31 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Arrow Part Number" "DMN6140LQ-7"
+			(at -840.31 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/dmn6140lq-7/diodes-incorporated?region=nac"
+			(at -940.31 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 58.42 116.84 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER" "Diodes Incorporated"
+			(at 58.42 116.84 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "6a3da261-37f8-4cff-b17a-82ff71015267")
+		)
+		(pin "2"
+			(uuid "be378f7e-7e38-4644-9cc2-cf869c8417de")
+		)
+		(pin "1"
+			(uuid "1ff46422-0bdb-44ac-b971-95a05b154bb2")
+		)
+		(instances
+			(project "precharge-controller"
+				(path "/d0dc5348-c362-4b06-85a5-76de80ed7055/1985261d-6d1b-4055-84ae-f12baea9cf66"
+					(reference "Q6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_US")
 		(at 52.07 82.55 270)
 		(mirror x)
@@ -3715,10 +4304,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "8740f260-586a-4fd8-a47f-7f2ca197ae95")
 		(property "Reference" "R12"
-			(at 52.07 76.2 90)
+			(at 52.07 77.47 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3728,7 +4316,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 52.07 78.74 90)
+			(at 52.07 80.01 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3748,7 +4336,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.mouser.it/datasheet/3/508/1/PYu-AT_51_RoHS_L_6.pdf"
 			(at 52.07 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -3761,6 +4349,50 @@
 		)
 		(property "Description" "Resistor, US symbol"
 			(at 52.07 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 52.07 82.55 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER" "YAGEO "
+			(at 52.07 82.55 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "AT0805FRD0710KL "
+			(at 52.07 82.55 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" "603-AT0805FRD0710KL "
+			(at 52.07 82.55 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3787,7 +4419,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 77.47 33.02 90)
+		(at 82.55 33.02 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3797,7 +4429,7 @@
 		(dnp no)
 		(uuid "a77412d5-08fa-4df1-bd78-2117d27201a6")
 		(property "Reference" "R25"
-			(at 77.47 36.068 90)
+			(at 82.55 36.068 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3807,7 +4439,7 @@
 			)
 		)
 		(property "Value" "51"
-			(at 77.47 38.608 90)
+			(at 82.55 38.608 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3817,7 +4449,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 77.724 32.004 90)
+			(at 82.804 32.004 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3827,8 +4459,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 77.47 33.02 0)
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/YAGEO-RSF_DATASHEET"
+			(at 82.55 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3839,7 +4471,51 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 77.47 33.02 0)
+			(at 82.55 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 82.55 33.02 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER" "YAGEO "
+			(at 82.55 33.02 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RSF2WSJR-52-51R "
+			(at 82.55 33.02 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" "603-RSF2WSJR-52-51R "
+			(at 82.55 33.02 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3875,10 +4551,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "af9d7b27-9f98-47a3-8dc5-220be1ffa57b")
 		(property "Reference" "R11"
-			(at 52.07 36.83 90)
+			(at 52.07 38.608 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3888,7 +4563,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 52.07 39.37 90)
+			(at 52.07 41.148 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3908,7 +4583,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.mouser.it/datasheet/3/508/1/PYu-AT_51_RoHS_L_6.pdf"
 			(at 52.07 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -3921,6 +4596,50 @@
 		)
 		(property "Description" "Resistor, US symbol"
 			(at 52.07 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 52.07 43.18 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER" "YAGEO "
+			(at 52.07 43.18 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "AT0805FRD0710KL "
+			(at 52.07 43.18 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" "603-AT0805FRD0710KL "
+			(at 52.07 43.18 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3947,7 +4666,7 @@
 	)
 	(symbol
 		(lib_id "Diode:1N4004")
-		(at 92.71 43.18 270)
+		(at 97.79 43.18 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3958,7 +4677,7 @@
 		(fields_autoplaced yes)
 		(uuid "afff7d8d-c679-4491-a087-08cd0f7e51a2")
 		(property "Reference" "D6"
-			(at 95.25 41.9099 90)
+			(at 100.33 41.9099 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3968,8 +4687,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1N4004"
-			(at 95.25 44.4499 90)
+		(property "Value" "400V"
+			(at 100.33 44.4499 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3979,8 +4698,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
-			(at 88.265 43.18 0)
+		(property "Footprint" ""
+			(at 93.345 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3991,7 +4710,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.vishay.com/docs/88503/1n4001.pdf"
-			(at 92.71 43.18 0)
+			(at 97.79 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4001,8 +4720,8 @@
 				)
 			)
 		)
-		(property "Description" "400V 1A General Purpose Rectifier Diode, DO-41"
-			(at 92.71 43.18 0)
+		(property "Description" "Rectifiers 400V 1A GLASS PASSIVE MAX DC a. 25C 10uA"
+			(at 97.79 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4013,7 +4732,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 92.71 43.18 0)
+			(at 97.79 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4024,7 +4743,51 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 92.71 43.18 0)
+			(at 97.79 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 97.79 43.18 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER" "YAGEO "
+			(at 97.79 43.18 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "S1G "
+			(at 97.79 43.18 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" "603-S1G "
+			(at 97.79 43.18 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4131,7 +4894,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 77.47 109.22 90)
+		(at 82.55 109.22 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4141,7 +4904,7 @@
 		(dnp no)
 		(uuid "becf78dc-0744-4f26-8082-61ecaec26dca")
 		(property "Reference" "R27"
-			(at 77.47 112.268 90)
+			(at 82.55 112.268 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4151,7 +4914,7 @@
 			)
 		)
 		(property "Value" "51"
-			(at 77.47 114.808 90)
+			(at 82.55 114.808 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4161,7 +4924,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 77.724 108.204 90)
+			(at 82.804 108.204 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4171,8 +4934,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 77.47 109.22 0)
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/YAGEO-RSF_DATASHEET"
+			(at 82.55 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4183,7 +4946,51 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 77.47 109.22 0)
+			(at 82.55 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 82.55 109.22 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER" "YAGEO "
+			(at 82.55 109.22 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RSF2WSJR-52-51R "
+			(at 82.55 109.22 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" "603-RSF2WSJR-52-51R "
+			(at 82.55 109.22 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4219,10 +5026,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "d1a83136-b669-409b-9b90-1f2ccbe2da97")
 		(property "Reference" "R13"
-			(at 52.07 114.3 90)
+			(at 52.07 115.824 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4232,7 +5038,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 52.07 116.84 90)
+			(at 52.07 118.364 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4252,7 +5058,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.mouser.it/datasheet/3/508/1/PYu-AT_51_RoHS_L_6.pdf"
 			(at 52.07 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -4265,6 +5071,50 @@
 		)
 		(property "Description" "Resistor, US symbol"
 			(at 52.07 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 52.07 120.65 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER" "YAGEO "
+			(at 52.07 120.65 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "AT0805FRD0710KL "
+			(at 52.07 120.65 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" "603-AT0805FRD0710KL "
+			(at 52.07 120.65 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4291,7 +5141,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 77.47 121.92 270)
+		(at 82.55 121.92 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4301,7 +5151,7 @@
 		(dnp no)
 		(uuid "d898a953-bbb9-4f89-b0c3-a2c090ae7940")
 		(property "Reference" "C16"
-			(at 77.47 126.238 90)
+			(at 82.55 126.238 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4310,8 +5160,8 @@
 				)
 			)
 		)
-		(property "Value" "3300u"
-			(at 77.47 128.778 90)
+		(property "Value" "3600u"
+			(at 82.55 128.778 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4321,7 +5171,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 122.8852 0)
+			(at 78.74 122.8852 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4331,8 +5181,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 77.47 121.92 0)
+		(property "Datasheet" "https://www.mouser.it/datasheet/3/508/1/KEM_A4123_PHH223.pdf"
+			(at 82.55 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4343,7 +5193,51 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 77.47 121.92 0)
+			(at 82.55 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 82.55 121.92 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER" "KEMET "
+			(at 82.55 121.92 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "PHH223HKP4360ME4 "
+			(at 82.55 121.92 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" "80-PHH223HKP4360ME4 "
+			(at 82.55 121.92 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4370,7 +5264,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_Zener")
-		(at 99.06 87.63 180)
+		(at 104.14 87.63 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4380,7 +5274,7 @@
 		(dnp no)
 		(uuid "d9c3ac2d-9ae2-48ec-8e48-60f74a81a7ee")
 		(property "Reference" "D9"
-			(at 99.06 90.932 0)
+			(at 104.14 90.932 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4390,7 +5284,7 @@
 			)
 		)
 		(property "Value" "36V"
-			(at 99.06 93.472 0)
+			(at 104.14 93.472 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4400,7 +5294,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 99.06 87.63 0)
+			(at 104.14 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4410,8 +5304,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 99.06 87.63 0)
+		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/1sma5913bt3-d.pdf"
+			(at 104.14 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4422,7 +5316,51 @@
 			)
 		)
 		(property "Description" "Zener diode"
-			(at 99.06 87.63 0)
+			(at 104.14 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 104.14 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER" "onsemi "
+			(at 104.14 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "1SMA5938BT3G "
+			(at 104.14 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" "863-1SMA5938BT3G "
+			(at 104.14 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4529,7 +5467,7 @@
 	)
 	(symbol
 		(lib_id "Diode:1N4004")
-		(at 92.71 119.38 270)
+		(at 97.79 119.38 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4540,7 +5478,7 @@
 		(fields_autoplaced yes)
 		(uuid "fba48ebd-ba41-4d8e-831e-2c9212d031da")
 		(property "Reference" "D10"
-			(at 95.25 118.1099 90)
+			(at 100.33 118.1099 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4550,8 +5488,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1N4004"
-			(at 95.25 120.6499 90)
+		(property "Value" "400V"
+			(at 100.33 120.6499 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4561,8 +5499,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
-			(at 88.265 119.38 0)
+		(property "Footprint" ""
+			(at 93.345 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4573,7 +5511,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.vishay.com/docs/88503/1n4001.pdf"
-			(at 92.71 119.38 0)
+			(at 97.79 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4583,8 +5521,8 @@
 				)
 			)
 		)
-		(property "Description" "400V 1A General Purpose Rectifier Diode, DO-41"
-			(at 92.71 119.38 0)
+		(property "Description" "Rectifiers 400V 1A GLASS PASSIVE MAX DC a. 25C 10uA"
+			(at 97.79 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4595,7 +5533,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 92.71 119.38 0)
+			(at 97.79 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4606,7 +5544,51 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 92.71 119.38 0)
+			(at 97.79 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 97.79 119.38 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER" "YAGEO "
+			(at 97.79 119.38 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "S1G "
+			(at 97.79 119.38 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" "603-S1G "
+			(at 97.79 119.38 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4713,7 +5695,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 77.47 45.72 270)
+		(at 82.55 45.72 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4723,7 +5705,7 @@
 		(dnp no)
 		(uuid "fe0ecd5a-7bc4-4048-919c-8161b7a8195f")
 		(property "Reference" "C14"
-			(at 77.47 50.038 90)
+			(at 82.55 50.038 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4732,8 +5714,8 @@
 				)
 			)
 		)
-		(property "Value" "3300u"
-			(at 77.47 52.578 90)
+		(property "Value" "3600u"
+			(at 82.55 52.578 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4743,7 +5725,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 46.6852 0)
+			(at 78.74 46.6852 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4753,8 +5735,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 77.47 45.72 0)
+		(property "Datasheet" "https://www.mouser.it/datasheet/3/508/1/KEM_A4123_PHH223.pdf"
+			(at 82.55 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4765,7 +5747,51 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 77.47 45.72 0)
+			(at 82.55 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 82.55 45.72 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER" "KEMET "
+			(at 82.55 45.72 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "PHH223HKP4360ME4 "
+			(at 82.55 45.72 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" "80-PHH223HKP4360ME4 "
+			(at 82.55 45.72 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

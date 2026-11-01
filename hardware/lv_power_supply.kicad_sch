@@ -2948,7 +2948,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.33uF"
+		(property "Value" "0.33u"
 			(at 129.54 45.72 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2959,7 +2959,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Library_Loader:C0805"
 			(at 126.6952 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -2970,7 +2970,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.mouser.it/datasheet/3/508/1/UPY-GP_NP0_16V-to-50V_18.pdf"
 			(at 125.73 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -2982,6 +2982,50 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 125.73 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 125.73 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER" "KEMET"
+			(at 125.73 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "C0805C334J5RACAUTO "
+			(at 125.73 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" "80-C0805C334J5RAUTO "
 			(at 125.73 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -3234,6 +3278,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 49.53 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER" "Vishay Semiconductors "
+			(at 49.53 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "3"
@@ -3495,6 +3561,28 @@
 				(justify left top)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 140.97 34.29 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER" "STMicroelectronics"
+			(at 140.97 34.29 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "90d346a9-8368-4d9d-8ddd-32a4da412a9d")
 		)
@@ -3716,7 +3804,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.mouser.it/datasheet/3/508/1/PYu-AT_51_RoHS_L_6.pdf"
 			(at 48.26 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -3728,6 +3816,50 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
+			(at 48.26 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 48.26 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER" "YAGEO "
+			(at 48.26 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "AT0805FRD0710KL "
+			(at 48.26 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" "603-AT0805FRD0710KL "
 			(at 48.26 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -3775,7 +3907,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF"
+		(property "Value" "0.1u"
 			(at 129.54 142.24 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3786,7 +3918,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Library_Loader:C0805"
 			(at 126.6952 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -3797,7 +3929,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.mouser.it/datasheet/3/508/1/KEM_C1078_X7R_FT_CAP_AUTO_SMD.pdf"
 			(at 125.73 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -3809,6 +3941,50 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 125.73 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 125.73 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER" "KEMET"
+			(at 125.73 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "C0805X104K5RACAUTO "
+			(at 125.73 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" "80-C0805X104K5RAUTO "
 			(at 125.73 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -3865,7 +4041,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Library_Loader:SOD3716X135N"
 			(at 62.23 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -3876,7 +4052,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.mouser.it/datasheet/3/225/1/MMSZ5221BHE3_MMSZ5261BHE3_SOD_123.pdf"
 			(at 62.23 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -3921,6 +4097,50 @@
 			)
 		)
 		(property "Sim.Params" "bv=15 ibv=1m"
+			(at 62.23 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 62.23 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER" "Micro Commercial Components (MCC) "
+			(at 62.23 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "MMSZ5245BHE3-TP "
+			(at 62.23 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" "833-MMSZ5245BHE3-TP "
 			(at 62.23 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -4070,7 +4290,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.mouser.it/datasheet/3/508/1/PYu-AT_51_RoHS_L_6.pdf"
 			(at 48.26 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -4082,6 +4302,50 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
+			(at 48.26 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 48.26 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER" "YAGEO "
+			(at 48.26 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "AT0805FRD0710KL "
+			(at 48.26 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" "603-AT0805FRD0710KL "
 			(at 48.26 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -4138,7 +4402,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Library_Loader:SOD3716X135N"
 			(at 62.23 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -4149,7 +4413,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.mouser.it/datasheet/3/225/1/MMSZ5221BHE3_MMSZ5261BHE3_SOD_123.pdf"
 			(at 62.23 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -4194,6 +4458,50 @@
 			)
 		)
 		(property "Sim.Params" "bv=15 ibv=1m"
+			(at 62.23 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 62.23 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER" "Micro Commercial Components (MCC) "
+			(at 62.23 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "MMSZ5245BHE3-TP "
+			(at 62.23 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" "833-MMSZ5245BHE3-TP "
 			(at 62.23 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -4399,7 +4707,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "234u"
+		(property "Value" "270u"
 			(at 143.51 142.24 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4410,7 +4718,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Library_Loader:CAPPRD500W65D1025H1100"
 			(at 140.6652 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -4421,7 +4729,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.rubycon.co.jp/wp-content/uploads/catalog-hybrid/CZH.pdf"
 			(at 139.7 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -4433,6 +4741,50 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 139.7 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 139.7 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER" "Rubycon "
+			(at 139.7 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "35CZH270M10X9 "
+			(at 139.7 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" "232-35CZH270M10X9 "
 			(at 139.7 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -4481,7 +4833,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF"
+		(property "Value" "0.1u"
 			(at 157.48 45.7199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4492,7 +4844,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Library_Loader:C0805"
 			(at 154.6352 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -4503,7 +4855,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.mouser.it/datasheet/3/508/1/KEM_C1078_X7R_FT_CAP_AUTO_SMD.pdf"
 			(at 153.67 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -4515,6 +4867,50 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 153.67 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 153.67 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER" "KEMET"
+			(at 153.67 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "C0805X104K5RACAUTO "
+			(at 153.67 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" "80-C0805X104K5RAUTO "
 			(at 153.67 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -4574,7 +4970,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Library_Loader:SOD3716X145N"
 			(at 107.95 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -4585,7 +4981,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/diodes%20inc_diods15474-1.pdf"
 			(at 107.95 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -4598,6 +4994,50 @@
 		)
 		(property "Description" "Bidirectional transient-voltage-suppression diode"
 			(at 107.95 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 107.95 44.45 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER" "Diodes Incorporated "
+			(at 107.95 44.45 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "MMSZ5255BQ-7-F "
+			(at 107.95 44.45 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" "621-MMSZ5255BQ-7-F "
+			(at 107.95 44.45 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4744,7 +5184,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.mouser.it/datasheet/3/508/1/PYu-SR_20105_RoHS_L_12.pdf"
 			(at 100.33 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -4757,6 +5197,50 @@
 		)
 		(property "Description" "Resistor, US symbol"
 			(at 100.33 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 100.33 34.29 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER" "YAGEO "
+			(at 100.33 34.29 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "SR0805FR-7W10RL "
+			(at 100.33 34.29 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" "603-SR0805FR-7W10RL "
+			(at 100.33 34.29 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4815,7 +5299,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Library_Loader:SOD3716X145N"
 			(at 107.95 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -4826,7 +5310,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/diodes%20inc_diods15474-1.pdf"
 			(at 107.95 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -4839,6 +5323,50 @@
 		)
 		(property "Description" "Bidirectional transient-voltage-suppression diode"
 			(at 107.95 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 107.95 140.97 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER" "Diodes Incorporated "
+			(at 107.95 140.97 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "MMSZ5255BQ-7-F "
+			(at 107.95 140.97 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" "621-MMSZ5255BQ-7-F "
+			(at 107.95 140.97 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4985,7 +5513,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.mouser.it/datasheet/3/508/1/PYu-SR_20105_RoHS_L_12.pdf"
 			(at 100.33 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -4998,6 +5526,50 @@
 		)
 		(property "Description" "Resistor, US symbol"
 			(at 100.33 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 100.33 130.81 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER" "YAGEO "
+			(at 100.33 130.81 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "SR0805FR-7W10RL "
+			(at 100.33 130.81 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" "603-SR0805FR-7W10RL "
+			(at 100.33 130.81 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5327,6 +5899,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 49.53 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER" "Vishay Semiconductors "
+			(at 49.53 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "3"

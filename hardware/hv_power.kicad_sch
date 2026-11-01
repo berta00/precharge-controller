@@ -1167,7 +1167,40 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "600 VDC, 50 A High Capacity Power Relay with Bidirectional Switching"
+			(at 80.01 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 80.01 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER" "Aratas "
+			(at 80.01 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" "653-G9KB-1ADC12 "
 			(at 80.01 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -1340,7 +1373,40 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "600 VDC, 50 A High Capacity Power Relay with Bidirectional Switching"
+			(at 80.01 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 80.01 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER" "Aratas "
+			(at 80.01 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" "653-G9KB-1ADC12 "
 			(at 80.01 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -1513,7 +1579,40 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "600 VDC, 50 A High Capacity Power Relay with Bidirectional Switching"
+			(at 80.01 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 80.01 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER" "Aratas "
+			(at 80.01 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" "653-G9KB-1ADC12 "
 			(at 80.01 77.47 0)
 			(hide yes)
 			(show_name no)

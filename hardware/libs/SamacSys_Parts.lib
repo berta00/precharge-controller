@@ -424,4 +424,162 @@ P 4 0 1 10 230 100 270 120 270 80 230 100 F
 ENDDRAW
 ENDDEF
 #
+#SamacSys ECAD Model C0805X104K5RACAUTO
+#/1140595/2203046/2.50/2/2/Capacitor
+DEF C0805X104K5RACAUTO C 0 30 Y Y 1 F N
+F0 "C" 350 250 50 H V L CNN
+F1 "C0805X104K5RACAUTO" 350 150 50 H V L CNN
+F2 "C0805" 350 50 50 H I L CNN
+F3 "https://www.yageogroup.com/content/datasheet/asset/file/KEM_C1078_X7R_FT-CAP_AUTO_SMD" 350 -50 50 H I L CNN
+F4 "SMD, MLCC, FT-CAP, Automotive Grade" 350 -150 50 H I L CNN "Description"
+F5 "1.1" 350 -250 50 H I L CNN "Height"
+F6 "Yageo Group" 350 -350 50 H I L CNN "Manufacturer_Name"
+F7 "C0805X104K5RACAUTO" 350 -450 50 H I L CNN "Manufacturer_Part_Number"
+F8 "80-C0805X104K5RAUTO" 350 -550 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/KEMET/C0805X104K5RACAUTO?qs=axlgi0kL0wIBSTkWkJ1t1A%3D%3D" 350 -650 50 H I L CNN "Mouser Price/Stock"
+F10 "C0805X104K5RACAUTO" 350 -750 50 H I L CNN "Arrow Part Number"
+F11 "https://www.arrow.com/en/products/c0805x104k5racauto/kemet-corporation?region=europe" 350 -850 50 H I L CNN "Arrow Price/Stock"
+DRAW
+X ~ 1 0 0 200 R 50 50 0 0 P
+X ~ 2 500 0 200 L 50 50 0 0 P
+P 2 0 1 6 220 100 220 -100 N
+P 2 0 1 6 280 100 280 -100 N
+P 2 0 1 6 200 0 220 0 N
+P 2 0 1 6 280 0 300 0 N
+ENDDRAW
+ENDDEF
+#
+#SamacSys ECAD Model C0805C334J5RACAUTO
+#/13853402/2203046/2.50/2/2/Capacitor
+DEF C0805C334J5RACAUTO C 0 30 Y Y 1 F N
+F0 "C" 350 250 50 H V L CNN
+F1 "C0805C334J5RACAUTO" 350 150 50 H V L CNN
+F2 "C0805" 350 50 50 H I L CNN
+F3 "https://www.yageogroup.com/content/datasheet/asset/file/KEM_C1023_X7R_AUTO_SMD" 350 -50 50 H I L CNN
+F4 "SMD, MLCC, Temperature Stable, Automotive Grade" 350 -150 50 H I L CNN "Description"
+F5 "1.1" 350 -250 50 H I L CNN "Height"
+F6 "Yageo Group" 350 -350 50 H I L CNN "Manufacturer_Name"
+F7 "C0805C334J5RACAUTO" 350 -450 50 H I L CNN "Manufacturer_Part_Number"
+F8 "80-C0805C334J5RAUTO" 350 -550 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/KEMET/C0805C334J5RACAUTO?qs=2FIyTMJ0hNld799v3LUrlQ%3D%3D" 350 -650 50 H I L CNN "Mouser Price/Stock"
+F10 "" 350 -750 50 H I L CNN "Arrow Part Number"
+F11 "" 350 -850 50 H I L CNN "Arrow Price/Stock"
+DRAW
+X ~ 1 0 0 200 R 50 50 0 0 P
+X ~ 2 500 0 200 L 50 50 0 0 P
+P 2 0 1 6 220 100 220 -100 N
+P 2 0 1 6 280 100 280 -100 N
+P 2 0 1 6 200 0 220 0 N
+P 2 0 1 6 280 0 300 0 N
+ENDDRAW
+ENDDEF
+#
+#SamacSys ECAD Model 35PZE270M10X9
+#/4944454/2203046/2.50/2/3/Capacitor Polarised
+DEF 35PZE270M10X9 C 0 30 Y Y 1 F N
+F0 "C" 350 250 50 H V L CNN
+F1 "35PZE270M10X9" 350 150 50 H V L CNN
+F2 "CAPPRD500W65D1025H1100" 350 50 50 H I L CNN
+F3 "http://www.rubycon.co.jp/en/catalog/e_pdfs/pzcap/e_PZE.pdf" 350 -50 50 H I L CNN
+F4 "270F 35V Aluminum Polymer Capacitor Radial, Can 20mOhm 10000 Hrs @ 105C" 350 -150 50 H I L CNN "Description"
+F5 "11" 350 -250 50 H I L CNN "Height"
+F6 "Rubycon" 350 -350 50 H I L CNN "Manufacturer_Name"
+F7 "35PZE270M10X9" 350 -450 50 H I L CNN "Manufacturer_Part_Number"
+F8 "232-35PZE270M10X9" 350 -550 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/Rubycon/35PZE270M10X9?qs=T3oQrply3y8oonWFNiVXpA%3D%3D" 350 -650 50 H I L CNN "Mouser Price/Stock"
+F10 "" 350 -750 50 H I L CNN "Arrow Part Number"
+F11 "" 350 -850 50 H I L CNN "Arrow Price/Stock"
+DRAW
+X ~ 1 0 0 100 R 50 50 0 0 P
+X ~ 2 500 0 100 L 50 50 0 0 P
+P 5 0 1 6 200 100 200 -100 230 -100 230 100 200 100 N
+P 2 0 1 6 180 50 140 50 N
+P 2 0 1 6 160 70 160 30 N
+P 2 0 1 6 100 0 200 0 N
+P 2 0 1 6 300 0 400 0 N
+P 5 0 1 10 300 100 300 -100 270 -100 270 100 300 100 F
+ENDDRAW
+ENDDEF
+#
+#SamacSys ECAD Model MMSZ5245BHE3-TP
+#/18014987/2203046/2.50/2/2/Zener Diode
+DEF MMSZ5245BHE3-TP Z 0 30 Y Y 1 F N
+F0 "Z" 400 350 50 H V L CNN
+F1 "MMSZ5245BHE3-TP" 400 250 50 H V L CNN
+F2 "SOD3716X135N" 400 150 50 H I L CNN
+F3 "https://www.mccsemi.com/pdf/Products/MMSZ5221BHE3-MMSZ5261BHE3(SOD-123).pdf" 400 50 50 H I L CNN
+F4 "Zener Diode 15 V 500 mW +/-5% Surface Mount SOD-123" 400 -50 50 H I L CNN "Description"
+F5 "1.35" 400 -150 50 H I L CNN "Height"
+F6 "MCC" 400 -250 50 H I L CNN "Manufacturer_Name"
+F7 "MMSZ5245BHE3-TP" 400 -350 50 H I L CNN "Manufacturer_Part_Number"
+F8 "" 400 -450 50 H I L CNN "Mouser Part Number"
+F9 "" 400 -550 50 H I L CNN "Mouser Price/Stock"
+F10 "" 400 -650 50 H I L CNN "Arrow Part Number"
+F11 "" 400 -750 50 H I L CNN "Arrow Price/Stock"
+DRAW
+X ~ 1 0 0 100 R 50 50 0 0 P
+X ~ 2 600 0 100 L 50 50 0 0 P
+P 2 0 1 6 200 80 200 -80 N
+P 2 0 1 6 200 80 240 100 N
+P 2 0 1 6 160 -100 200 -80 N
+P 2 0 1 6 100 0 200 0 N
+P 2 0 1 6 500 0 400 0 N
+P 4 0 1 10 200 0 400 100 400 -100 200 0 F
+ENDDRAW
+ENDDEF
+#
+#SamacSys ECAD Model MMSZ5255BQ-7-F
+#/11318777/2203046/2.50/2/2/Zener Diode
+DEF MMSZ5255BQ-7-F Z 0 30 Y Y 1 F N
+F0 "Z" 400 350 50 H V L CNN
+F1 "MMSZ5255BQ-7-F" 400 250 50 H V L CNN
+F2 "SOD3716X145N" 400 150 50 H I L CNN
+F3 "https://www.diodes.com/assets/Datasheets/ds18010.pdf" 400 50 50 H I L CNN
+F4 "Zener Diodes Zener Diode SOD123 T&R 3K" 400 -50 50 H I L CNN "Description"
+F5 "1.45" 400 -150 50 H I L CNN "Height"
+F6 "Diodes Incorporated" 400 -250 50 H I L CNN "Manufacturer_Name"
+F7 "MMSZ5255BQ-7-F" 400 -350 50 H I L CNN "Manufacturer_Part_Number"
+F8 "621-MMSZ5255BQ-7-F" 400 -450 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/MMSZ5255BQ-7-F?qs=vdQOMtKMWaDX1xQBoCbLEg%3D%3D" 400 -550 50 H I L CNN "Mouser Price/Stock"
+F10 "MMSZ5255BQ-7-F" 400 -650 50 H I L CNN "Arrow Part Number"
+F11 "https://www.arrow.com/en/products/mmsz5255bq-7-f/diodes-incorporated?region=nac" 400 -750 50 H I L CNN "Arrow Price/Stock"
+DRAW
+X ~ 1 0 0 100 R 50 50 0 0 P
+X ~ 2 600 0 100 L 50 50 0 0 P
+P 2 0 1 6 200 80 200 -80 N
+P 2 0 1 6 200 80 240 100 N
+P 2 0 1 6 160 -100 200 -80 N
+P 2 0 1 6 100 0 200 0 N
+P 2 0 1 6 500 0 400 0 N
+P 4 0 1 10 200 0 400 100 400 -100 200 0 F
+ENDDRAW
+ENDDEF
+#
+#SamacSys ECAD Model BZT52C12-HE3-08
+#/558358/2203046/2.50/2/3/Zener Diode
+DEF BZT52C12-HE3-08 Z 0 30 Y Y 1 F N
+F0 "Z" 400 350 50 H V L CNN
+F1 "BZT52C12-HE3-08" 400 250 50 H V L CNN
+F2 "SOD3716X135N" 400 150 50 H I L CNN
+F3 "http://www.vishay.com/docs/85760/bzt52.pdf" 400 50 50 H I L CNN
+F4 "Diode Zener Single 12V 5% 500mW Automotive 2-Pin SOD-123 T/R" 400 -50 50 H I L CNN "Description"
+F5 "1.35" 400 -150 50 H I L CNN "Height"
+F6 "Vishay" 400 -250 50 H I L CNN "Manufacturer_Name"
+F7 "BZT52C12-HE3-08" 400 -350 50 H I L CNN "Manufacturer_Part_Number"
+F8 "78-BZT52C12-HE3-08" 400 -450 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/BZT52C12-HE3-08?qs=ESFF34Uzhwjcp2%252By2jOhYg%3D%3D" 400 -550 50 H I L CNN "Mouser Price/Stock"
+F10 "BZT52C12-HE3-08" 400 -650 50 H I L CNN "Arrow Part Number"
+F11 "https://www.arrow.com/en/products/bzt52c12-he3-08/vishay" 400 -750 50 H I L CNN "Arrow Price/Stock"
+DRAW
+X ~ 1 0 0 100 R 50 50 0 0 P
+X ~ 2 600 0 100 L 50 50 0 0 P
+P 2 0 1 6 200 80 200 -80 N
+P 2 0 1 6 200 80 240 100 N
+P 2 0 1 6 160 -100 200 -80 N
+P 2 0 1 6 100 0 200 0 N
+P 2 0 1 6 500 0 400 0 N
+P 4 0 1 10 200 0 400 100 400 -100 200 0 F
+ENDDRAW
+ENDDEF
+#
 #End Library
