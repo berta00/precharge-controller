@@ -31,6 +31,10 @@
   - [6. Connectors](#6-connectors)
     - [6.1 Low Voltage Connector](#61-low-voltage-connector)
     - [6.2 High Voltage Terminal Blocks](#62-high-voltage-terminal-blocks)
+  - [7. Small components selection (resistors, capacitors, and diodes)](#7-small-components-selection-resistors-capacitors-and-diodes)
+    - [7.1 Resistors](#71-resistors)
+    - [7.2 Capacitors](#72-capacitors)
+    - [7.3 Diodes \& Protection](#73-diodes--protection)
 
 
 ## 1. LV Power Supply
@@ -99,7 +103,7 @@ Following the manufacturer's datasheet recommendations two filtering capacitor a
 
 Because the +12V_SHDW line supplies inductive loads (relay and contactor coils), switching events generate sharp current steps and voltage sags. A dual-stage bypass filter is utilized:
 
-- **High-Frequency Bypass (C3):** A $0.1\space \mu\text{F}$ multilayer ceramic capacitor (MLCC) is placed locally to absorb high-frequency EMI.
+- **High-Frequency Bypass (C3):** A $0.1\space \mu\text{F}$.
 - **Inductive Transient Bypass (C4):** To supply sudden transient currents when multiple relay coils switch simultaneously without causing severe voltage droops ($\Delta V$), a bulk capacitor is required. 
 
 According to the Omron G9KB-1A12V relay datasheet, the nominal coil resistance is $R_{c} = 51\space \Omega$. To optimize power consumption and thermal performance, the system applies a holding voltage of $V_{hold} = 6\text{ V}$ (50% of the rated 12V) in relay drive block.
@@ -173,12 +177,10 @@ R6 \cdot C6 = -\frac{50\text{ ms}}{\ln\left(1 - \frac{7.1\text{ V}}{12\text{ V}}
 $$
 
 Given this information, we can choose an RC couple which fits the $\tau$ contraint:
-- $C6 = 1\space \mu\text{F}$ (not electrolytic because they have high tolerances for a timer)
-- $R6 = 56\text{ k}\Omega$ (standard value)
+- $C6 = 1\space \mu\text{F}$
+- $R6 = 56\text{ k}\Omega$
 
 R19 is used as discharge resistance, in order to prevent a short circuit and protect the NMOS (Q4). In this case $I_{peak} = \frac{12\text{ V}}{R19}$. Choosing a resistor of $R19 = 100\space \Omega$, we are sure to preserve the NMOS and to not interfere with R6 and ensuring a stable down signal when enable is up. The discharge time with $\tau = 100\space \Omega \cdot 1\space \mu\text{F}$ is around $0.1\text{ ms}$, so it won't affect the timer functioning.
-
-The timer wont be precise to the millisecond, due to component tolerances.
 
 ### 2.3 Logic chips
 
@@ -284,7 +286,7 @@ $$
 
 As recommended by the relay manufacturer, using only a standard freewheeling diode delays the release time of the relay contacts. Adding a Zener diode in series solves this by increasing the discharge voltage, allowing the coil current to decay much faster while protecting the driver from overvoltage.
 
-**Flywheel Diodes (D6, D8, D10) required specs:** Fast recovery or standard silicon diode with a repetitive peak reverse voltage $V_{RRM}$ at least 10 times the coil rated voltage ($\ge 120\text{ V}$), and a forward current $I_F$ exceeding the nominal coil current ($\ge 300\text{ mA}$).
+**Flywheel Diodes (D6, D8, D10) required specs:** A repetitive peak reverse voltage $V_{RRM}$ at least 10 times the coil rated voltage ($\ge 120\text{ V}$), and a forward current $I_F$ exceeding the nominal coil current ($\ge 300\text{ mA}$).
 
 **Zener Diodes (D7, D9, D11) required specs:** The manufacturer recommends a Zener voltage approximately 3 times the rated coil voltage to ensure optimal release time and energy dissipation:
 $$
@@ -486,3 +488,21 @@ Chosen Weidmüller's PCF 7.50/03/180 3.5SN OR BX (9500630000) specs:
 - Maximum ratings: $1000\text{ V}$ and $24\text{ A}$.
 
 The central pole is left disconnected in order to ensure maximum separation between potentials.
+
+
+## 7. Small components selection (resistors, capacitors, and diodes)
+
+### 7.1 Resistors
+- **General logic and RC timers:** Standardized to SMD 0805 packages with $0.125\text{ W}$ power rating and $0.1\%$ to $1\%$ tolerance. This ensures precise timing for the 50 ms enable timer and accurate logic thresholds.
+- **HV sense dividers:** Selected as SMD 1206 or 2010 packages with $0.1\%$ to $1\%$ tolerance. While standard 0805 packages risk electrical breakdown, the larger 1206/2010 packages can safely handle over $200\text{ V}$ each. This is required to distribute the $600\text{ V}$ traction system voltage safely.
+- **Holding voltage coil:** Sized as an Axial THT Metal Oxide resistor ($51\space\Omega$, $2\text{ W}$, $5\%$ tolerance).
+
+### 7.2 Capacitors
+- **Logic decoupling and filters ($0.1\space\mu\text{F}, 0.33\space\mu\text{F}, 1\space\mu\text{F}$):** Standardized to SMD 0805/1206 packages with X7R dielectric, $50\text{ V}$ rating, and $10\%$ tolerance (5% for timers). The X7R dielectric guarantees stable capacitance across extreme automotive temperatures.
+- **Transient load:** Sized as a $330\space\mu\text{F}$, $25\text{ V}$ Aluminum Electrolytic capacitor. The minimum calculated requirement was $234\space\mu\text{F}$ to prevent voltage dips during switching. This was rounded up to the nearest standard value ($330\space\mu\text{F}$).
+- **Holding voltage:** Selected the KEMET PHH223 Hybrid Radial Crown ($3600\space\mu\text{F}, 25\text{ V}$) automotive graded.
+
+### 7.3 Diodes & Protection
+- **Logic Zener:** Selected as SMD SOD-123 packages ($12\text{ V}/15\text{ V}$, $0.5\text{ W}$, $5\%$ tolerance). These are used to clamp voltages below critical breakdown levels, protecting the MOSFETs and operational amplifiers from damage.
+- **Transient voltage protectors (TVS):** Sized as $28\text{ V}$. They absorb voltage spikes, protecting the shutdown line and ensuring the main logic power supply never exceeds the $35\text{ V}$ maximum limit of the voltage regulator.
+- **Relay flywheeling:** An ES1G Fast Recovery Rectifier ($1\text{ A}$, $400\text{ V}$) paired with a $36\text{ V}$ Zener ($1.5\text{ W}$). This setup dissipates the high-energy voltage spike created when the relay coil turns off.

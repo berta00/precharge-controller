@@ -119,13 +119,11 @@ The core sequencing and state retention are managed by a discrete set-reset (SR)
 
 To comply with safety requirements regarding power loss and fault contingencies, a monitoring and reset and gate is integrated into the logic domain:
 - **Shutdown and Low-Voltage Supervision:** The circuit continuously tracks the integrity of both the $12\text{ V}$ shutdown safety supply and the unregulated low-voltage lines.
-- **Fail-Safe Response:** If the shutdown supply or the low-voltage auxiliary supply drops below operating thresholds, or if the ENABLE signal is removed for more than $50\text{ ms}$, the protection logic overrides the SR latch state. This forces all relay control outputs (CMD_AIR_PRE, CMD_AIR_POS, CMD_AIR_NEG) to actively open within a maximum of $250\text{ ms}$, safely isolating the high-voltage Traction System from the inverter.
+- **Fail-Safe Response:** If the shutdown supply or the low-voltage auxiliary supply drops below operating thresholds, or if the ENABLE signal is removed for more than $50\text{ ms}$, the protection logic overrides the SR latch state. This forces all relay control outputs (CMD_AIR_PRE, CMD_AIR_POS, CMD_AIR_NEG) to actively open, safely isolating the high-voltage Traction System from the inverter. In the event of a safety shutdown or loss of the enable signal, the logic decouples the relay driver MOSFETs in nanoseconds. Therefore, the total system decoupling time is strictly dictated by the mechanical release time of the relays and the retarted falling edge of the enable line, which in the worse case scenario is around $60\text{ ms}$.
 
 <p align="center">
     <img src="../docs/img/lv_logic_3_sheet.png" style="width: 700px; float: center;" >
 </p>
-
-<TODO calculate precise opening time>
 
 
 ## 4. Low voltage relay drive
