@@ -7,7 +7,9 @@ Hardware-only precharge controller design for the E-Agle Trento Racing Team elec
 - `./docs`:
   - `datasheet`: Datasheets of all the used components
   - `img`: Images used in markdown files
-  - `DESCRIPTION.md`: Description file containing a complete overview about the project   
+  - `BOM.csv`: Bill Of Material file
+  - `DESCRIPTION.md`: Description file containing a complete overview about the project
+  - `SIZING.md`: Sizing file containing all the calculations and considerations
 - `./hardware`:
   - `libs`: Libraries used in kicad project
   - `sim`: LTspice simulation files
