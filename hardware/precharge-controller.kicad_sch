@@ -4,6 +4,15 @@
 	(generator_version "10.0")
 	(uuid "d0dc5348-c362-4b06-85a5-76de80ed7055")
 	(paper "A4")
+	(title_block
+		(title "Hardware precharge-controller")
+		(date "2026-11-01")
+		(rev "1.0")
+		(company "University of Trento")
+		(comment 1 "By Bertagnolli Marco")
+		(comment 3 "recruitment test.")
+		(comment 4 "Hardware-only precharge controller design for the E-Agle Trento Racing Team electronics")
+	)
 	(lib_symbols
 		(symbol "Libary_Loader:9500630000"
 			(exclude_from_sim no)
@@ -637,6 +646,18 @@
 		)
 		(uuid "1f8fb1e7-2e7f-4509-ab35-c40dcc29636d")
 	)
+	(rectangle
+		(start 25.4 143.764)
+		(end 156.21 165.1)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "dbc458f4-10cd-477c-a65c-e5df258039d1")
+	)
 	(text "Low voltage"
 		(exclude_from_sim no)
 		(at 25.146 23.622 0)
@@ -698,6 +719,17 @@
 			)
 		)
 		(uuid "a8bc369e-94a4-473a-9aae-f59761b7074e")
+	)
+	(text "Sizing LV Connector (J1):\nJ1 = TE / Deutsch DTF13-4P-G003 (4-pin: LV_SUPPLY_IN, LV_SHDW_IN, ENABLE_IN, GND)\nV_{LV_max} = 24V < max V_{J1_nominal} = 250V DC\nI_{LV_max} = I_{LOGIC_max} + I_{SHDW_peak} = 8mA + 470mA = 0.478A << max I_{J1_nominal} = 13A (per contact)\n\nSizing HV Connectors (J2, J3, J4):\nJ2, J3, J4 = Weidmuller PCF 7.50/03/180 3.5SN OR BX (9500630000 - Flat-blade tab terminal)\nV_{HV_max} = 600V DC <= max V_{J_HV_nominal} = 630V / 690V (IEC)\nI_{HV_pre_peak} = 0.60A << max I_{J_HV_nominal} = 24A\nCenter pin left unconnected -> hogher clearance"
+		(exclude_from_sim no)
+		(at 25.908 154.686 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e5367c6d-2adb-45cd-8d94-ffc591f269d0")
 	)
 	(junction
 		(at 58.42 96.52)

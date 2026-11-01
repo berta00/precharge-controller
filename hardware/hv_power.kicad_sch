@@ -4,6 +4,14 @@
 	(generator_version "10.0")
 	(uuid "df87a490-335f-4f2e-80cc-6614d7ec6312")
 	(paper "A4")
+	(title_block
+		(title "Hardware precharge-controller")
+		(rev "1.0")
+		(company "University of Trento")
+		(comment 1 "By Bertagnolli Marco")
+		(comment 3 "recruitment test.")
+		(comment 4 "Hardware-only precharge controller design for the E-Agle Trento Racing Team electronics")
+	)
 	(lib_symbols
 		(symbol "G9KB_1A12V:G9KB-1A_DC12"
 			(pin_names
@@ -640,6 +648,18 @@
 		(uuid "5e4e7682-25ad-4cf7-aad5-16f62135f8fa")
 	)
 	(rectangle
+		(start 44.704 149.606)
+		(end 148.336 171.196)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "a81bd51d-c9fd-4feb-bf4a-6feab8d39826")
+	)
+	(rectangle
 		(start 44.45 25.4)
 		(end 82.55 60.96)
 		(stroke
@@ -673,6 +693,17 @@
 			(justify left)
 		)
 		(uuid "05ea69e3-fb51-4db0-bfb7-968db59915a6")
+	)
+	(text "Input: V_{TS} = 0V to 600V DC\n\nMax current draw (HV precharge branch):\nI_{pre_peak} = V_{TS_max} / R17 = 600V / 1000Ohm = 0.60A (< 1A)\n\nSizing HV Relays & Precharge Resistor:\nU2, U3, U4 = Omron G9KB-1A12V (V_{contact_max} = 600V DC, V_{coil} = 12V DC, R_{coil} = 51Ohm)\nR_{pre} = 1000Ohm Precharge Power Resistor\ntau = R17 * C_{DC_LINK} = 1000Ohm * 630uF = 0.63s (or 0.378s with C_{DC_LINK} = 378uF)\nt_{95%} = tau * ln(20) = 3 * tau = 1.89s (or 1.13s with C_{DC_LINK} = 378uF)"
+		(exclude_from_sim no)
+		(at 44.958 160.528 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1dbd34b8-b9cc-42e3-ace2-3aac3ece5de2")
 	)
 	(text "AIR POS relay"
 		(exclude_from_sim no)
@@ -1155,7 +1186,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "G9KB-1A DC12"
+		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/Omron_4-13-2022_G9KB%20Datasheet.pdf"
 			(at 80.01 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -1201,6 +1232,17 @@
 			)
 		)
 		(property "Mouser Part Number" "653-G9KB-1ADC12 "
+			(at 80.01 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "G9KB-1A DC12"
 			(at 80.01 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -1361,7 +1403,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "G9KB-1A DC12"
+		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/Omron_4-13-2022_G9KB%20Datasheet.pdf"
 			(at 80.01 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -1407,6 +1449,17 @@
 			)
 		)
 		(property "Mouser Part Number" "653-G9KB-1ADC12 "
+			(at 80.01 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "G9KB-1A DC12"
 			(at 80.01 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -1567,7 +1620,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "G9KB-1A DC12"
+		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/Omron_4-13-2022_G9KB%20Datasheet.pdf"
 			(at 80.01 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -1613,6 +1666,17 @@
 			)
 		)
 		(property "Mouser Part Number" "653-G9KB-1ADC12 "
+			(at 80.01 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "G9KB-1A DC12"
 			(at 80.01 77.47 0)
 			(hide yes)
 			(show_name no)

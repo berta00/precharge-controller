@@ -4,6 +4,14 @@
 	(generator_version "10.0")
 	(uuid "f3422505-d817-4da8-aab9-23f34756f464")
 	(paper "A4")
+	(title_block
+		(title "Hardware precharge-controller")
+		(rev "1.0")
+		(company "University of Trento")
+		(comment 1 "By Bertagnolli Marco")
+		(comment 3 "recruitment test.")
+		(comment 4 "Hardware-only precharge controller design for the E-Agle Trento Racing Team electronics")
+	)
 	(lib_symbols
 		(symbol "Device:C"
 			(pin_numbers
@@ -1357,6 +1365,18 @@
 		(uuid "759e882a-7563-4395-bfeb-6518dedb33ee")
 	)
 	(rectangle
+		(start 26.289 137.922)
+		(end 165.989 179.197)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "82cc0e12-e05e-4c7d-88d2-3b184dcfb70e")
+	)
+	(rectangle
 		(start 73.66 101.6)
 		(end 91.44 133.858)
 		(stroke
@@ -1485,6 +1505,17 @@
 			)
 		)
 		(uuid "9cc0e979-af33-41e8-aa28-369c6ff2cb66")
+	)
+	(text "Input: V_{CMD_AIR_NEG}, V_{CMD_AIR_PRE}, V_{CMD_AIR_POS} = 0V / 12V\nOutput: Low-side drive for U2, U3, U4 coils (+12V_SHDW supply)\n\nMax current draw (per channel):\nI_{coil_peak} = V_{SHDW} / R_{coil} = 12V / 51Ohm = 235mA\nI_{coil_hold} = V_{hold} / R_{coil} = 6V / 51Ohm = 117mA\n\nSizing Low-Side NMOS Driver:\nQ3, Q5, Q6 = DMN6140L (max V_{DS} = 60V, R_{DS(on)} = 50mOhm, P_{D_hold} = R_{DS(on)} * I_{coil_hold}^{2} = 0.05Ohm * (117mA)^{2} = 0.68mW)\nR14, R15, R16 = 1kOhm gate resistor (I_{G_peak} = 12V / 1kOhm = 12mA)\nR11, R12, R13 = 10kOhm gate pull-down to GND (prevents floating gate)\n\nSizing Coil Holding Voltage Network (Omron G9KB-1A12V, R_{coil} = 51Ohm):\nR25, R26, R27 = 51Ohm (V_{hold} = V_{SHDW} * R_{coil} / (R_{coil} + R_{hold}) = 12V * 51Ohm / 102Ohm = 6V, P_{R} = (117mA)^{2} * 51Ohm = 0.70W < 2W)\nR_{eq} = (R_{coil} * R_{hold}) / (R_{coil} + R_{hold}) = (51Ohm * 51Ohm) / (51Ohm + 51Ohm) = 25.5Ohm\nC14, C15, C16 = 3300uF (C_{calc} = -t_{pull} / (R_{eq} * ln(1 - V_{C} / V_{max})) = -0.1s / (25.5Ohm * ln(1 - 4.2V / 6V)) = 3260uF -> 3300uF)\n\nSizing Freewheeling & Back-EMF Protection:\nD6, D8, D10 = ES1G freewheeling diode (max I_{F} = 1A > I_{coil_peak} = 235mA)\nD7, D9, D11 = 36V Zener clamp (max V_{DS}_{protected} = V_{SHDW} + V_{Z} + V_{F} = 12V + 36V + 1V = 49V < max V_{DS}_{nominal} = 60V)"
+		(exclude_from_sim no)
+		(at 26.67 158.75 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9d28245f-b776-4d06-af0d-25ec9a27ff90")
 	)
 	(text "Holding voltage"
 		(exclude_from_sim no)
